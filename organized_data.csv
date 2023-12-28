@@ -1,0 +1,2161 @@
+,locations,timeOfDay,stayTime
+0,One Galle Face ,Morning,More than 3 hours
+1,One Galle Face ,Evening,2 - 3 hours
+2,One Galle Face ,Night,More than 3 hours
+3,Colombo City Center (CCC),Morning,2 - 3 hours
+4,Colombo City Center (CCC),Evening,2 - 3 hours
+5,Colombo City Center (CCC),Night,2 - 3 hours
+6,Galle Face Green,Morning,1 - 2 hours
+7,Galle Face Green,Evening,Less than 1 hour
+8,Galle Face Green,Night,2 - 3 hours
+9,Gangaramaya Temple,Morning,1 - 2 hours
+10,Gangaramaya Temple,Evening,Less than 1 hour
+11,Gangaramaya Temple,Night,1 - 2 hours
+12,National Museum of Colombo,Morning,More than 3 hours
+13,National Museum of Colombo,Evening,More than 3 hours
+14,National Museum of Colombo,Night,More than 3 hours
+15,Independence Memorial Hall,Morning,1 - 2 hours
+16,Independence Memorial Hall,Evening,1 - 2 hours
+17,Independence Memorial Hall,Night,1 - 2 hours
+18,Dutch Museum,Morning,2 - 3 hours
+19,Dutch Museum,Evening,2 - 3 hours
+20,Dutch Museum,Night,2 - 3 hours
+21,National Art Gallery,Morning,More than 3 hours
+22,National Art Gallery,Evening,More than 3 hours
+23,National Art Gallery,Night,2 - 3 hours
+24,Kelaniya Raja Maha Viharaya,Morning,2 - 3 hours
+25,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+26,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+27,Kailasanathar Swamy Kovil,Morning,2 - 3 hours
+28,Kailasanathar Swamy Kovil,Evening,2 - 3 hours
+29,Kailasanathar Swamy Kovil,Night,More than 3 hours
+30,Viharamahadevi Park,Morning,1 - 2 hours
+31,Viharamahadevi Park,Evening,1 - 2 hours
+32,Viharamahadevi Park,Night,2 - 3 hours
+33,Port City,Morning,More than 3 hours
+34,Port City,Evening,2 - 3 hours
+35,Port City,Night,More than 3 hours
+36,Lotus Tower,Morning,2 - 3 hours
+37,Lotus Tower,Evening,2 - 3 hours
+38,Lotus Tower,Night,More than 3 hours
+39,Pettah Market,Morning,1 - 2 hours
+40,Pettah Market,Evening,Less than 1 hour
+41,Pettah Market,Night,1 - 2 hours
+42,Jami Ul-Alfar Mosque,Morning,
+43,Jami Ul-Alfar Mosque,Evening,
+44,Jami Ul-Alfar Mosque,Night,
+45,One Galle Face ,Morning,1 - 2 hours
+46,One Galle Face ,Evening,1 - 2 hours
+47,One Galle Face ,Night,1 - 2 hours
+48,Colombo City Center (CCC),Morning,1 - 2 hours
+49,Colombo City Center (CCC),Evening,1 - 2 hours
+50,Colombo City Center (CCC),Night,1 - 2 hours
+51,Galle Face Green,Morning,1 - 2 hours
+52,Galle Face Green,Evening,1 - 2 hours
+53,Galle Face Green,Night,1 - 2 hours
+54,Gangaramaya Temple,Morning,1 - 2 hours
+55,Gangaramaya Temple,Evening,1 - 2 hours
+56,Gangaramaya Temple,Night,1 - 2 hours
+57,National Museum of Colombo,Morning,Less than 1 hour
+58,National Museum of Colombo,Evening,1 - 2 hours
+59,National Museum of Colombo,Night,1 - 2 hours
+60,Independence Memorial Hall,Morning,1 - 2 hours
+61,Independence Memorial Hall,Evening,1 - 2 hours
+62,Independence Memorial Hall,Night,1 - 2 hours
+63,Dutch Museum,Morning,Less than 1 hour
+64,Dutch Museum,Evening,Less than 1 hour
+65,Dutch Museum,Night,Less than 1 hour
+66,National Art Gallery,Morning,Less than 1 hour
+67,National Art Gallery,Evening,Less than 1 hour
+68,National Art Gallery,Night,Less than 1 hour
+69,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+70,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+71,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+72,Kailasanathar Swamy Kovil,Morning,1 - 2 hours
+73,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+74,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+75,Viharamahadevi Park,Morning,2 - 3 hours
+76,Viharamahadevi Park,Evening,1 - 2 hours
+77,Viharamahadevi Park,Night,2 - 3 hours
+78,Port City,Morning,1 - 2 hours
+79,Port City,Evening,1 - 2 hours
+80,Port City,Night,2 - 3 hours
+81,Lotus Tower,Morning,1 - 2 hours
+82,Lotus Tower,Evening,Less than 1 hour
+83,Lotus Tower,Night,1 - 2 hours
+84,Pettah Market,Morning,1 - 2 hours
+85,Pettah Market,Evening,2 - 3 hours
+86,Pettah Market,Night,2 - 3 hours
+87,Jami Ul-Alfar Mosque,Morning,
+88,Jami Ul-Alfar Mosque,Evening,
+89,Jami Ul-Alfar Mosque,Night,
+90,One Galle Face ,Morning,2 - 3 hours
+91,One Galle Face ,Evening,More than 3 hours
+92,One Galle Face ,Night,More than 3 hours
+93,Colombo City Center (CCC),Morning,2 - 3 hours
+94,Colombo City Center (CCC),Evening,2 - 3 hours
+95,Colombo City Center (CCC),Night,2 - 3 hours
+96,Galle Face Green,Morning,1 - 2 hours
+97,Galle Face Green,Evening,Less than 1 hour
+98,Galle Face Green,Night,2 - 3 hours
+99,Gangaramaya Temple,Morning,1 - 2 hours
+100,Gangaramaya Temple,Evening,Less than 1 hour
+101,Gangaramaya Temple,Night,2 - 3 hours
+102,National Museum of Colombo,Morning,2 - 3 hours
+103,National Museum of Colombo,Evening,1 - 2 hours
+104,National Museum of Colombo,Night,Less than 1 hour
+105,Independence Memorial Hall,Morning,Less than 1 hour
+106,Independence Memorial Hall,Evening,1 - 2 hours
+107,Independence Memorial Hall,Night,1 - 2 hours
+108,Dutch Museum,Morning,1 - 2 hours
+109,Dutch Museum,Evening,1 - 2 hours
+110,Dutch Museum,Night,1 - 2 hours
+111,National Art Gallery,Morning,2 - 3 hours
+112,National Art Gallery,Evening,2 - 3 hours
+113,National Art Gallery,Night,1 - 2 hours
+114,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+115,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+116,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+117,Kailasanathar Swamy Kovil,Morning,Less than 1 hour
+118,Kailasanathar Swamy Kovil,Evening,Less than 1 hour
+119,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+120,Viharamahadevi Park,Morning,1 - 2 hours
+121,Viharamahadevi Park,Evening,2 - 3 hours
+122,Viharamahadevi Park,Night,More than 3 hours
+123,Port City,Morning,1 - 2 hours
+124,Port City,Evening,Less than 1 hour
+125,Port City,Night,2 - 3 hours
+126,Lotus Tower,Morning,Less than 1 hour
+127,Lotus Tower,Evening,1 - 2 hours
+128,Lotus Tower,Night,2 - 3 hours
+129,Pettah Market,Morning,2 - 3 hours
+130,Pettah Market,Evening,1 - 2 hours
+131,Pettah Market,Night,Less than 1 hour
+132,Jami Ul-Alfar Mosque,Morning,
+133,Jami Ul-Alfar Mosque,Evening,
+134,Jami Ul-Alfar Mosque,Night,
+135,One Galle Face ,Morning,2 - 3 hours
+136,One Galle Face ,Evening,2 - 3 hours
+137,One Galle Face ,Night,1 - 2 hours
+138,Colombo City Center (CCC),Morning,2 - 3 hours
+139,Colombo City Center (CCC),Evening,1 - 2 hours
+140,Colombo City Center (CCC),Night,Less than 1 hour
+141,Galle Face Green,Morning,More than 3 hours
+142,Galle Face Green,Evening,2 - 3 hours
+143,Galle Face Green,Night,1 - 2 hours
+144,Gangaramaya Temple,Morning,1 - 2 hours
+145,Gangaramaya Temple,Evening,Less than 1 hour
+146,Gangaramaya Temple,Night,Less than 1 hour
+147,National Museum of Colombo,Morning,1 - 2 hours
+148,National Museum of Colombo,Evening,Less than 1 hour
+149,National Museum of Colombo,Night,Less than 1 hour
+150,Independence Memorial Hall,Morning,1 - 2 hours
+151,Independence Memorial Hall,Evening,1 - 2 hours
+152,Independence Memorial Hall,Night,1 - 2 hours
+153,Dutch Museum,Morning,2 - 3 hours
+154,Dutch Museum,Evening,1 - 2 hours
+155,Dutch Museum,Night,Less than 1 hour
+156,National Art Gallery,Morning,1 - 2 hours
+157,National Art Gallery,Evening,1 - 2 hours
+158,National Art Gallery,Night,1 - 2 hours
+159,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+160,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+161,Kelaniya Raja Maha Viharaya,Night,Less than 1 hour
+162,Kailasanathar Swamy Kovil,Morning,1 - 2 hours
+163,Kailasanathar Swamy Kovil,Evening,Less than 1 hour
+164,Kailasanathar Swamy Kovil,Night,Less than 1 hour
+165,Viharamahadevi Park,Morning,1 - 2 hours
+166,Viharamahadevi Park,Evening,Less than 1 hour
+167,Viharamahadevi Park,Night,Less than 1 hour
+168,Port City,Morning,2 - 3 hours
+169,Port City,Evening,1 - 2 hours
+170,Port City,Night,Less than 1 hour
+171,Lotus Tower,Morning,1 - 2 hours
+172,Lotus Tower,Evening,Less than 1 hour
+173,Lotus Tower,Night,Less than 1 hour
+174,Pettah Market,Morning,More than 3 hours
+175,Pettah Market,Evening,2 - 3 hours
+176,Pettah Market,Night,1 - 2 hours
+177,Jami Ul-Alfar Mosque,Morning,
+178,Jami Ul-Alfar Mosque,Evening,
+179,Jami Ul-Alfar Mosque,Night,
+180,One Galle Face ,Morning,2 - 3 hours
+181,One Galle Face ,Evening,2 - 3 hours
+182,One Galle Face ,Night,2 - 3 hours
+183,Colombo City Center (CCC),Morning,1 - 2 hours
+184,Colombo City Center (CCC),Evening,1 - 2 hours
+185,Colombo City Center (CCC),Night,2 - 3 hours
+186,Galle Face Green,Morning,Less than 1 hour
+187,Galle Face Green,Evening,Less than 1 hour
+188,Galle Face Green,Night,Less than 1 hour
+189,Gangaramaya Temple,Morning,Less than 1 hour
+190,Gangaramaya Temple,Evening,Less than 1 hour
+191,Gangaramaya Temple,Night,Less than 1 hour
+192,National Museum of Colombo,Morning,1 - 2 hours
+193,National Museum of Colombo,Evening,1 - 2 hours
+194,National Museum of Colombo,Night,Less than 1 hour
+195,Independence Memorial Hall,Morning,Less than 1 hour
+196,Independence Memorial Hall,Evening,Less than 1 hour
+197,Independence Memorial Hall,Night,Less than 1 hour
+198,Dutch Museum,Morning,1 - 2 hours
+199,Dutch Museum,Evening,1 - 2 hours
+200,Dutch Museum,Night,1 - 2 hours
+201,National Art Gallery,Morning,2 - 3 hours
+202,National Art Gallery,Evening,1 - 2 hours
+203,National Art Gallery,Night,Less than 1 hour
+204,Kelaniya Raja Maha Viharaya,Morning,Less than 1 hour
+205,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+206,Kelaniya Raja Maha Viharaya,Night,Less than 1 hour
+207,Kailasanathar Swamy Kovil,Morning,Less than 1 hour
+208,Kailasanathar Swamy Kovil,Evening,Less than 1 hour
+209,Kailasanathar Swamy Kovil,Night,Less than 1 hour
+210,Viharamahadevi Park,Morning,1 - 2 hours
+211,Viharamahadevi Park,Evening,1 - 2 hours
+212,Viharamahadevi Park,Night,1 - 2 hours
+213,Port City,Morning,Less than 1 hour
+214,Port City,Evening,Less than 1 hour
+215,Port City,Night,Less than 1 hour
+216,Lotus Tower,Morning,1 - 2 hours
+217,Lotus Tower,Evening,1 - 2 hours
+218,Lotus Tower,Night,Less than 1 hour
+219,Pettah Market,Morning,2 - 3 hours
+220,Pettah Market,Evening,1 - 2 hours
+221,Pettah Market,Night,Less than 1 hour
+222,Jami Ul-Alfar Mosque,Morning,
+223,Jami Ul-Alfar Mosque,Evening,
+224,Jami Ul-Alfar Mosque,Night,
+225,One Galle Face ,Morning,Less than 1 hour
+226,One Galle Face ,Evening,2 - 3 hours
+227,One Galle Face ,Night,More than 3 hours
+228,Colombo City Center (CCC),Morning,Less than 1 hour
+229,Colombo City Center (CCC),Evening,1 - 2 hours
+230,Colombo City Center (CCC),Night,More than 3 hours
+231,Galle Face Green,Morning,1 - 2 hours
+232,Galle Face Green,Evening,Less than 1 hour
+233,Galle Face Green,Night,2 - 3 hours
+234,Gangaramaya Temple,Morning,1 - 2 hours
+235,Gangaramaya Temple,Evening,1 - 2 hours
+236,Gangaramaya Temple,Night,2 - 3 hours
+237,National Museum of Colombo,Morning,1 - 2 hours
+238,National Museum of Colombo,Evening,1 - 2 hours
+239,National Museum of Colombo,Night,Less than 1 hour
+240,Independence Memorial Hall,Morning,Less than 1 hour
+241,Independence Memorial Hall,Evening,Less than 1 hour
+242,Independence Memorial Hall,Night,Less than 1 hour
+243,Dutch Museum,Morning,Less than 1 hour
+244,Dutch Museum,Evening,1 - 2 hours
+245,Dutch Museum,Night,Less than 1 hour
+246,National Art Gallery,Morning,Less than 1 hour
+247,National Art Gallery,Evening,Less than 1 hour
+248,National Art Gallery,Night,Less than 1 hour
+249,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+250,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+251,Kelaniya Raja Maha Viharaya,Night,Less than 1 hour
+252,Kailasanathar Swamy Kovil,Morning,1 - 2 hours
+253,Kailasanathar Swamy Kovil,Evening,Less than 1 hour
+254,Kailasanathar Swamy Kovil,Night,Less than 1 hour
+255,Viharamahadevi Park,Morning,1 - 2 hours
+256,Viharamahadevi Park,Evening,Less than 1 hour
+257,Viharamahadevi Park,Night,2 - 3 hours
+258,Port City,Morning,Less than 1 hour
+259,Port City,Evening,Less than 1 hour
+260,Port City,Night,Less than 1 hour
+261,Lotus Tower,Morning,Less than 1 hour
+262,Lotus Tower,Evening,Less than 1 hour
+263,Lotus Tower,Night,Less than 1 hour
+264,Pettah Market,Morning,Less than 1 hour
+265,Pettah Market,Evening,1 - 2 hours
+266,Pettah Market,Night,Less than 1 hour
+267,Jami Ul-Alfar Mosque,Morning,
+268,Jami Ul-Alfar Mosque,Evening,
+269,Jami Ul-Alfar Mosque,Night,
+270,One Galle Face ,Morning,1 - 2 hours
+271,One Galle Face ,Evening,2 - 3 hours
+272,One Galle Face ,Night,2 - 3 hours
+273,Colombo City Center (CCC),Morning,1 - 2 hours
+274,Colombo City Center (CCC),Evening,2 - 3 hours
+275,Colombo City Center (CCC),Night,2 - 3 hours
+276,Galle Face Green,Morning,1 - 2 hours
+277,Galle Face Green,Evening,Less than 1 hour
+278,Galle Face Green,Night,2 - 3 hours
+279,Gangaramaya Temple,Morning,1 - 2 hours
+280,Gangaramaya Temple,Evening,1 - 2 hours
+281,Gangaramaya Temple,Night,1 - 2 hours
+282,National Museum of Colombo,Morning,1 - 2 hours
+283,National Museum of Colombo,Evening,1 - 2 hours
+284,National Museum of Colombo,Night,1 - 2 hours
+285,Independence Memorial Hall,Morning,1 - 2 hours
+286,Independence Memorial Hall,Evening,Less than 1 hour
+287,Independence Memorial Hall,Night,1 - 2 hours
+288,Dutch Museum,Morning,1 - 2 hours
+289,Dutch Museum,Evening,1 - 2 hours
+290,Dutch Museum,Night,1 - 2 hours
+291,National Art Gallery,Morning,Never visited
+292,National Art Gallery,Evening,Never visited
+293,National Art Gallery,Night,Never visited
+294,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+295,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+296,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+297,Kailasanathar Swamy Kovil,Morning,1 - 2 hours
+298,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+299,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+300,Viharamahadevi Park,Morning,1 - 2 hours
+301,Viharamahadevi Park,Evening,1 - 2 hours
+302,Viharamahadevi Park,Night,1 - 2 hours
+303,Port City,Morning,2 - 3 hours
+304,Port City,Evening,1 - 2 hours
+305,Port City,Night,More than 3 hours
+306,Lotus Tower,Morning,Never visited
+307,Lotus Tower,Evening,Never visited
+308,Lotus Tower,Night,Never visited
+309,Pettah Market,Morning,1 - 2 hours
+310,Pettah Market,Evening,1 - 2 hours
+311,Pettah Market,Night,1 - 2 hours
+312,Jami Ul-Alfar Mosque,Morning,Never visited
+313,Jami Ul-Alfar Mosque,Evening,Never visited
+314,Jami Ul-Alfar Mosque,Night,Never visited
+315,One Galle Face ,Morning,1 - 2 hours
+316,One Galle Face ,Evening,More than 3 hours
+317,One Galle Face ,Night,Less than 1 hour
+318,Colombo City Center (CCC),Morning,1 - 2 hours
+319,Colombo City Center (CCC),Evening,2 - 3 hours
+320,Colombo City Center (CCC),Night,Less than 1 hour
+321,Galle Face Green,Morning,2 - 3 hours
+322,Galle Face Green,Evening,More than 3 hours
+323,Galle Face Green,Night,Less than 1 hour
+324,Gangaramaya Temple,Morning,1 - 2 hours
+325,Gangaramaya Temple,Evening,1 - 2 hours
+326,Gangaramaya Temple,Night,2 - 3 hours
+327,National Museum of Colombo,Morning,More than 3 hours
+328,National Museum of Colombo,Evening,More than 3 hours
+329,National Museum of Colombo,Night,1 - 2 hours
+330,Independence Memorial Hall,Morning,2 - 3 hours
+331,Independence Memorial Hall,Evening,1 - 2 hours
+332,Independence Memorial Hall,Night,Less than 1 hour
+333,Dutch Museum,Morning,Never visited
+334,Dutch Museum,Evening,Never visited
+335,Dutch Museum,Night,Never visited
+336,National Art Gallery,Morning,Never visited
+337,National Art Gallery,Evening,Never visited
+338,National Art Gallery,Night,Never visited
+339,Kelaniya Raja Maha Viharaya,Morning,More than 3 hours
+340,Kelaniya Raja Maha Viharaya,Evening,More than 3 hours
+341,Kelaniya Raja Maha Viharaya,Night,2 - 3 hours
+342,Kailasanathar Swamy Kovil,Morning,Never visited
+343,Kailasanathar Swamy Kovil,Evening,Never visited
+344,Kailasanathar Swamy Kovil,Night,Never visited
+345,Viharamahadevi Park,Morning,1 - 2 hours
+346,Viharamahadevi Park,Evening,2 - 3 hours
+347,Viharamahadevi Park,Night,1 - 2 hours
+348,Port City,Morning,Less than 1 hour
+349,Port City,Evening,Less than 1 hour
+350,Port City,Night,Less than 1 hour
+351,Lotus Tower,Morning,Less than 1 hour
+352,Lotus Tower,Evening,Less than 1 hour
+353,Lotus Tower,Night,Less than 1 hour
+354,Pettah Market,Morning,Less than 1 hour
+355,Pettah Market,Evening,1 - 2 hours
+356,Pettah Market,Night,1 - 2 hours
+357,Jami Ul-Alfar Mosque,Morning,Never visited
+358,Jami Ul-Alfar Mosque,Evening,Never visited
+359,Jami Ul-Alfar Mosque,Night,Never visited
+360,One Galle Face ,Morning,1 - 2 hours
+361,One Galle Face ,Evening,2 - 3 hours
+362,One Galle Face ,Night,2 - 3 hours
+363,Colombo City Center (CCC),Morning,1 - 2 hours
+364,Colombo City Center (CCC),Evening,2 - 3 hours
+365,Colombo City Center (CCC),Night,2 - 3 hours
+366,Galle Face Green,Morning,2 - 3 hours
+367,Galle Face Green,Evening,2 - 3 hours
+368,Galle Face Green,Night,2 - 3 hours
+369,Gangaramaya Temple,Morning,1 - 2 hours
+370,Gangaramaya Temple,Evening,1 - 2 hours
+371,Gangaramaya Temple,Night,1 - 2 hours
+372,National Museum of Colombo,Morning,2 - 3 hours
+373,National Museum of Colombo,Evening,2 - 3 hours
+374,National Museum of Colombo,Night,Less than 1 hour
+375,Independence Memorial Hall,Morning,2 - 3 hours
+376,Independence Memorial Hall,Evening,2 - 3 hours
+377,Independence Memorial Hall,Night,1 - 2 hours
+378,Dutch Museum,Morning,Never visited
+379,Dutch Museum,Evening,Never visited
+380,Dutch Museum,Night,Never visited
+381,National Art Gallery,Morning,Never visited
+382,National Art Gallery,Evening,Never visited
+383,National Art Gallery,Night,Never visited
+384,Kelaniya Raja Maha Viharaya,Morning,2 - 3 hours
+385,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+386,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+387,Kailasanathar Swamy Kovil,Morning,Never visited
+388,Kailasanathar Swamy Kovil,Evening,Never visited
+389,Kailasanathar Swamy Kovil,Night,Never visited
+390,Viharamahadevi Park,Morning,1 - 2 hours
+391,Viharamahadevi Park,Evening,2 - 3 hours
+392,Viharamahadevi Park,Night,1 - 2 hours
+393,Port City,Morning,1 - 2 hours
+394,Port City,Evening,Less than 1 hour
+395,Port City,Night,1 - 2 hours
+396,Lotus Tower,Morning,Never visited
+397,Lotus Tower,Evening,Never visited
+398,Lotus Tower,Night,Never visited
+399,Pettah Market,Morning,1 - 2 hours
+400,Pettah Market,Evening,Less than 1 hour
+401,Pettah Market,Night,1 - 2 hours
+402,Jami Ul-Alfar Mosque,Morning,Never visited
+403,Jami Ul-Alfar Mosque,Evening,Never visited
+404,Jami Ul-Alfar Mosque,Night,Never visited
+405,One Galle Face ,Morning,1 - 2 hours
+406,One Galle Face ,Evening,More than 3 hours
+407,One Galle Face ,Night,2 - 3 hours
+408,Colombo City Center (CCC),Morning,1 - 2 hours
+409,Colombo City Center (CCC),Evening,More than 3 hours
+410,Colombo City Center (CCC),Night,2 - 3 hours
+411,Galle Face Green,Morning,Less than 1 hour
+412,Galle Face Green,Evening,1 - 2 hours
+413,Galle Face Green,Night,1 - 2 hours
+414,Gangaramaya Temple,Morning,Less than 1 hour
+415,Gangaramaya Temple,Evening,Less than 1 hour
+416,Gangaramaya Temple,Night,Less than 1 hour
+417,National Museum of Colombo,Morning,Less than 1 hour
+418,National Museum of Colombo,Evening,Less than 1 hour
+419,National Museum of Colombo,Night,Less than 1 hour
+420,Independence Memorial Hall,Morning,Less than 1 hour
+421,Independence Memorial Hall,Evening,1 - 2 hours
+422,Independence Memorial Hall,Night,Less than 1 hour
+423,Dutch Museum,Morning,Less than 1 hour
+424,Dutch Museum,Evening,Never visited
+425,Dutch Museum,Night,Never visited
+426,National Art Gallery,Morning,Never visited
+427,National Art Gallery,Evening,Never visited
+428,National Art Gallery,Night,Never visited
+429,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+430,Kelaniya Raja Maha Viharaya,Evening,2 - 3 hours
+431,Kelaniya Raja Maha Viharaya,Night,Less than 1 hour
+432,Kailasanathar Swamy Kovil,Morning,Never visited
+433,Kailasanathar Swamy Kovil,Evening,Never visited
+434,Kailasanathar Swamy Kovil,Night,Never visited
+435,Viharamahadevi Park,Morning,Less than 1 hour
+436,Viharamahadevi Park,Evening,1 - 2 hours
+437,Viharamahadevi Park,Night,1 - 2 hours
+438,Port City,Morning,2 - 3 hours
+439,Port City,Evening,2 - 3 hours
+440,Port City,Night,Never visited
+441,Lotus Tower,Morning,1 - 2 hours
+442,Lotus Tower,Evening,2 - 3 hours
+443,Lotus Tower,Night,Never visited
+444,Pettah Market,Morning,More than 3 hours
+445,Pettah Market,Evening,More than 3 hours
+446,Pettah Market,Night,More than 3 hours
+447,Jami Ul-Alfar Mosque,Morning,Never visited
+448,Jami Ul-Alfar Mosque,Evening,Never visited
+449,Jami Ul-Alfar Mosque,Night,Never visited
+450,One Galle Face ,Morning,Never visited
+451,One Galle Face ,Evening,Less than 1 hour
+452,One Galle Face ,Night,1 - 2 hours
+453,Colombo City Center (CCC),Morning,Never visited
+454,Colombo City Center (CCC),Evening,Less than 1 hour
+455,Colombo City Center (CCC),Night,1 - 2 hours
+456,Galle Face Green,Morning,Less than 1 hour
+457,Galle Face Green,Evening,Never visited
+458,Galle Face Green,Night,Less than 1 hour
+459,Gangaramaya Temple,Morning,Less than 1 hour
+460,Gangaramaya Temple,Evening,Less than 1 hour
+461,Gangaramaya Temple,Night,1 - 2 hours
+462,National Museum of Colombo,Morning,1 - 2 hours
+463,National Museum of Colombo,Evening,Less than 1 hour
+464,National Museum of Colombo,Night,1 - 2 hours
+465,Independence Memorial Hall,Morning,1 - 2 hours
+466,Independence Memorial Hall,Evening,1 - 2 hours
+467,Independence Memorial Hall,Night,1 - 2 hours
+468,Dutch Museum,Morning,2 - 3 hours
+469,Dutch Museum,Evening,2 - 3 hours
+470,Dutch Museum,Night,2 - 3 hours
+471,National Art Gallery,Morning,2 - 3 hours
+472,National Art Gallery,Evening,1 - 2 hours
+473,National Art Gallery,Night,Less than 1 hour
+474,Kelaniya Raja Maha Viharaya,Morning,Never visited
+475,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+476,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+477,Kailasanathar Swamy Kovil,Morning,1 - 2 hours
+478,Kailasanathar Swamy Kovil,Evening,Less than 1 hour
+479,Kailasanathar Swamy Kovil,Night,Never visited
+480,Viharamahadevi Park,Morning,Never visited
+481,Viharamahadevi Park,Evening,Less than 1 hour
+482,Viharamahadevi Park,Night,1 - 2 hours
+483,Port City,Morning,1 - 2 hours
+484,Port City,Evening,Less than 1 hour
+485,Port City,Night,Never visited
+486,Lotus Tower,Morning,1 - 2 hours
+487,Lotus Tower,Evening,Less than 1 hour
+488,Lotus Tower,Night,Never visited
+489,Pettah Market,Morning,Never visited
+490,Pettah Market,Evening,Less than 1 hour
+491,Pettah Market,Night,1 - 2 hours
+492,Jami Ul-Alfar Mosque,Morning,2 - 3 hours
+493,Jami Ul-Alfar Mosque,Evening,1 - 2 hours
+494,Jami Ul-Alfar Mosque,Night,Less than 1 hour
+495,One Galle Face ,Morning,Never visited
+496,One Galle Face ,Evening,1 - 2 hours
+497,One Galle Face ,Night,2 - 3 hours
+498,Colombo City Center (CCC),Morning,Never visited
+499,Colombo City Center (CCC),Evening,Never visited
+500,Colombo City Center (CCC),Night,Never visited
+501,Galle Face Green,Morning,Never visited
+502,Galle Face Green,Evening,Never visited
+503,Galle Face Green,Night,Never visited
+504,Gangaramaya Temple,Morning,Never visited
+505,Gangaramaya Temple,Evening,Never visited
+506,Gangaramaya Temple,Night,Never visited
+507,National Museum of Colombo,Morning,2 - 3 hours
+508,National Museum of Colombo,Evening,Never visited
+509,National Museum of Colombo,Night,Never visited
+510,Independence Memorial Hall,Morning,Never visited
+511,Independence Memorial Hall,Evening,Never visited
+512,Independence Memorial Hall,Night,Never visited
+513,Dutch Museum,Morning,Never visited
+514,Dutch Museum,Evening,Never visited
+515,Dutch Museum,Night,Never visited
+516,National Art Gallery,Morning,Never visited
+517,National Art Gallery,Evening,Never visited
+518,National Art Gallery,Night,Never visited
+519,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+520,Kelaniya Raja Maha Viharaya,Evening,Never visited
+521,Kelaniya Raja Maha Viharaya,Night,Never visited
+522,Kailasanathar Swamy Kovil,Morning,Never visited
+523,Kailasanathar Swamy Kovil,Evening,Never visited
+524,Kailasanathar Swamy Kovil,Night,Never visited
+525,Viharamahadevi Park,Morning,Never visited
+526,Viharamahadevi Park,Evening,1 - 2 hours
+527,Viharamahadevi Park,Night,Never visited
+528,Port City,Morning,Never visited
+529,Port City,Evening,Never visited
+530,Port City,Night,Never visited
+531,Lotus Tower,Morning,Never visited
+532,Lotus Tower,Evening,Never visited
+533,Lotus Tower,Night,Never visited
+534,Pettah Market,Morning,Never visited
+535,Pettah Market,Evening,Less than 1 hour
+536,Pettah Market,Night,Never visited
+537,Jami Ul-Alfar Mosque,Morning,Never visited
+538,Jami Ul-Alfar Mosque,Evening,Never visited
+539,Jami Ul-Alfar Mosque,Night,Never visited
+540,One Galle Face ,Morning,Never visited
+541,One Galle Face ,Evening,1 - 2 hours
+542,One Galle Face ,Night,1 - 2 hours
+543,Colombo City Center (CCC),Morning,Never visited
+544,Colombo City Center (CCC),Evening,1 - 2 hours
+545,Colombo City Center (CCC),Night,1 - 2 hours
+546,Galle Face Green,Morning,Less than 1 hour
+547,Galle Face Green,Evening,1 - 2 hours
+548,Galle Face Green,Night,1 - 2 hours
+549,Gangaramaya Temple,Morning,Never visited
+550,Gangaramaya Temple,Evening,Never visited
+551,Gangaramaya Temple,Night,Never visited
+552,National Museum of Colombo,Morning,Never visited
+553,National Museum of Colombo,Evening,Never visited
+554,National Museum of Colombo,Night,Never visited
+555,Independence Memorial Hall,Morning,Never visited
+556,Independence Memorial Hall,Evening,1 - 2 hours
+557,Independence Memorial Hall,Night,1 - 2 hours
+558,Dutch Museum,Morning,Never visited
+559,Dutch Museum,Evening,Never visited
+560,Dutch Museum,Night,Never visited
+561,National Art Gallery,Morning,Never visited
+562,National Art Gallery,Evening,Never visited
+563,National Art Gallery,Night,Never visited
+564,Kelaniya Raja Maha Viharaya,Morning,Never visited
+565,Kelaniya Raja Maha Viharaya,Evening,Never visited
+566,Kelaniya Raja Maha Viharaya,Night,Never visited
+567,Kailasanathar Swamy Kovil,Morning,Never visited
+568,Kailasanathar Swamy Kovil,Evening,Never visited
+569,Kailasanathar Swamy Kovil,Night,Never visited
+570,Viharamahadevi Park,Morning,1 - 2 hours
+571,Viharamahadevi Park,Evening,1 - 2 hours
+572,Viharamahadevi Park,Night,Never visited
+573,Port City,Morning,More than 3 hours
+574,Port City,Evening,More than 3 hours
+575,Port City,Night,More than 3 hours
+576,Lotus Tower,Morning,Never visited
+577,Lotus Tower,Evening,Never visited
+578,Lotus Tower,Night,Never visited
+579,Pettah Market,Morning,More than 3 hours
+580,Pettah Market,Evening,More than 3 hours
+581,Pettah Market,Night,More than 3 hours
+582,Jami Ul-Alfar Mosque,Morning,Never visited
+583,Jami Ul-Alfar Mosque,Evening,Never visited
+584,Jami Ul-Alfar Mosque,Night,Never visited
+585,One Galle Face ,Morning,More than 3 hours
+586,One Galle Face ,Evening,More than 3 hours
+587,One Galle Face ,Night,1 - 2 hours
+588,Colombo City Center (CCC),Morning,1 - 2 hours
+589,Colombo City Center (CCC),Evening,2 - 3 hours
+590,Colombo City Center (CCC),Night,More than 3 hours
+591,Galle Face Green,Morning,Never visited
+592,Galle Face Green,Evening,More than 3 hours
+593,Galle Face Green,Night,More than 3 hours
+594,Gangaramaya Temple,Morning,More than 3 hours
+595,Gangaramaya Temple,Evening,More than 3 hours
+596,Gangaramaya Temple,Night,2 - 3 hours
+597,National Museum of Colombo,Morning,Never visited
+598,National Museum of Colombo,Evening,More than 3 hours
+599,National Museum of Colombo,Night,Never visited
+600,Independence Memorial Hall,Morning,2 - 3 hours
+601,Independence Memorial Hall,Evening,2 - 3 hours
+602,Independence Memorial Hall,Night,1 - 2 hours
+603,Dutch Museum,Morning,Never visited
+604,Dutch Museum,Evening,Never visited
+605,Dutch Museum,Night,Never visited
+606,National Art Gallery,Morning,Never visited
+607,National Art Gallery,Evening,Never visited
+608,National Art Gallery,Night,Never visited
+609,Kelaniya Raja Maha Viharaya,Morning,More than 3 hours
+610,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+611,Kelaniya Raja Maha Viharaya,Night,More than 3 hours
+612,Kailasanathar Swamy Kovil,Morning,Never visited
+613,Kailasanathar Swamy Kovil,Evening,2 - 3 hours
+614,Kailasanathar Swamy Kovil,Night,2 - 3 hours
+615,Viharamahadevi Park,Morning,Less than 1 hour
+616,Viharamahadevi Park,Evening,More than 3 hours
+617,Viharamahadevi Park,Night,Never visited
+618,Port City,Morning,Never visited
+619,Port City,Evening,2 - 3 hours
+620,Port City,Night,Never visited
+621,Lotus Tower,Morning,Never visited
+622,Lotus Tower,Evening,More than 3 hours
+623,Lotus Tower,Night,Never visited
+624,Pettah Market,Morning,More than 3 hours
+625,Pettah Market,Evening,More than 3 hours
+626,Pettah Market,Night,More than 3 hours
+627,Jami Ul-Alfar Mosque,Morning,Never visited
+628,Jami Ul-Alfar Mosque,Evening,Never visited
+629,Jami Ul-Alfar Mosque,Night,Never visited
+630,One Galle Face ,Morning,1 - 2 hours
+631,One Galle Face ,Evening,1 - 2 hours
+632,One Galle Face ,Night,1 - 2 hours
+633,Colombo City Center (CCC),Morning,Never visited
+634,Colombo City Center (CCC),Evening,1 - 2 hours
+635,Colombo City Center (CCC),Night,1 - 2 hours
+636,Galle Face Green,Morning,Never visited
+637,Galle Face Green,Evening,2 - 3 hours
+638,Galle Face Green,Night,1 - 2 hours
+639,Gangaramaya Temple,Morning,Less than 1 hour
+640,Gangaramaya Temple,Evening,1 - 2 hours
+641,Gangaramaya Temple,Night,2 - 3 hours
+642,National Museum of Colombo,Morning,Never visited
+643,National Museum of Colombo,Evening,Less than 1 hour
+644,National Museum of Colombo,Night,Never visited
+645,Independence Memorial Hall,Morning,Never visited
+646,Independence Memorial Hall,Evening,Less than 1 hour
+647,Independence Memorial Hall,Night,1 - 2 hours
+648,Dutch Museum,Morning,Never visited
+649,Dutch Museum,Evening,Never visited
+650,Dutch Museum,Night,Never visited
+651,National Art Gallery,Morning,Never visited
+652,National Art Gallery,Evening,Never visited
+653,National Art Gallery,Night,Never visited
+654,Kelaniya Raja Maha Viharaya,Morning,Never visited
+655,Kelaniya Raja Maha Viharaya,Evening,Never visited
+656,Kelaniya Raja Maha Viharaya,Night,Never visited
+657,Kailasanathar Swamy Kovil,Morning,Never visited
+658,Kailasanathar Swamy Kovil,Evening,Never visited
+659,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+660,Viharamahadevi Park,Morning,Never visited
+661,Viharamahadevi Park,Evening,1 - 2 hours
+662,Viharamahadevi Park,Night,Never visited
+663,Port City,Morning,Never visited
+664,Port City,Evening,1 - 2 hours
+665,Port City,Night,Less than 1 hour
+666,Lotus Tower,Morning,Never visited
+667,Lotus Tower,Evening,Less than 1 hour
+668,Lotus Tower,Night,Never visited
+669,Pettah Market,Morning,1 - 2 hours
+670,Pettah Market,Evening,1 - 2 hours
+671,Pettah Market,Night,Never visited
+672,Jami Ul-Alfar Mosque,Morning,Never visited
+673,Jami Ul-Alfar Mosque,Evening,Never visited
+674,Jami Ul-Alfar Mosque,Night,Never visited
+675,One Galle Face ,Morning,Never visited
+676,One Galle Face ,Evening,2 - 3 hours
+677,One Galle Face ,Night,2 - 3 hours
+678,Colombo City Center (CCC),Morning,Never visited
+679,Colombo City Center (CCC),Evening,Never visited
+680,Colombo City Center (CCC),Night,More than 3 hours
+681,Galle Face Green,Morning,Never visited
+682,Galle Face Green,Evening,Less than 1 hour
+683,Galle Face Green,Night,Less than 1 hour
+684,Gangaramaya Temple,Morning,Never visited
+685,Gangaramaya Temple,Evening,Never visited
+686,Gangaramaya Temple,Night,Never visited
+687,National Museum of Colombo,Morning,Never visited
+688,National Museum of Colombo,Evening,Never visited
+689,National Museum of Colombo,Night,Never visited
+690,Independence Memorial Hall,Morning,Never visited
+691,Independence Memorial Hall,Evening,Never visited
+692,Independence Memorial Hall,Night,Never visited
+693,Dutch Museum,Morning,Never visited
+694,Dutch Museum,Evening,Never visited
+695,Dutch Museum,Night,Never visited
+696,National Art Gallery,Morning,Never visited
+697,National Art Gallery,Evening,Never visited
+698,National Art Gallery,Night,Never visited
+699,Kelaniya Raja Maha Viharaya,Morning,Never visited
+700,Kelaniya Raja Maha Viharaya,Evening,Never visited
+701,Kelaniya Raja Maha Viharaya,Night,Never visited
+702,Kailasanathar Swamy Kovil,Morning,Never visited
+703,Kailasanathar Swamy Kovil,Evening,Never visited
+704,Kailasanathar Swamy Kovil,Night,Never visited
+705,Viharamahadevi Park,Morning,Never visited
+706,Viharamahadevi Park,Evening,Never visited
+707,Viharamahadevi Park,Night,Never visited
+708,Port City,Morning,Never visited
+709,Port City,Evening,Never visited
+710,Port City,Night,Never visited
+711,Lotus Tower,Morning,Never visited
+712,Lotus Tower,Evening,Never visited
+713,Lotus Tower,Night,Never visited
+714,Pettah Market,Morning,Never visited
+715,Pettah Market,Evening,Never visited
+716,Pettah Market,Night,Never visited
+717,Jami Ul-Alfar Mosque,Morning,Never visited
+718,Jami Ul-Alfar Mosque,Evening,Never visited
+719,Jami Ul-Alfar Mosque,Night,Never visited
+720,One Galle Face ,Morning,Never visited
+721,One Galle Face ,Evening,Less than 1 hour
+722,One Galle Face ,Night,1 - 2 hours
+723,Colombo City Center (CCC),Morning,Never visited
+724,Colombo City Center (CCC),Evening,Less than 1 hour
+725,Colombo City Center (CCC),Night,1 - 2 hours
+726,Galle Face Green,Morning,Never visited
+727,Galle Face Green,Evening,Less than 1 hour
+728,Galle Face Green,Night,1 - 2 hours
+729,Gangaramaya Temple,Morning,Never visited
+730,Gangaramaya Temple,Evening,Never visited
+731,Gangaramaya Temple,Night,1 - 2 hours
+732,National Museum of Colombo,Morning,Never visited
+733,National Museum of Colombo,Evening,Less than 1 hour
+734,National Museum of Colombo,Night,Never visited
+735,Independence Memorial Hall,Morning,Less than 1 hour
+736,Independence Memorial Hall,Evening,1 - 2 hours
+737,Independence Memorial Hall,Night,1 - 2 hours
+738,Dutch Museum,Morning,Never visited
+739,Dutch Museum,Evening,Less than 1 hour
+740,Dutch Museum,Night,Never visited
+741,National Art Gallery,Morning,Never visited
+742,National Art Gallery,Evening,Less than 1 hour
+743,National Art Gallery,Night,Never visited
+744,Kelaniya Raja Maha Viharaya,Morning,Never visited
+745,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+746,Kelaniya Raja Maha Viharaya,Night,Never visited
+747,Kailasanathar Swamy Kovil,Morning,Less than 1 hour
+748,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+749,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+750,Viharamahadevi Park,Morning,Less than 1 hour
+751,Viharamahadevi Park,Evening,Less than 1 hour
+752,Viharamahadevi Park,Night,Less than 1 hour
+753,Port City,Morning,Never visited
+754,Port City,Evening,Less than 1 hour
+755,Port City,Night,Less than 1 hour
+756,Lotus Tower,Morning,Never visited
+757,Lotus Tower,Evening,Never visited
+758,Lotus Tower,Night,Less than 1 hour
+759,Pettah Market,Morning,Never visited
+760,Pettah Market,Evening,Less than 1 hour
+761,Pettah Market,Night,1 - 2 hours
+762,Jami Ul-Alfar Mosque,Morning,Never visited
+763,Jami Ul-Alfar Mosque,Evening,Never visited
+764,Jami Ul-Alfar Mosque,Night,Never visited
+765,One Galle Face ,Morning,Never visited
+766,One Galle Face ,Evening,1 - 2 hours
+767,One Galle Face ,Night,Never visited
+768,Colombo City Center (CCC),Morning,Never visited
+769,Colombo City Center (CCC),Evening,Never visited
+770,Colombo City Center (CCC),Night,Never visited
+771,Galle Face Green,Morning,Never visited
+772,Galle Face Green,Evening,1 - 2 hours
+773,Galle Face Green,Night,Less than 1 hour
+774,Gangaramaya Temple,Morning,Never visited
+775,Gangaramaya Temple,Evening,1 - 2 hours
+776,Gangaramaya Temple,Night,Never visited
+777,National Museum of Colombo,Morning,Never visited
+778,National Museum of Colombo,Evening,2 - 3 hours
+779,National Museum of Colombo,Night,Never visited
+780,Independence Memorial Hall,Morning,Never visited
+781,Independence Memorial Hall,Evening,Less than 1 hour
+782,Independence Memorial Hall,Night,Never visited
+783,Dutch Museum,Morning,Never visited
+784,Dutch Museum,Evening,Never visited
+785,Dutch Museum,Night,Never visited
+786,National Art Gallery,Morning,Never visited
+787,National Art Gallery,Evening,Never visited
+788,National Art Gallery,Night,Never visited
+789,Kelaniya Raja Maha Viharaya,Morning,2 - 3 hours
+790,Kelaniya Raja Maha Viharaya,Evening,More than 3 hours
+791,Kelaniya Raja Maha Viharaya,Night,Less than 1 hour
+792,Kailasanathar Swamy Kovil,Morning,Never visited
+793,Kailasanathar Swamy Kovil,Evening,Never visited
+794,Kailasanathar Swamy Kovil,Night,Never visited
+795,Viharamahadevi Park,Morning,Never visited
+796,Viharamahadevi Park,Evening,2 - 3 hours
+797,Viharamahadevi Park,Night,Never visited
+798,Port City,Morning,Never visited
+799,Port City,Evening,Never visited
+800,Port City,Night,Never visited
+801,Lotus Tower,Morning,Never visited
+802,Lotus Tower,Evening,Never visited
+803,Lotus Tower,Night,Never visited
+804,Pettah Market,Morning,Never visited
+805,Pettah Market,Evening,Never visited
+806,Pettah Market,Night,Never visited
+807,Jami Ul-Alfar Mosque,Morning,Never visited
+808,Jami Ul-Alfar Mosque,Evening,Never visited
+809,Jami Ul-Alfar Mosque,Night,Never visited
+810,One Galle Face ,Morning,2 - 3 hours
+811,One Galle Face ,Evening,More than 3 hours
+812,One Galle Face ,Night,2 - 3 hours
+813,Colombo City Center (CCC),Morning,2 - 3 hours
+814,Colombo City Center (CCC),Evening,More than 3 hours
+815,Colombo City Center (CCC),Night,2 - 3 hours
+816,Galle Face Green,Morning,2 - 3 hours
+817,Galle Face Green,Evening,More than 3 hours
+818,Galle Face Green,Night,More than 3 hours
+819,Gangaramaya Temple,Morning,Less than 1 hour
+820,Gangaramaya Temple,Evening,1 - 2 hours
+821,Gangaramaya Temple,Night,2 - 3 hours
+822,National Museum of Colombo,Morning,2 - 3 hours
+823,National Museum of Colombo,Evening,More than 3 hours
+824,National Museum of Colombo,Night,2 - 3 hours
+825,Independence Memorial Hall,Morning,1 - 2 hours
+826,Independence Memorial Hall,Evening,2 - 3 hours
+827,Independence Memorial Hall,Night,2 - 3 hours
+828,Dutch Museum,Morning,Never visited
+829,Dutch Museum,Evening,Never visited
+830,Dutch Museum,Night,Never visited
+831,National Art Gallery,Morning,Never visited
+832,National Art Gallery,Evening,Never visited
+833,National Art Gallery,Night,Never visited
+834,Kelaniya Raja Maha Viharaya,Morning,Never visited
+835,Kelaniya Raja Maha Viharaya,Evening,Never visited
+836,Kelaniya Raja Maha Viharaya,Night,Never visited
+837,Kailasanathar Swamy Kovil,Morning,Never visited
+838,Kailasanathar Swamy Kovil,Evening,Never visited
+839,Kailasanathar Swamy Kovil,Night,Never visited
+840,Viharamahadevi Park,Morning,2 - 3 hours
+841,Viharamahadevi Park,Evening,More than 3 hours
+842,Viharamahadevi Park,Night,More than 3 hours
+843,Port City,Morning,Never visited
+844,Port City,Evening,Never visited
+845,Port City,Night,More than 3 hours
+846,Lotus Tower,Morning,Never visited
+847,Lotus Tower,Evening,Never visited
+848,Lotus Tower,Night,Never visited
+849,Pettah Market,Morning,More than 3 hours
+850,Pettah Market,Evening,More than 3 hours
+851,Pettah Market,Night,More than 3 hours
+852,Jami Ul-Alfar Mosque,Morning,Never visited
+853,Jami Ul-Alfar Mosque,Evening,Never visited
+854,Jami Ul-Alfar Mosque,Night,Never visited
+855,One Galle Face ,Morning,1 - 2 hours
+856,One Galle Face ,Evening,2 - 3 hours
+857,One Galle Face ,Night,Never visited
+858,Colombo City Center (CCC),Morning,1 - 2 hours
+859,Colombo City Center (CCC),Evening,2 - 3 hours
+860,Colombo City Center (CCC),Night,Never visited
+861,Galle Face Green,Morning,Never visited
+862,Galle Face Green,Evening,Less than 1 hour
+863,Galle Face Green,Night,1 - 2 hours
+864,Gangaramaya Temple,Morning,Never visited
+865,Gangaramaya Temple,Evening,Never visited
+866,Gangaramaya Temple,Night,Never visited
+867,National Museum of Colombo,Morning,Less than 1 hour
+868,National Museum of Colombo,Evening,Never visited
+869,National Museum of Colombo,Night,Never visited
+870,Independence Memorial Hall,Morning,Never visited
+871,Independence Memorial Hall,Evening,2 - 3 hours
+872,Independence Memorial Hall,Night,Never visited
+873,Dutch Museum,Morning,Never visited
+874,Dutch Museum,Evening,Never visited
+875,Dutch Museum,Night,Never visited
+876,National Art Gallery,Morning,Never visited
+877,National Art Gallery,Evening,Never visited
+878,National Art Gallery,Night,Never visited
+879,Kelaniya Raja Maha Viharaya,Morning,Never visited
+880,Kelaniya Raja Maha Viharaya,Evening,Never visited
+881,Kelaniya Raja Maha Viharaya,Night,Never visited
+882,Kailasanathar Swamy Kovil,Morning,Never visited
+883,Kailasanathar Swamy Kovil,Evening,Never visited
+884,Kailasanathar Swamy Kovil,Night,Never visited
+885,Viharamahadevi Park,Morning,1 - 2 hours
+886,Viharamahadevi Park,Evening,1 - 2 hours
+887,Viharamahadevi Park,Night,1 - 2 hours
+888,Port City,Morning,Never visited
+889,Port City,Evening,Never visited
+890,Port City,Night,Never visited
+891,Lotus Tower,Morning,Never visited
+892,Lotus Tower,Evening,Never visited
+893,Lotus Tower,Night,2 - 3 hours
+894,Pettah Market,Morning,1 - 2 hours
+895,Pettah Market,Evening,2 - 3 hours
+896,Pettah Market,Night,More than 3 hours
+897,Jami Ul-Alfar Mosque,Morning,Never visited
+898,Jami Ul-Alfar Mosque,Evening,Never visited
+899,Jami Ul-Alfar Mosque,Night,Never visited
+900,One Galle Face ,Morning,1 - 2 hours
+901,One Galle Face ,Evening,More than 3 hours
+902,One Galle Face ,Night,1 - 2 hours
+903,Colombo City Center (CCC),Morning,1 - 2 hours
+904,Colombo City Center (CCC),Evening,More than 3 hours
+905,Colombo City Center (CCC),Night,1 - 2 hours
+906,Galle Face Green,Morning,Less than 1 hour
+907,Galle Face Green,Evening,1 - 2 hours
+908,Galle Face Green,Night,1 - 2 hours
+909,Gangaramaya Temple,Morning,1 - 2 hours
+910,Gangaramaya Temple,Evening,More than 3 hours
+911,Gangaramaya Temple,Night,1 - 2 hours
+912,National Museum of Colombo,Morning,1 - 2 hours
+913,National Museum of Colombo,Evening,2 - 3 hours
+914,National Museum of Colombo,Night,1 - 2 hours
+915,Independence Memorial Hall,Morning,1 - 2 hours
+916,Independence Memorial Hall,Evening,Never visited
+917,Independence Memorial Hall,Night,1 - 2 hours
+918,Dutch Museum,Morning,1 - 2 hours
+919,Dutch Museum,Evening,2 - 3 hours
+920,Dutch Museum,Night,2 - 3 hours
+921,National Art Gallery,Morning,1 - 2 hours
+922,National Art Gallery,Evening,2 - 3 hours
+923,National Art Gallery,Night,1 - 2 hours
+924,Kelaniya Raja Maha Viharaya,Morning,2 - 3 hours
+925,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+926,Kelaniya Raja Maha Viharaya,Night,2 - 3 hours
+927,Kailasanathar Swamy Kovil,Morning,Never visited
+928,Kailasanathar Swamy Kovil,Evening,Never visited
+929,Kailasanathar Swamy Kovil,Night,Never visited
+930,Viharamahadevi Park,Morning,Never visited
+931,Viharamahadevi Park,Evening,1 - 2 hours
+932,Viharamahadevi Park,Night,Less than 1 hour
+933,Port City,Morning,Never visited
+934,Port City,Evening,Never visited
+935,Port City,Night,Never visited
+936,Lotus Tower,Morning,Never visited
+937,Lotus Tower,Evening,Never visited
+938,Lotus Tower,Night,Never visited
+939,Pettah Market,Morning,1 - 2 hours
+940,Pettah Market,Evening,2 - 3 hours
+941,Pettah Market,Night,Never visited
+942,Jami Ul-Alfar Mosque,Morning,Never visited
+943,Jami Ul-Alfar Mosque,Evening,Never visited
+944,Jami Ul-Alfar Mosque,Night,Never visited
+945,One Galle Face ,Morning,Never visited
+946,One Galle Face ,Evening,1 - 2 hours
+947,One Galle Face ,Night,1 - 2 hours
+948,Colombo City Center (CCC),Morning,Never visited
+949,Colombo City Center (CCC),Evening,Never visited
+950,Colombo City Center (CCC),Night,Never visited
+951,Galle Face Green,Morning,Never visited
+952,Galle Face Green,Evening,2 - 3 hours
+953,Galle Face Green,Night,More than 3 hours
+954,Gangaramaya Temple,Morning,Never visited
+955,Gangaramaya Temple,Evening,Never visited
+956,Gangaramaya Temple,Night,Never visited
+957,National Museum of Colombo,Morning,Never visited
+958,National Museum of Colombo,Evening,Never visited
+959,National Museum of Colombo,Night,Never visited
+960,Independence Memorial Hall,Morning,1 - 2 hours
+961,Independence Memorial Hall,Evening,Never visited
+962,Independence Memorial Hall,Night,Never visited
+963,Dutch Museum,Morning,Never visited
+964,Dutch Museum,Evening,Never visited
+965,Dutch Museum,Night,Never visited
+966,National Art Gallery,Morning,Never visited
+967,National Art Gallery,Evening,Never visited
+968,National Art Gallery,Night,Never visited
+969,Kelaniya Raja Maha Viharaya,Morning,Never visited
+970,Kelaniya Raja Maha Viharaya,Evening,2 - 3 hours
+971,Kelaniya Raja Maha Viharaya,Night,Never visited
+972,Kailasanathar Swamy Kovil,Morning,Never visited
+973,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+974,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+975,Viharamahadevi Park,Morning,1 - 2 hours
+976,Viharamahadevi Park,Evening,1 - 2 hours
+977,Viharamahadevi Park,Night,1 - 2 hours
+978,Port City,Morning,Never visited
+979,Port City,Evening,Less than 1 hour
+980,Port City,Night,Less than 1 hour
+981,Lotus Tower,Morning,Never visited
+982,Lotus Tower,Evening,Never visited
+983,Lotus Tower,Night,Never visited
+984,Pettah Market,Morning,1 - 2 hours
+985,Pettah Market,Evening,1 - 2 hours
+986,Pettah Market,Night,1 - 2 hours
+987,Jami Ul-Alfar Mosque,Morning,Never visited
+988,Jami Ul-Alfar Mosque,Evening,Never visited
+989,Jami Ul-Alfar Mosque,Night,Never visited
+990,One Galle Face ,Morning,Never visited
+991,One Galle Face ,Evening,2 - 3 hours
+992,One Galle Face ,Night,Never visited
+993,Colombo City Center (CCC),Morning,Never visited
+994,Colombo City Center (CCC),Evening,Never visited
+995,Colombo City Center (CCC),Night,Never visited
+996,Galle Face Green,Morning,Never visited
+997,Galle Face Green,Evening,Less than 1 hour
+998,Galle Face Green,Night,Never visited
+999,Gangaramaya Temple,Morning,Never visited
+1000,Gangaramaya Temple,Evening,Never visited
+1001,Gangaramaya Temple,Night,Never visited
+1002,National Museum of Colombo,Morning,Never visited
+1003,National Museum of Colombo,Evening,Never visited
+1004,National Museum of Colombo,Night,Never visited
+1005,Independence Memorial Hall,Morning,Never visited
+1006,Independence Memorial Hall,Evening,Less than 1 hour
+1007,Independence Memorial Hall,Night,Never visited
+1008,Dutch Museum,Morning,Never visited
+1009,Dutch Museum,Evening,Never visited
+1010,Dutch Museum,Night,Never visited
+1011,National Art Gallery,Morning,Never visited
+1012,National Art Gallery,Evening,Never visited
+1013,National Art Gallery,Night,Never visited
+1014,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1015,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1016,Kelaniya Raja Maha Viharaya,Night,Never visited
+1017,Kailasanathar Swamy Kovil,Morning,Less than 1 hour
+1018,Kailasanathar Swamy Kovil,Evening,Less than 1 hour
+1019,Kailasanathar Swamy Kovil,Night,Less than 1 hour
+1020,Viharamahadevi Park,Morning,Less than 1 hour
+1021,Viharamahadevi Park,Evening,1 - 2 hours
+1022,Viharamahadevi Park,Night,Never visited
+1023,Port City,Morning,Never visited
+1024,Port City,Evening,Never visited
+1025,Port City,Night,Never visited
+1026,Lotus Tower,Morning,Never visited
+1027,Lotus Tower,Evening,Never visited
+1028,Lotus Tower,Night,Never visited
+1029,Pettah Market,Morning,2 - 3 hours
+1030,Pettah Market,Evening,2 - 3 hours
+1031,Pettah Market,Night,Never visited
+1032,Jami Ul-Alfar Mosque,Morning,Never visited
+1033,Jami Ul-Alfar Mosque,Evening,Never visited
+1034,Jami Ul-Alfar Mosque,Night,Never visited
+1035,One Galle Face ,Morning,Less than 1 hour
+1036,One Galle Face ,Evening,2 - 3 hours
+1037,One Galle Face ,Night,More than 3 hours
+1038,Colombo City Center (CCC),Morning,1 - 2 hours
+1039,Colombo City Center (CCC),Evening,1 - 2 hours
+1040,Colombo City Center (CCC),Night,2 - 3 hours
+1041,Galle Face Green,Morning,1 - 2 hours
+1042,Galle Face Green,Evening,More than 3 hours
+1043,Galle Face Green,Night,More than 3 hours
+1044,Gangaramaya Temple,Morning,Less than 1 hour
+1045,Gangaramaya Temple,Evening,More than 3 hours
+1046,Gangaramaya Temple,Night,1 - 2 hours
+1047,National Museum of Colombo,Morning,Never visited
+1048,National Museum of Colombo,Evening,Never visited
+1049,National Museum of Colombo,Night,Never visited
+1050,Independence Memorial Hall,Morning,2 - 3 hours
+1051,Independence Memorial Hall,Evening,More than 3 hours
+1052,Independence Memorial Hall,Night,More than 3 hours
+1053,Dutch Museum,Morning,Never visited
+1054,Dutch Museum,Evening,Never visited
+1055,Dutch Museum,Night,Never visited
+1056,National Art Gallery,Morning,1 - 2 hours
+1057,National Art Gallery,Evening,1 - 2 hours
+1058,National Art Gallery,Night,1 - 2 hours
+1059,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1060,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1061,Kelaniya Raja Maha Viharaya,Night,Never visited
+1062,Kailasanathar Swamy Kovil,Morning,1 - 2 hours
+1063,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+1064,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+1065,Viharamahadevi Park,Morning,1 - 2 hours
+1066,Viharamahadevi Park,Evening,1 - 2 hours
+1067,Viharamahadevi Park,Night,1 - 2 hours
+1068,Port City,Morning,Never visited
+1069,Port City,Evening,Never visited
+1070,Port City,Night,Never visited
+1071,Lotus Tower,Morning,Never visited
+1072,Lotus Tower,Evening,Never visited
+1073,Lotus Tower,Night,Never visited
+1074,Pettah Market,Morning,1 - 2 hours
+1075,Pettah Market,Evening,1 - 2 hours
+1076,Pettah Market,Night,1 - 2 hours
+1077,Jami Ul-Alfar Mosque,Morning,Never visited
+1078,Jami Ul-Alfar Mosque,Evening,Never visited
+1079,Jami Ul-Alfar Mosque,Night,Never visited
+1080,One Galle Face ,Morning,Less than 1 hour
+1081,One Galle Face ,Evening,Never visited
+1082,One Galle Face ,Night,2 - 3 hours
+1083,Colombo City Center (CCC),Morning,Never visited
+1084,Colombo City Center (CCC),Evening,1 - 2 hours
+1085,Colombo City Center (CCC),Night,2 - 3 hours
+1086,Galle Face Green,Morning,Never visited
+1087,Galle Face Green,Evening,2 - 3 hours
+1088,Galle Face Green,Night,1 - 2 hours
+1089,Gangaramaya Temple,Morning,1 - 2 hours
+1090,Gangaramaya Temple,Evening,Less than 1 hour
+1091,Gangaramaya Temple,Night,Never visited
+1092,National Museum of Colombo,Morning,2 - 3 hours
+1093,National Museum of Colombo,Evening,1 - 2 hours
+1094,National Museum of Colombo,Night,Never visited
+1095,Independence Memorial Hall,Morning,Less than 1 hour
+1096,Independence Memorial Hall,Evening,1 - 2 hours
+1097,Independence Memorial Hall,Night,Less than 1 hour
+1098,Dutch Museum,Morning,Never visited
+1099,Dutch Museum,Evening,Never visited
+1100,Dutch Museum,Night,Never visited
+1101,National Art Gallery,Morning,Never visited
+1102,National Art Gallery,Evening,2 - 3 hours
+1103,National Art Gallery,Night,Less than 1 hour
+1104,Kelaniya Raja Maha Viharaya,Morning,2 - 3 hours
+1105,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+1106,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+1107,Kailasanathar Swamy Kovil,Morning,1 - 2 hours
+1108,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+1109,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+1110,Viharamahadevi Park,Morning,Less than 1 hour
+1111,Viharamahadevi Park,Evening,1 - 2 hours
+1112,Viharamahadevi Park,Night,2 - 3 hours
+1113,Port City,Morning,2 - 3 hours
+1114,Port City,Evening,Never visited
+1115,Port City,Night,Less than 1 hour
+1116,Lotus Tower,Morning,Never visited
+1117,Lotus Tower,Evening,Never visited
+1118,Lotus Tower,Night,Never visited
+1119,Pettah Market,Morning,2 - 3 hours
+1120,Pettah Market,Evening,1 - 2 hours
+1121,Pettah Market,Night,Less than 1 hour
+1122,Jami Ul-Alfar Mosque,Morning,Never visited
+1123,Jami Ul-Alfar Mosque,Evening,Never visited
+1124,Jami Ul-Alfar Mosque,Night,Never visited
+1125,One Galle Face ,Morning,1 - 2 hours
+1126,One Galle Face ,Evening,1 - 2 hours
+1127,One Galle Face ,Night,2 - 3 hours
+1128,Colombo City Center (CCC),Morning,Less than 1 hour
+1129,Colombo City Center (CCC),Evening,Less than 1 hour
+1130,Colombo City Center (CCC),Night,2 - 3 hours
+1131,Galle Face Green,Morning,Never visited
+1132,Galle Face Green,Evening,Never visited
+1133,Galle Face Green,Night,2 - 3 hours
+1134,Gangaramaya Temple,Morning,Less than 1 hour
+1135,Gangaramaya Temple,Evening,Never visited
+1136,Gangaramaya Temple,Night,Less than 1 hour
+1137,National Museum of Colombo,Morning,Never visited
+1138,National Museum of Colombo,Evening,Never visited
+1139,National Museum of Colombo,Night,Never visited
+1140,Independence Memorial Hall,Morning,Never visited
+1141,Independence Memorial Hall,Evening,Never visited
+1142,Independence Memorial Hall,Night,Never visited
+1143,Dutch Museum,Morning,Never visited
+1144,Dutch Museum,Evening,Never visited
+1145,Dutch Museum,Night,2 - 3 hours
+1146,National Art Gallery,Morning,Never visited
+1147,National Art Gallery,Evening,Never visited
+1148,National Art Gallery,Night,Never visited
+1149,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1150,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1151,Kelaniya Raja Maha Viharaya,Night,Never visited
+1152,Kailasanathar Swamy Kovil,Morning,Never visited
+1153,Kailasanathar Swamy Kovil,Evening,Never visited
+1154,Kailasanathar Swamy Kovil,Night,Never visited
+1155,Viharamahadevi Park,Morning,1 - 2 hours
+1156,Viharamahadevi Park,Evening,Never visited
+1157,Viharamahadevi Park,Night,1 - 2 hours
+1158,Port City,Morning,Never visited
+1159,Port City,Evening,Never visited
+1160,Port City,Night,Never visited
+1161,Lotus Tower,Morning,Never visited
+1162,Lotus Tower,Evening,Never visited
+1163,Lotus Tower,Night,Never visited
+1164,Pettah Market,Morning,1 - 2 hours
+1165,Pettah Market,Evening,Less than 1 hour
+1166,Pettah Market,Night,Never visited
+1167,Jami Ul-Alfar Mosque,Morning,Never visited
+1168,Jami Ul-Alfar Mosque,Evening,Never visited
+1169,Jami Ul-Alfar Mosque,Night,Never visited
+1170,One Galle Face ,Morning,Less than 1 hour
+1171,One Galle Face ,Evening,1 - 2 hours
+1172,One Galle Face ,Night,1 - 2 hours
+1173,Colombo City Center (CCC),Morning,Less than 1 hour
+1174,Colombo City Center (CCC),Evening,1 - 2 hours
+1175,Colombo City Center (CCC),Night,1 - 2 hours
+1176,Galle Face Green,Morning,Less than 1 hour
+1177,Galle Face Green,Evening,1 - 2 hours
+1178,Galle Face Green,Night,1 - 2 hours
+1179,Gangaramaya Temple,Morning,Never visited
+1180,Gangaramaya Temple,Evening,Never visited
+1181,Gangaramaya Temple,Night,Never visited
+1182,National Museum of Colombo,Morning,1 - 2 hours
+1183,National Museum of Colombo,Evening,1 - 2 hours
+1184,National Museum of Colombo,Night,1 - 2 hours
+1185,Independence Memorial Hall,Morning,1 - 2 hours
+1186,Independence Memorial Hall,Evening,1 - 2 hours
+1187,Independence Memorial Hall,Night,1 - 2 hours
+1188,Dutch Museum,Morning,Less than 1 hour
+1189,Dutch Museum,Evening,1 - 2 hours
+1190,Dutch Museum,Night,1 - 2 hours
+1191,National Art Gallery,Morning,1 - 2 hours
+1192,National Art Gallery,Evening,1 - 2 hours
+1193,National Art Gallery,Night,1 - 2 hours
+1194,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1195,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1196,Kelaniya Raja Maha Viharaya,Night,Never visited
+1197,Kailasanathar Swamy Kovil,Morning,Never visited
+1198,Kailasanathar Swamy Kovil,Evening,Never visited
+1199,Kailasanathar Swamy Kovil,Night,Never visited
+1200,Viharamahadevi Park,Morning,1 - 2 hours
+1201,Viharamahadevi Park,Evening,1 - 2 hours
+1202,Viharamahadevi Park,Night,1 - 2 hours
+1203,Port City,Morning,1 - 2 hours
+1204,Port City,Evening,1 - 2 hours
+1205,Port City,Night,1 - 2 hours
+1206,Lotus Tower,Morning,Less than 1 hour
+1207,Lotus Tower,Evening,Less than 1 hour
+1208,Lotus Tower,Night,Less than 1 hour
+1209,Pettah Market,Morning,1 - 2 hours
+1210,Pettah Market,Evening,1 - 2 hours
+1211,Pettah Market,Night,1 - 2 hours
+1212,Jami Ul-Alfar Mosque,Morning,Less than 1 hour
+1213,Jami Ul-Alfar Mosque,Evening,Less than 1 hour
+1214,Jami Ul-Alfar Mosque,Night,Less than 1 hour
+1215,One Galle Face ,Morning,Less than 1 hour
+1216,One Galle Face ,Evening,Less than 1 hour
+1217,One Galle Face ,Night,Less than 1 hour
+1218,Colombo City Center (CCC),Morning,Less than 1 hour
+1219,Colombo City Center (CCC),Evening,Less than 1 hour
+1220,Colombo City Center (CCC),Night,Less than 1 hour
+1221,Galle Face Green,Morning,Less than 1 hour
+1222,Galle Face Green,Evening,Less than 1 hour
+1223,Galle Face Green,Night,Less than 1 hour
+1224,Gangaramaya Temple,Morning,Never visited
+1225,Gangaramaya Temple,Evening,Never visited
+1226,Gangaramaya Temple,Night,Never visited
+1227,National Museum of Colombo,Morning,Never visited
+1228,National Museum of Colombo,Evening,Never visited
+1229,National Museum of Colombo,Night,Never visited
+1230,Independence Memorial Hall,Morning,Less than 1 hour
+1231,Independence Memorial Hall,Evening,Less than 1 hour
+1232,Independence Memorial Hall,Night,Less than 1 hour
+1233,Dutch Museum,Morning,Never visited
+1234,Dutch Museum,Evening,Never visited
+1235,Dutch Museum,Night,Never visited
+1236,National Art Gallery,Morning,Never visited
+1237,National Art Gallery,Evening,Never visited
+1238,National Art Gallery,Night,Never visited
+1239,Kelaniya Raja Maha Viharaya,Morning,Less than 1 hour
+1240,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+1241,Kelaniya Raja Maha Viharaya,Night,Less than 1 hour
+1242,Kailasanathar Swamy Kovil,Morning,Never visited
+1243,Kailasanathar Swamy Kovil,Evening,Never visited
+1244,Kailasanathar Swamy Kovil,Night,Never visited
+1245,Viharamahadevi Park,Morning,1 - 2 hours
+1246,Viharamahadevi Park,Evening,1 - 2 hours
+1247,Viharamahadevi Park,Night,Never visited
+1248,Port City,Morning,Never visited
+1249,Port City,Evening,Never visited
+1250,Port City,Night,Never visited
+1251,Lotus Tower,Morning,Never visited
+1252,Lotus Tower,Evening,Never visited
+1253,Lotus Tower,Night,Never visited
+1254,Pettah Market,Morning,Less than 1 hour
+1255,Pettah Market,Evening,Less than 1 hour
+1256,Pettah Market,Night,Less than 1 hour
+1257,Jami Ul-Alfar Mosque,Morning,Never visited
+1258,Jami Ul-Alfar Mosque,Evening,Never visited
+1259,Jami Ul-Alfar Mosque,Night,Never visited
+1260,One Galle Face ,Morning,Less than 1 hour
+1261,One Galle Face ,Evening,1 - 2 hours
+1262,One Galle Face ,Night,1 - 2 hours
+1263,Colombo City Center (CCC),Morning,Never visited
+1264,Colombo City Center (CCC),Evening,Never visited
+1265,Colombo City Center (CCC),Night,Never visited
+1266,Galle Face Green,Morning,Never visited
+1267,Galle Face Green,Evening,Never visited
+1268,Galle Face Green,Night,Never visited
+1269,Gangaramaya Temple,Morning,Never visited
+1270,Gangaramaya Temple,Evening,Never visited
+1271,Gangaramaya Temple,Night,Never visited
+1272,National Museum of Colombo,Morning,More than 3 hours
+1273,National Museum of Colombo,Evening,Never visited
+1274,National Museum of Colombo,Night,Never visited
+1275,Independence Memorial Hall,Morning,Never visited
+1276,Independence Memorial Hall,Evening,Never visited
+1277,Independence Memorial Hall,Night,Never visited
+1278,Dutch Museum,Morning,Never visited
+1279,Dutch Museum,Evening,Never visited
+1280,Dutch Museum,Night,Never visited
+1281,National Art Gallery,Morning,Never visited
+1282,National Art Gallery,Evening,Never visited
+1283,National Art Gallery,Night,Never visited
+1284,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1285,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1286,Kelaniya Raja Maha Viharaya,Night,More than 3 hours
+1287,Kailasanathar Swamy Kovil,Morning,2 - 3 hours
+1288,Kailasanathar Swamy Kovil,Evening,Never visited
+1289,Kailasanathar Swamy Kovil,Night,Never visited
+1290,Viharamahadevi Park,Morning,More than 3 hours
+1291,Viharamahadevi Park,Evening,Never visited
+1292,Viharamahadevi Park,Night,Never visited
+1293,Port City,Morning,Never visited
+1294,Port City,Evening,Never visited
+1295,Port City,Night,Never visited
+1296,Lotus Tower,Morning,Never visited
+1297,Lotus Tower,Evening,Never visited
+1298,Lotus Tower,Night,Never visited
+1299,Pettah Market,Morning,Never visited
+1300,Pettah Market,Evening,Never visited
+1301,Pettah Market,Night,Never visited
+1302,Jami Ul-Alfar Mosque,Morning,Never visited
+1303,Jami Ul-Alfar Mosque,Evening,Never visited
+1304,Jami Ul-Alfar Mosque,Night,Never visited
+1305,One Galle Face ,Morning,1 - 2 hours
+1306,One Galle Face ,Evening,2 - 3 hours
+1307,One Galle Face ,Night,More than 3 hours
+1308,Colombo City Center (CCC),Morning,1 - 2 hours
+1309,Colombo City Center (CCC),Evening,2 - 3 hours
+1310,Colombo City Center (CCC),Night,Never visited
+1311,Galle Face Green,Morning,Never visited
+1312,Galle Face Green,Evening,1 - 2 hours
+1313,Galle Face Green,Night,1 - 2 hours
+1314,Gangaramaya Temple,Morning,Never visited
+1315,Gangaramaya Temple,Evening,1 - 2 hours
+1316,Gangaramaya Temple,Night,Never visited
+1317,National Museum of Colombo,Morning,Less than 1 hour
+1318,National Museum of Colombo,Evening,1 - 2 hours
+1319,National Museum of Colombo,Night,Never visited
+1320,Independence Memorial Hall,Morning,Never visited
+1321,Independence Memorial Hall,Evening,1 - 2 hours
+1322,Independence Memorial Hall,Night,Never visited
+1323,Dutch Museum,Morning,Never visited
+1324,Dutch Museum,Evening,1 - 2 hours
+1325,Dutch Museum,Night,Never visited
+1326,National Art Gallery,Morning,Never visited
+1327,National Art Gallery,Evening,1 - 2 hours
+1328,National Art Gallery,Night,Never visited
+1329,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1330,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+1331,Kelaniya Raja Maha Viharaya,Night,Never visited
+1332,Kailasanathar Swamy Kovil,Morning,Never visited
+1333,Kailasanathar Swamy Kovil,Evening,Never visited
+1334,Kailasanathar Swamy Kovil,Night,Never visited
+1335,Viharamahadevi Park,Morning,Never visited
+1336,Viharamahadevi Park,Evening,1 - 2 hours
+1337,Viharamahadevi Park,Night,Less than 1 hour
+1338,Port City,Morning,Never visited
+1339,Port City,Evening,Never visited
+1340,Port City,Night,Never visited
+1341,Lotus Tower,Morning,Never visited
+1342,Lotus Tower,Evening,Never visited
+1343,Lotus Tower,Night,Never visited
+1344,Pettah Market,Morning,Never visited
+1345,Pettah Market,Evening,Never visited
+1346,Pettah Market,Night,Never visited
+1347,Jami Ul-Alfar Mosque,Morning,Never visited
+1348,Jami Ul-Alfar Mosque,Evening,Never visited
+1349,Jami Ul-Alfar Mosque,Night,Never visited
+1350,One Galle Face ,Morning,Never visited
+1351,One Galle Face ,Evening,Never visited
+1352,One Galle Face ,Night,Never visited
+1353,Colombo City Center (CCC),Morning,Never visited
+1354,Colombo City Center (CCC),Evening,Never visited
+1355,Colombo City Center (CCC),Night,Never visited
+1356,Galle Face Green,Morning,Never visited
+1357,Galle Face Green,Evening,Never visited
+1358,Galle Face Green,Night,Never visited
+1359,Gangaramaya Temple,Morning,Never visited
+1360,Gangaramaya Temple,Evening,Never visited
+1361,Gangaramaya Temple,Night,Never visited
+1362,National Museum of Colombo,Morning,Never visited
+1363,National Museum of Colombo,Evening,Never visited
+1364,National Museum of Colombo,Night,Never visited
+1365,Independence Memorial Hall,Morning,Never visited
+1366,Independence Memorial Hall,Evening,Never visited
+1367,Independence Memorial Hall,Night,Never visited
+1368,Dutch Museum,Morning,Never visited
+1369,Dutch Museum,Evening,Never visited
+1370,Dutch Museum,Night,Never visited
+1371,National Art Gallery,Morning,Never visited
+1372,National Art Gallery,Evening,Never visited
+1373,National Art Gallery,Night,Never visited
+1374,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1375,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1376,Kelaniya Raja Maha Viharaya,Night,Never visited
+1377,Kailasanathar Swamy Kovil,Morning,Never visited
+1378,Kailasanathar Swamy Kovil,Evening,Never visited
+1379,Kailasanathar Swamy Kovil,Night,Never visited
+1380,Viharamahadevi Park,Morning,Never visited
+1381,Viharamahadevi Park,Evening,Never visited
+1382,Viharamahadevi Park,Night,Never visited
+1383,Port City,Morning,Never visited
+1384,Port City,Evening,Never visited
+1385,Port City,Night,Never visited
+1386,Lotus Tower,Morning,Never visited
+1387,Lotus Tower,Evening,Never visited
+1388,Lotus Tower,Night,Never visited
+1389,Pettah Market,Morning,Never visited
+1390,Pettah Market,Evening,Never visited
+1391,Pettah Market,Night,Never visited
+1392,Jami Ul-Alfar Mosque,Morning,Never visited
+1393,Jami Ul-Alfar Mosque,Evening,Never visited
+1394,Jami Ul-Alfar Mosque,Night,Never visited
+1395,One Galle Face ,Morning,Never visited
+1396,One Galle Face ,Evening,Never visited
+1397,One Galle Face ,Night,Never visited
+1398,Colombo City Center (CCC),Morning,Never visited
+1399,Colombo City Center (CCC),Evening,Never visited
+1400,Colombo City Center (CCC),Night,Never visited
+1401,Galle Face Green,Morning,Never visited
+1402,Galle Face Green,Evening,Less than 1 hour
+1403,Galle Face Green,Night,1 - 2 hours
+1404,Gangaramaya Temple,Morning,Never visited
+1405,Gangaramaya Temple,Evening,Never visited
+1406,Gangaramaya Temple,Night,Never visited
+1407,National Museum of Colombo,Morning,Never visited
+1408,National Museum of Colombo,Evening,Never visited
+1409,National Museum of Colombo,Night,Never visited
+1410,Independence Memorial Hall,Morning,1 - 2 hours
+1411,Independence Memorial Hall,Evening,Never visited
+1412,Independence Memorial Hall,Night,Never visited
+1413,Dutch Museum,Morning,Never visited
+1414,Dutch Museum,Evening,Never visited
+1415,Dutch Museum,Night,Never visited
+1416,National Art Gallery,Morning,Never visited
+1417,National Art Gallery,Evening,Never visited
+1418,National Art Gallery,Night,Never visited
+1419,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1420,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+1421,Kelaniya Raja Maha Viharaya,Night,Never visited
+1422,Kailasanathar Swamy Kovil,Morning,Never visited
+1423,Kailasanathar Swamy Kovil,Evening,Never visited
+1424,Kailasanathar Swamy Kovil,Night,Never visited
+1425,Viharamahadevi Park,Morning,Never visited
+1426,Viharamahadevi Park,Evening,Never visited
+1427,Viharamahadevi Park,Night,Never visited
+1428,Port City,Morning,Never visited
+1429,Port City,Evening,Never visited
+1430,Port City,Night,Never visited
+1431,Lotus Tower,Morning,Never visited
+1432,Lotus Tower,Evening,Never visited
+1433,Lotus Tower,Night,Never visited
+1434,Pettah Market,Morning,Never visited
+1435,Pettah Market,Evening,Less than 1 hour
+1436,Pettah Market,Night,Never visited
+1437,Jami Ul-Alfar Mosque,Morning,Never visited
+1438,Jami Ul-Alfar Mosque,Evening,Never visited
+1439,Jami Ul-Alfar Mosque,Night,Never visited
+1440,One Galle Face ,Morning,Less than 1 hour
+1441,One Galle Face ,Evening,2 - 3 hours
+1442,One Galle Face ,Night,2 - 3 hours
+1443,Colombo City Center (CCC),Morning,Never visited
+1444,Colombo City Center (CCC),Evening,2 - 3 hours
+1445,Colombo City Center (CCC),Night,1 - 2 hours
+1446,Galle Face Green,Morning,Never visited
+1447,Galle Face Green,Evening,Never visited
+1448,Galle Face Green,Night,More than 3 hours
+1449,Gangaramaya Temple,Morning,1 - 2 hours
+1450,Gangaramaya Temple,Evening,Less than 1 hour
+1451,Gangaramaya Temple,Night,Never visited
+1452,National Museum of Colombo,Morning,1 - 2 hours
+1453,National Museum of Colombo,Evening,Never visited
+1454,National Museum of Colombo,Night,Never visited
+1455,Independence Memorial Hall,Morning,Less than 1 hour
+1456,Independence Memorial Hall,Evening,1 - 2 hours
+1457,Independence Memorial Hall,Night,1 - 2 hours
+1458,Dutch Museum,Morning,Never visited
+1459,Dutch Museum,Evening,1 - 2 hours
+1460,Dutch Museum,Night,Less than 1 hour
+1461,National Art Gallery,Morning,Never visited
+1462,National Art Gallery,Evening,Never visited
+1463,National Art Gallery,Night,Never visited
+1464,Kelaniya Raja Maha Viharaya,Morning,Less than 1 hour
+1465,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1466,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+1467,Kailasanathar Swamy Kovil,Morning,Never visited
+1468,Kailasanathar Swamy Kovil,Evening,Never visited
+1469,Kailasanathar Swamy Kovil,Night,Never visited
+1470,Viharamahadevi Park,Morning,Never visited
+1471,Viharamahadevi Park,Evening,1 - 2 hours
+1472,Viharamahadevi Park,Night,1 - 2 hours
+1473,Port City,Morning,Never visited
+1474,Port City,Evening,Never visited
+1475,Port City,Night,2 - 3 hours
+1476,Lotus Tower,Morning,Never visited
+1477,Lotus Tower,Evening,Never visited
+1478,Lotus Tower,Night,Never visited
+1479,Pettah Market,Morning,Less than 1 hour
+1480,Pettah Market,Evening,Less than 1 hour
+1481,Pettah Market,Night,Never visited
+1482,Jami Ul-Alfar Mosque,Morning,Never visited
+1483,Jami Ul-Alfar Mosque,Evening,Never visited
+1484,Jami Ul-Alfar Mosque,Night,Never visited
+1485,One Galle Face ,Morning,2 - 3 hours
+1486,One Galle Face ,Evening,More than 3 hours
+1487,One Galle Face ,Night,More than 3 hours
+1488,Colombo City Center (CCC),Morning,More than 3 hours
+1489,Colombo City Center (CCC),Evening,More than 3 hours
+1490,Colombo City Center (CCC),Night,More than 3 hours
+1491,Galle Face Green,Morning,More than 3 hours
+1492,Galle Face Green,Evening,More than 3 hours
+1493,Galle Face Green,Night,More than 3 hours
+1494,Gangaramaya Temple,Morning,1 - 2 hours
+1495,Gangaramaya Temple,Evening,1 - 2 hours
+1496,Gangaramaya Temple,Night,1 - 2 hours
+1497,National Museum of Colombo,Morning,1 - 2 hours
+1498,National Museum of Colombo,Evening,1 - 2 hours
+1499,National Museum of Colombo,Night,1 - 2 hours
+1500,Independence Memorial Hall,Morning,1 - 2 hours
+1501,Independence Memorial Hall,Evening,1 - 2 hours
+1502,Independence Memorial Hall,Night,1 - 2 hours
+1503,Dutch Museum,Morning,1 - 2 hours
+1504,Dutch Museum,Evening,1 - 2 hours
+1505,Dutch Museum,Night,1 - 2 hours
+1506,National Art Gallery,Morning,2 - 3 hours
+1507,National Art Gallery,Evening,2 - 3 hours
+1508,National Art Gallery,Night,2 - 3 hours
+1509,Kelaniya Raja Maha Viharaya,Morning,1 - 2 hours
+1510,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+1511,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+1512,Kailasanathar Swamy Kovil,Morning,2 - 3 hours
+1513,Kailasanathar Swamy Kovil,Evening,2 - 3 hours
+1514,Kailasanathar Swamy Kovil,Night,2 - 3 hours
+1515,Viharamahadevi Park,Morning,More than 3 hours
+1516,Viharamahadevi Park,Evening,More than 3 hours
+1517,Viharamahadevi Park,Night,More than 3 hours
+1518,Port City,Morning,More than 3 hours
+1519,Port City,Evening,More than 3 hours
+1520,Port City,Night,More than 3 hours
+1521,Lotus Tower,Morning,More than 3 hours
+1522,Lotus Tower,Evening,More than 3 hours
+1523,Lotus Tower,Night,More than 3 hours
+1524,Pettah Market,Morning,2 - 3 hours
+1525,Pettah Market,Evening,2 - 3 hours
+1526,Pettah Market,Night,2 - 3 hours
+1527,Jami Ul-Alfar Mosque,Morning,Never visited
+1528,Jami Ul-Alfar Mosque,Evening,Never visited
+1529,Jami Ul-Alfar Mosque,Night,Never visited
+1530,One Galle Face ,Morning,Never visited
+1531,One Galle Face ,Evening,1 - 2 hours
+1532,One Galle Face ,Night,2 - 3 hours
+1533,Colombo City Center (CCC),Morning,Less than 1 hour
+1534,Colombo City Center (CCC),Evening,1 - 2 hours
+1535,Colombo City Center (CCC),Night,2 - 3 hours
+1536,Galle Face Green,Morning,1 - 2 hours
+1537,Galle Face Green,Evening,2 - 3 hours
+1538,Galle Face Green,Night,2 - 3 hours
+1539,Gangaramaya Temple,Morning,Less than 1 hour
+1540,Gangaramaya Temple,Evening,Less than 1 hour
+1541,Gangaramaya Temple,Night,Never visited
+1542,National Museum of Colombo,Morning,1 - 2 hours
+1543,National Museum of Colombo,Evening,Never visited
+1544,National Museum of Colombo,Night,Never visited
+1545,Independence Memorial Hall,Morning,2 - 3 hours
+1546,Independence Memorial Hall,Evening,2 - 3 hours
+1547,Independence Memorial Hall,Night,1 - 2 hours
+1548,Dutch Museum,Morning,2 - 3 hours
+1549,Dutch Museum,Evening,1 - 2 hours
+1550,Dutch Museum,Night,1 - 2 hours
+1551,National Art Gallery,Morning,2 - 3 hours
+1552,National Art Gallery,Evening,1 - 2 hours
+1553,National Art Gallery,Night,Less than 1 hour
+1554,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1555,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1556,Kelaniya Raja Maha Viharaya,Night,Never visited
+1557,Kailasanathar Swamy Kovil,Morning,2 - 3 hours
+1558,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+1559,Kailasanathar Swamy Kovil,Night,1 - 2 hours
+1560,Viharamahadevi Park,Morning,1 - 2 hours
+1561,Viharamahadevi Park,Evening,2 - 3 hours
+1562,Viharamahadevi Park,Night,2 - 3 hours
+1563,Port City,Morning,2 - 3 hours
+1564,Port City,Evening,1 - 2 hours
+1565,Port City,Night,1 - 2 hours
+1566,Lotus Tower,Morning,1 - 2 hours
+1567,Lotus Tower,Evening,1 - 2 hours
+1568,Lotus Tower,Night,Never visited
+1569,Pettah Market,Morning,2 - 3 hours
+1570,Pettah Market,Evening,2 - 3 hours
+1571,Pettah Market,Night,1 - 2 hours
+1572,Jami Ul-Alfar Mosque,Morning,Never visited
+1573,Jami Ul-Alfar Mosque,Evening,Never visited
+1574,Jami Ul-Alfar Mosque,Night,Never visited
+1575,One Galle Face ,Morning,Less than 1 hour
+1576,One Galle Face ,Evening,Less than 1 hour
+1577,One Galle Face ,Night,2 - 3 hours
+1578,Colombo City Center (CCC),Morning,Less than 1 hour
+1579,Colombo City Center (CCC),Evening,2 - 3 hours
+1580,Colombo City Center (CCC),Night,More than 3 hours
+1581,Galle Face Green,Morning,Less than 1 hour
+1582,Galle Face Green,Evening,2 - 3 hours
+1583,Galle Face Green,Night,More than 3 hours
+1584,Gangaramaya Temple,Morning,Never visited
+1585,Gangaramaya Temple,Evening,Never visited
+1586,Gangaramaya Temple,Night,Never visited
+1587,National Museum of Colombo,Morning,1 - 2 hours
+1588,National Museum of Colombo,Evening,Never visited
+1589,National Museum of Colombo,Night,Never visited
+1590,Independence Memorial Hall,Morning,1 - 2 hours
+1591,Independence Memorial Hall,Evening,1 - 2 hours
+1592,Independence Memorial Hall,Night,1 - 2 hours
+1593,Dutch Museum,Morning,Never visited
+1594,Dutch Museum,Evening,Never visited
+1595,Dutch Museum,Night,Never visited
+1596,National Art Gallery,Morning,Never visited
+1597,National Art Gallery,Evening,Never visited
+1598,National Art Gallery,Night,Never visited
+1599,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1600,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1601,Kelaniya Raja Maha Viharaya,Night,Never visited
+1602,Kailasanathar Swamy Kovil,Morning,Never visited
+1603,Kailasanathar Swamy Kovil,Evening,Never visited
+1604,Kailasanathar Swamy Kovil,Night,Never visited
+1605,Viharamahadevi Park,Morning,Less than 1 hour
+1606,Viharamahadevi Park,Evening,1 - 2 hours
+1607,Viharamahadevi Park,Night,1 - 2 hours
+1608,Port City,Morning,Never visited
+1609,Port City,Evening,Never visited
+1610,Port City,Night,Never visited
+1611,Lotus Tower,Morning,Never visited
+1612,Lotus Tower,Evening,Never visited
+1613,Lotus Tower,Night,Never visited
+1614,Pettah Market,Morning,1 - 2 hours
+1615,Pettah Market,Evening,2 - 3 hours
+1616,Pettah Market,Night,1 - 2 hours
+1617,Jami Ul-Alfar Mosque,Morning,Never visited
+1618,Jami Ul-Alfar Mosque,Evening,Never visited
+1619,Jami Ul-Alfar Mosque,Night,Never visited
+1620,One Galle Face ,Morning,1 - 2 hours
+1621,One Galle Face ,Evening,1 - 2 hours
+1622,One Galle Face ,Night,1 - 2 hours
+1623,Colombo City Center (CCC),Morning,1 - 2 hours
+1624,Colombo City Center (CCC),Evening,1 - 2 hours
+1625,Colombo City Center (CCC),Night,1 - 2 hours
+1626,Galle Face Green,Morning,1 - 2 hours
+1627,Galle Face Green,Evening,1 - 2 hours
+1628,Galle Face Green,Night,1 - 2 hours
+1629,Gangaramaya Temple,Morning,Less than 1 hour
+1630,Gangaramaya Temple,Evening,Less than 1 hour
+1631,Gangaramaya Temple,Night,Less than 1 hour
+1632,National Museum of Colombo,Morning,1 - 2 hours
+1633,National Museum of Colombo,Evening,1 - 2 hours
+1634,National Museum of Colombo,Night,1 - 2 hours
+1635,Independence Memorial Hall,Morning,Less than 1 hour
+1636,Independence Memorial Hall,Evening,Less than 1 hour
+1637,Independence Memorial Hall,Night,Less than 1 hour
+1638,Dutch Museum,Morning,Never visited
+1639,Dutch Museum,Evening,Never visited
+1640,Dutch Museum,Night,Never visited
+1641,National Art Gallery,Morning,Never visited
+1642,National Art Gallery,Evening,Never visited
+1643,National Art Gallery,Night,Never visited
+1644,Kelaniya Raja Maha Viharaya,Morning,Less than 1 hour
+1645,Kelaniya Raja Maha Viharaya,Evening,Less than 1 hour
+1646,Kelaniya Raja Maha Viharaya,Night,Less than 1 hour
+1647,Kailasanathar Swamy Kovil,Morning,Never visited
+1648,Kailasanathar Swamy Kovil,Evening,Never visited
+1649,Kailasanathar Swamy Kovil,Night,Never visited
+1650,Viharamahadevi Park,Morning,Less than 1 hour
+1651,Viharamahadevi Park,Evening,Less than 1 hour
+1652,Viharamahadevi Park,Night,Less than 1 hour
+1653,Port City,Morning,Never visited
+1654,Port City,Evening,Never visited
+1655,Port City,Night,Never visited
+1656,Lotus Tower,Morning,Never visited
+1657,Lotus Tower,Evening,Never visited
+1658,Lotus Tower,Night,Never visited
+1659,Pettah Market,Morning,1 - 2 hours
+1660,Pettah Market,Evening,1 - 2 hours
+1661,Pettah Market,Night,1 - 2 hours
+1662,Jami Ul-Alfar Mosque,Morning,Never visited
+1663,Jami Ul-Alfar Mosque,Evening,Never visited
+1664,Jami Ul-Alfar Mosque,Night,Never visited
+1665,One Galle Face ,Morning,Never visited
+1666,One Galle Face ,Evening,1 - 2 hours
+1667,One Galle Face ,Night,2 - 3 hours
+1668,Colombo City Center (CCC),Morning,1 - 2 hours
+1669,Colombo City Center (CCC),Evening,1 - 2 hours
+1670,Colombo City Center (CCC),Night,1 - 2 hours
+1671,Galle Face Green,Morning,Never visited
+1672,Galle Face Green,Evening,Never visited
+1673,Galle Face Green,Night,Less than 1 hour
+1674,Gangaramaya Temple,Morning,Never visited
+1675,Gangaramaya Temple,Evening,Less than 1 hour
+1676,Gangaramaya Temple,Night,Never visited
+1677,National Museum of Colombo,Morning,Less than 1 hour
+1678,National Museum of Colombo,Evening,Less than 1 hour
+1679,National Museum of Colombo,Night,Never visited
+1680,Independence Memorial Hall,Morning,1 - 2 hours
+1681,Independence Memorial Hall,Evening,1 - 2 hours
+1682,Independence Memorial Hall,Night,1 - 2 hours
+1683,Dutch Museum,Morning,Less than 1 hour
+1684,Dutch Museum,Evening,Less than 1 hour
+1685,Dutch Museum,Night,Never visited
+1686,National Art Gallery,Morning,Less than 1 hour
+1687,National Art Gallery,Evening,Less than 1 hour
+1688,National Art Gallery,Night,Never visited
+1689,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1690,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1691,Kelaniya Raja Maha Viharaya,Night,Never visited
+1692,Kailasanathar Swamy Kovil,Morning,Never visited
+1693,Kailasanathar Swamy Kovil,Evening,Never visited
+1694,Kailasanathar Swamy Kovil,Night,Never visited
+1695,Viharamahadevi Park,Morning,Less than 1 hour
+1696,Viharamahadevi Park,Evening,Less than 1 hour
+1697,Viharamahadevi Park,Night,Less than 1 hour
+1698,Port City,Morning,Less than 1 hour
+1699,Port City,Evening,Less than 1 hour
+1700,Port City,Night,Never visited
+1701,Lotus Tower,Morning,Never visited
+1702,Lotus Tower,Evening,Less than 1 hour
+1703,Lotus Tower,Night,1 - 2 hours
+1704,Pettah Market,Morning,1 - 2 hours
+1705,Pettah Market,Evening,1 - 2 hours
+1706,Pettah Market,Night,1 - 2 hours
+1707,Jami Ul-Alfar Mosque,Morning,Never visited
+1708,Jami Ul-Alfar Mosque,Evening,Never visited
+1709,Jami Ul-Alfar Mosque,Night,Never visited
+1710,One Galle Face ,Morning,Less than 1 hour
+1711,One Galle Face ,Evening,2 - 3 hours
+1712,One Galle Face ,Night,Less than 1 hour
+1713,Colombo City Center (CCC),Morning,Less than 1 hour
+1714,Colombo City Center (CCC),Evening,1 - 2 hours
+1715,Colombo City Center (CCC),Night,Less than 1 hour
+1716,Galle Face Green,Morning,Less than 1 hour
+1717,Galle Face Green,Evening,Less than 1 hour
+1718,Galle Face Green,Night,Less than 1 hour
+1719,Gangaramaya Temple,Morning,Never visited
+1720,Gangaramaya Temple,Evening,Never visited
+1721,Gangaramaya Temple,Night,Never visited
+1722,National Museum of Colombo,Morning,Never visited
+1723,National Museum of Colombo,Evening,Never visited
+1724,National Museum of Colombo,Night,Never visited
+1725,Independence Memorial Hall,Morning,Less than 1 hour
+1726,Independence Memorial Hall,Evening,Less than 1 hour
+1727,Independence Memorial Hall,Night,Less than 1 hour
+1728,Dutch Museum,Morning,Never visited
+1729,Dutch Museum,Evening,Never visited
+1730,Dutch Museum,Night,Never visited
+1731,National Art Gallery,Morning,Never visited
+1732,National Art Gallery,Evening,Never visited
+1733,National Art Gallery,Night,Never visited
+1734,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1735,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1736,Kelaniya Raja Maha Viharaya,Night,Never visited
+1737,Kailasanathar Swamy Kovil,Morning,Less than 1 hour
+1738,Kailasanathar Swamy Kovil,Evening,Less than 1 hour
+1739,Kailasanathar Swamy Kovil,Night,Less than 1 hour
+1740,Viharamahadevi Park,Morning,Never visited
+1741,Viharamahadevi Park,Evening,Less than 1 hour
+1742,Viharamahadevi Park,Night,Never visited
+1743,Port City,Morning,Never visited
+1744,Port City,Evening,Never visited
+1745,Port City,Night,Never visited
+1746,Lotus Tower,Morning,Never visited
+1747,Lotus Tower,Evening,Never visited
+1748,Lotus Tower,Night,Never visited
+1749,Pettah Market,Morning,1 - 2 hours
+1750,Pettah Market,Evening,2 - 3 hours
+1751,Pettah Market,Night,Less than 1 hour
+1752,Jami Ul-Alfar Mosque,Morning,Never visited
+1753,Jami Ul-Alfar Mosque,Evening,Never visited
+1754,Jami Ul-Alfar Mosque,Night,Never visited
+1755,One Galle Face ,Morning,Never visited
+1756,One Galle Face ,Evening,Less than 1 hour
+1757,One Galle Face ,Night,More than 3 hours
+1758,Colombo City Center (CCC),Morning,Never visited
+1759,Colombo City Center (CCC),Evening,Never visited
+1760,Colombo City Center (CCC),Night,2 - 3 hours
+1761,Galle Face Green,Morning,Never visited
+1762,Galle Face Green,Evening,Never visited
+1763,Galle Face Green,Night,1 - 2 hours
+1764,Gangaramaya Temple,Morning,Never visited
+1765,Gangaramaya Temple,Evening,Never visited
+1766,Gangaramaya Temple,Night,Never visited
+1767,National Museum of Colombo,Morning,Never visited
+1768,National Museum of Colombo,Evening,Never visited
+1769,National Museum of Colombo,Night,Never visited
+1770,Independence Memorial Hall,Morning,Never visited
+1771,Independence Memorial Hall,Evening,Never visited
+1772,Independence Memorial Hall,Night,Never visited
+1773,Dutch Museum,Morning,Never visited
+1774,Dutch Museum,Evening,Never visited
+1775,Dutch Museum,Night,Never visited
+1776,National Art Gallery,Morning,Never visited
+1777,National Art Gallery,Evening,Never visited
+1778,National Art Gallery,Night,Never visited
+1779,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1780,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1781,Kelaniya Raja Maha Viharaya,Night,Never visited
+1782,Kailasanathar Swamy Kovil,Morning,Never visited
+1783,Kailasanathar Swamy Kovil,Evening,Never visited
+1784,Kailasanathar Swamy Kovil,Night,Never visited
+1785,Viharamahadevi Park,Morning,Never visited
+1786,Viharamahadevi Park,Evening,Less than 1 hour
+1787,Viharamahadevi Park,Night,1 - 2 hours
+1788,Port City,Morning,Never visited
+1789,Port City,Evening,1 - 2 hours
+1790,Port City,Night,1 - 2 hours
+1791,Lotus Tower,Morning,Never visited
+1792,Lotus Tower,Evening,Never visited
+1793,Lotus Tower,Night,Never visited
+1794,Pettah Market,Morning,Less than 1 hour
+1795,Pettah Market,Evening,Less than 1 hour
+1796,Pettah Market,Night,Less than 1 hour
+1797,Jami Ul-Alfar Mosque,Morning,Never visited
+1798,Jami Ul-Alfar Mosque,Evening,Never visited
+1799,Jami Ul-Alfar Mosque,Night,Never visited
+1800,One Galle Face ,Morning,Never visited
+1801,One Galle Face ,Evening,1 - 2 hours
+1802,One Galle Face ,Night,Less than 1 hour
+1803,Colombo City Center (CCC),Morning,Never visited
+1804,Colombo City Center (CCC),Evening,Less than 1 hour
+1805,Colombo City Center (CCC),Night,Less than 1 hour
+1806,Galle Face Green,Morning,Less than 1 hour
+1807,Galle Face Green,Evening,1 - 2 hours
+1808,Galle Face Green,Night,Less than 1 hour
+1809,Gangaramaya Temple,Morning,Never visited
+1810,Gangaramaya Temple,Evening,Never visited
+1811,Gangaramaya Temple,Night,Never visited
+1812,National Museum of Colombo,Morning,Never visited
+1813,National Museum of Colombo,Evening,1 - 2 hours
+1814,National Museum of Colombo,Night,1 - 2 hours
+1815,Independence Memorial Hall,Morning,Never visited
+1816,Independence Memorial Hall,Evening,1 - 2 hours
+1817,Independence Memorial Hall,Night,1 - 2 hours
+1818,Dutch Museum,Morning,Never visited
+1819,Dutch Museum,Evening,Never visited
+1820,Dutch Museum,Night,Never visited
+1821,National Art Gallery,Morning,Never visited
+1822,National Art Gallery,Evening,Never visited
+1823,National Art Gallery,Night,Never visited
+1824,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1825,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1826,Kelaniya Raja Maha Viharaya,Night,Never visited
+1827,Kailasanathar Swamy Kovil,Morning,Never visited
+1828,Kailasanathar Swamy Kovil,Evening,Never visited
+1829,Kailasanathar Swamy Kovil,Night,Never visited
+1830,Viharamahadevi Park,Morning,1 - 2 hours
+1831,Viharamahadevi Park,Evening,1 - 2 hours
+1832,Viharamahadevi Park,Night,Less than 1 hour
+1833,Port City,Morning,Never visited
+1834,Port City,Evening,Never visited
+1835,Port City,Night,Never visited
+1836,Lotus Tower,Morning,Never visited
+1837,Lotus Tower,Evening,1 - 2 hours
+1838,Lotus Tower,Night,1 - 2 hours
+1839,Pettah Market,Morning,Less than 1 hour
+1840,Pettah Market,Evening,1 - 2 hours
+1841,Pettah Market,Night,Less than 1 hour
+1842,Jami Ul-Alfar Mosque,Morning,Never visited
+1843,Jami Ul-Alfar Mosque,Evening,Never visited
+1844,Jami Ul-Alfar Mosque,Night,Never visited
+1845,One Galle Face ,Morning,1 - 2 hours
+1846,One Galle Face ,Evening,2 - 3 hours
+1847,One Galle Face ,Night,Never visited
+1848,Colombo City Center (CCC),Morning,Less than 1 hour
+1849,Colombo City Center (CCC),Evening,1 - 2 hours
+1850,Colombo City Center (CCC),Night,Less than 1 hour
+1851,Galle Face Green,Morning,Never visited
+1852,Galle Face Green,Evening,Less than 1 hour
+1853,Galle Face Green,Night,1 - 2 hours
+1854,Gangaramaya Temple,Morning,Never visited
+1855,Gangaramaya Temple,Evening,Never visited
+1856,Gangaramaya Temple,Night,Never visited
+1857,National Museum of Colombo,Morning,Never visited
+1858,National Museum of Colombo,Evening,Less than 1 hour
+1859,National Museum of Colombo,Night,Never visited
+1860,Independence Memorial Hall,Morning,Never visited
+1861,Independence Memorial Hall,Evening,Never visited
+1862,Independence Memorial Hall,Night,Never visited
+1863,Dutch Museum,Morning,Never visited
+1864,Dutch Museum,Evening,Never visited
+1865,Dutch Museum,Night,Never visited
+1866,National Art Gallery,Morning,Less than 1 hour
+1867,National Art Gallery,Evening,Never visited
+1868,National Art Gallery,Night,Never visited
+1869,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1870,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1871,Kelaniya Raja Maha Viharaya,Night,Never visited
+1872,Kailasanathar Swamy Kovil,Morning,Never visited
+1873,Kailasanathar Swamy Kovil,Evening,Never visited
+1874,Kailasanathar Swamy Kovil,Night,Never visited
+1875,Viharamahadevi Park,Morning,1 - 2 hours
+1876,Viharamahadevi Park,Evening,1 - 2 hours
+1877,Viharamahadevi Park,Night,Never visited
+1878,Port City,Morning,Never visited
+1879,Port City,Evening,Never visited
+1880,Port City,Night,Never visited
+1881,Lotus Tower,Morning,Never visited
+1882,Lotus Tower,Evening,Never visited
+1883,Lotus Tower,Night,Never visited
+1884,Pettah Market,Morning,1 - 2 hours
+1885,Pettah Market,Evening,1 - 2 hours
+1886,Pettah Market,Night,Less than 1 hour
+1887,Jami Ul-Alfar Mosque,Morning,Never visited
+1888,Jami Ul-Alfar Mosque,Evening,Never visited
+1889,Jami Ul-Alfar Mosque,Night,Never visited
+1890,One Galle Face ,Morning,Less than 1 hour
+1891,One Galle Face ,Evening,1 - 2 hours
+1892,One Galle Face ,Night,1 - 2 hours
+1893,Colombo City Center (CCC),Morning,Less than 1 hour
+1894,Colombo City Center (CCC),Evening,Less than 1 hour
+1895,Colombo City Center (CCC),Night,Less than 1 hour
+1896,Galle Face Green,Morning,Less than 1 hour
+1897,Galle Face Green,Evening,Less than 1 hour
+1898,Galle Face Green,Night,Less than 1 hour
+1899,Gangaramaya Temple,Morning,Never visited
+1900,Gangaramaya Temple,Evening,Never visited
+1901,Gangaramaya Temple,Night,Never visited
+1902,National Museum of Colombo,Morning,Never visited
+1903,National Museum of Colombo,Evening,Never visited
+1904,National Museum of Colombo,Night,Never visited
+1905,Independence Memorial Hall,Morning,Never visited
+1906,Independence Memorial Hall,Evening,Never visited
+1907,Independence Memorial Hall,Night,Never visited
+1908,Dutch Museum,Morning,Never visited
+1909,Dutch Museum,Evening,Never visited
+1910,Dutch Museum,Night,Never visited
+1911,National Art Gallery,Morning,Never visited
+1912,National Art Gallery,Evening,Never visited
+1913,National Art Gallery,Night,Never visited
+1914,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1915,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1916,Kelaniya Raja Maha Viharaya,Night,Never visited
+1917,Kailasanathar Swamy Kovil,Morning,Never visited
+1918,Kailasanathar Swamy Kovil,Evening,Never visited
+1919,Kailasanathar Swamy Kovil,Night,Never visited
+1920,Viharamahadevi Park,Morning,Never visited
+1921,Viharamahadevi Park,Evening,Never visited
+1922,Viharamahadevi Park,Night,Never visited
+1923,Port City,Morning,Never visited
+1924,Port City,Evening,Never visited
+1925,Port City,Night,Never visited
+1926,Lotus Tower,Morning,Never visited
+1927,Lotus Tower,Evening,Never visited
+1928,Lotus Tower,Night,Never visited
+1929,Pettah Market,Morning,Less than 1 hour
+1930,Pettah Market,Evening,Less than 1 hour
+1931,Pettah Market,Night,Less than 1 hour
+1932,Jami Ul-Alfar Mosque,Morning,Never visited
+1933,Jami Ul-Alfar Mosque,Evening,Never visited
+1934,Jami Ul-Alfar Mosque,Night,Never visited
+1935,One Galle Face ,Morning,Never visited
+1936,One Galle Face ,Evening,1 - 2 hours
+1937,One Galle Face ,Night,2 - 3 hours
+1938,Colombo City Center (CCC),Morning,Never visited
+1939,Colombo City Center (CCC),Evening,1 - 2 hours
+1940,Colombo City Center (CCC),Night,2 - 3 hours
+1941,Galle Face Green,Morning,Never visited
+1942,Galle Face Green,Evening,1 - 2 hours
+1943,Galle Face Green,Night,1 - 2 hours
+1944,Gangaramaya Temple,Morning,Never visited
+1945,Gangaramaya Temple,Evening,Less than 1 hour
+1946,Gangaramaya Temple,Night,Never visited
+1947,National Museum of Colombo,Morning,1 - 2 hours
+1948,National Museum of Colombo,Evening,1 - 2 hours
+1949,National Museum of Colombo,Night,Never visited
+1950,Independence Memorial Hall,Morning,Never visited
+1951,Independence Memorial Hall,Evening,1 - 2 hours
+1952,Independence Memorial Hall,Night,1 - 2 hours
+1953,Dutch Museum,Morning,Never visited
+1954,Dutch Museum,Evening,1 - 2 hours
+1955,Dutch Museum,Night,1 - 2 hours
+1956,National Art Gallery,Morning,Never visited
+1957,National Art Gallery,Evening,1 - 2 hours
+1958,National Art Gallery,Night,1 - 2 hours
+1959,Kelaniya Raja Maha Viharaya,Morning,Never visited
+1960,Kelaniya Raja Maha Viharaya,Evening,Never visited
+1961,Kelaniya Raja Maha Viharaya,Night,Never visited
+1962,Kailasanathar Swamy Kovil,Morning,Less than 1 hour
+1963,Kailasanathar Swamy Kovil,Evening,1 - 2 hours
+1964,Kailasanathar Swamy Kovil,Night,Less than 1 hour
+1965,Viharamahadevi Park,Morning,Never visited
+1966,Viharamahadevi Park,Evening,1 - 2 hours
+1967,Viharamahadevi Park,Night,1 - 2 hours
+1968,Port City,Morning,Never visited
+1969,Port City,Evening,Never visited
+1970,Port City,Night,Never visited
+1971,Lotus Tower,Morning,Never visited
+1972,Lotus Tower,Evening,1 - 2 hours
+1973,Lotus Tower,Night,1 - 2 hours
+1974,Pettah Market,Morning,1 - 2 hours
+1975,Pettah Market,Evening,1 - 2 hours
+1976,Pettah Market,Night,Never visited
+1977,Jami Ul-Alfar Mosque,Morning,Never visited
+1978,Jami Ul-Alfar Mosque,Evening,Never visited
+1979,Jami Ul-Alfar Mosque,Night,Never visited
+1980,One Galle Face ,Morning,Never visited
+1981,One Galle Face ,Evening,2 - 3 hours
+1982,One Galle Face ,Night,2 - 3 hours
+1983,Colombo City Center (CCC),Morning,Never visited
+1984,Colombo City Center (CCC),Evening,2 - 3 hours
+1985,Colombo City Center (CCC),Night,2 - 3 hours
+1986,Galle Face Green,Morning,Never visited
+1987,Galle Face Green,Evening,Never visited
+1988,Galle Face Green,Night,1 - 2 hours
+1989,Gangaramaya Temple,Morning,Never visited
+1990,Gangaramaya Temple,Evening,Never visited
+1991,Gangaramaya Temple,Night,Never visited
+1992,National Museum of Colombo,Morning,Never visited
+1993,National Museum of Colombo,Evening,Never visited
+1994,National Museum of Colombo,Night,Never visited
+1995,Independence Memorial Hall,Morning,Less than 1 hour
+1996,Independence Memorial Hall,Evening,1 - 2 hours
+1997,Independence Memorial Hall,Night,Never visited
+1998,Dutch Museum,Morning,Never visited
+1999,Dutch Museum,Evening,1 - 2 hours
+2000,Dutch Museum,Night,Never visited
+2001,National Art Gallery,Morning,Never visited
+2002,National Art Gallery,Evening,1 - 2 hours
+2003,National Art Gallery,Night,Never visited
+2004,Kelaniya Raja Maha Viharaya,Morning,Never visited
+2005,Kelaniya Raja Maha Viharaya,Evening,1 - 2 hours
+2006,Kelaniya Raja Maha Viharaya,Night,1 - 2 hours
+2007,Kailasanathar Swamy Kovil,Morning,Never visited
+2008,Kailasanathar Swamy Kovil,Evening,Never visited
+2009,Kailasanathar Swamy Kovil,Night,Never visited
+2010,Viharamahadevi Park,Morning,Less than 1 hour
+2011,Viharamahadevi Park,Evening,1 - 2 hours
+2012,Viharamahadevi Park,Night,2 - 3 hours
+2013,Port City,Morning,Never visited
+2014,Port City,Evening,Never visited
+2015,Port City,Night,Never visited
+2016,Lotus Tower,Morning,Never visited
+2017,Lotus Tower,Evening,Never visited
+2018,Lotus Tower,Night,Never visited
+2019,Pettah Market,Morning,Never visited
+2020,Pettah Market,Evening,1 - 2 hours
+2021,Pettah Market,Night,Never visited
+2022,Jami Ul-Alfar Mosque,Morning,Never visited
+2023,Jami Ul-Alfar Mosque,Evening,Never visited
+2024,Jami Ul-Alfar Mosque,Night,Never visited
+2025,One Galle Face ,Morning,More than 3 hours
+2026,One Galle Face ,Evening,More than 3 hours
+2027,One Galle Face ,Night,1 - 2 hours
+2028,Colombo City Center (CCC),Morning,Less than 1 hour
+2029,Colombo City Center (CCC),Evening,2 - 3 hours
+2030,Colombo City Center (CCC),Night,More than 3 hours
+2031,Galle Face Green,Morning,Less than 1 hour
+2032,Galle Face Green,Evening,Less than 1 hour
+2033,Galle Face Green,Night,1 - 2 hours
+2034,Gangaramaya Temple,Morning,Never visited
+2035,Gangaramaya Temple,Evening,Less than 1 hour
+2036,Gangaramaya Temple,Night,1 - 2 hours
+2037,National Museum of Colombo,Morning,1 - 2 hours
+2038,National Museum of Colombo,Evening,Never visited
+2039,National Museum of Colombo,Night,Never visited
+2040,Independence Memorial Hall,Morning,Never visited
+2041,Independence Memorial Hall,Evening,Never visited
+2042,Independence Memorial Hall,Night,Never visited
+2043,Dutch Museum,Morning,Never visited
+2044,Dutch Museum,Evening,Never visited
+2045,Dutch Museum,Night,Never visited
+2046,National Art Gallery,Morning,Less than 1 hour
+2047,National Art Gallery,Evening,Never visited
+2048,National Art Gallery,Night,Never visited
+2049,Kelaniya Raja Maha Viharaya,Morning,Never visited
+2050,Kelaniya Raja Maha Viharaya,Evening,Never visited
+2051,Kelaniya Raja Maha Viharaya,Night,Never visited
+2052,Kailasanathar Swamy Kovil,Morning,Never visited
+2053,Kailasanathar Swamy Kovil,Evening,Never visited
+2054,Kailasanathar Swamy Kovil,Night,Never visited
+2055,Viharamahadevi Park,Morning,1 - 2 hours
+2056,Viharamahadevi Park,Evening,Less than 1 hour
+2057,Viharamahadevi Park,Night,Less than 1 hour
+2058,Port City,Morning,Never visited
+2059,Port City,Evening,1 - 2 hours
+2060,Port City,Night,2 - 3 hours
+2061,Lotus Tower,Morning,Never visited
+2062,Lotus Tower,Evening,1 - 2 hours
+2063,Lotus Tower,Night,1 - 2 hours
+2064,Pettah Market,Morning,More than 3 hours
+2065,Pettah Market,Evening,More than 3 hours
+2066,Pettah Market,Night,Never visited
+2067,Jami Ul-Alfar Mosque,Morning,Never visited
+2068,Jami Ul-Alfar Mosque,Evening,Never visited
+2069,Jami Ul-Alfar Mosque,Night,Never visited
+2070,One Galle Face ,Morning,1 - 2 hours
+2071,One Galle Face ,Evening,Less than 1 hour
+2072,One Galle Face ,Night,2 - 3 hours
+2073,Colombo City Center (CCC),Morning,1 - 2 hours
+2074,Colombo City Center (CCC),Evening,Less than 1 hour
+2075,Colombo City Center (CCC),Night,2 - 3 hours
+2076,Galle Face Green,Morning,Less than 1 hour
+2077,Galle Face Green,Evening,Never visited
+2078,Galle Face Green,Night,More than 3 hours
+2079,Gangaramaya Temple,Morning,Never visited
+2080,Gangaramaya Temple,Evening,Never visited
+2081,Gangaramaya Temple,Night,Never visited
+2082,National Museum of Colombo,Morning,Never visited
+2083,National Museum of Colombo,Evening,Never visited
+2084,National Museum of Colombo,Night,Never visited
+2085,Independence Memorial Hall,Morning,Less than 1 hour
+2086,Independence Memorial Hall,Evening,1 - 2 hours
+2087,Independence Memorial Hall,Night,Never visited
+2088,Dutch Museum,Morning,Never visited
+2089,Dutch Museum,Evening,Never visited
+2090,Dutch Museum,Night,Never visited
+2091,National Art Gallery,Morning,Never visited
+2092,National Art Gallery,Evening,Never visited
+2093,National Art Gallery,Night,Never visited
+2094,Kelaniya Raja Maha Viharaya,Morning,Never visited
+2095,Kelaniya Raja Maha Viharaya,Evening,Never visited
+2096,Kelaniya Raja Maha Viharaya,Night,Never visited
+2097,Kailasanathar Swamy Kovil,Morning,Never visited
+2098,Kailasanathar Swamy Kovil,Evening,Never visited
+2099,Kailasanathar Swamy Kovil,Night,Never visited
+2100,Viharamahadevi Park,Morning,Less than 1 hour
+2101,Viharamahadevi Park,Evening,1 - 2 hours
+2102,Viharamahadevi Park,Night,Never visited
+2103,Port City,Morning,Never visited
+2104,Port City,Evening,Never visited
+2105,Port City,Night,1 - 2 hours
+2106,Lotus Tower,Morning,Never visited
+2107,Lotus Tower,Evening,Never visited
+2108,Lotus Tower,Night,Never visited
+2109,Pettah Market,Morning,Less than 1 hour
+2110,Pettah Market,Evening,1 - 2 hours
+2111,Pettah Market,Night,Never visited
+2112,Jami Ul-Alfar Mosque,Morning,Less than 1 hour
+2113,Jami Ul-Alfar Mosque,Evening,Less than 1 hour
+2114,Jami Ul-Alfar Mosque,Night,Less than 1 hour
+2115,One Galle Face ,Morning,1 - 2 hours
+2116,One Galle Face ,Evening,1 - 2 hours
+2117,One Galle Face ,Night,Less than 1 hour
+2118,Colombo City Center (CCC),Morning,1 - 2 hours
+2119,Colombo City Center (CCC),Evening,2 - 3 hours
+2120,Colombo City Center (CCC),Night,1 - 2 hours
+2121,Galle Face Green,Morning,Less than 1 hour
+2122,Galle Face Green,Evening,Less than 1 hour
+2123,Galle Face Green,Night,2 - 3 hours
+2124,Gangaramaya Temple,Morning,Never visited
+2125,Gangaramaya Temple,Evening,Never visited
+2126,Gangaramaya Temple,Night,Never visited
+2127,National Museum of Colombo,Morning,More than 3 hours
+2128,National Museum of Colombo,Evening,2 - 3 hours
+2129,National Museum of Colombo,Night,Less than 1 hour
+2130,Independence Memorial Hall,Morning,1 - 2 hours
+2131,Independence Memorial Hall,Evening,1 - 2 hours
+2132,Independence Memorial Hall,Night,Less than 1 hour
+2133,Dutch Museum,Morning,Less than 1 hour
+2134,Dutch Museum,Evening,Less than 1 hour
+2135,Dutch Museum,Night,Less than 1 hour
+2136,National Art Gallery,Morning,Never visited
+2137,National Art Gallery,Evening,Never visited
+2138,National Art Gallery,Night,Never visited
+2139,Kelaniya Raja Maha Viharaya,Morning,Never visited
+2140,Kelaniya Raja Maha Viharaya,Evening,Never visited
+2141,Kelaniya Raja Maha Viharaya,Night,Never visited
+2142,Kailasanathar Swamy Kovil,Morning,Never visited
+2143,Kailasanathar Swamy Kovil,Evening,Never visited
+2144,Kailasanathar Swamy Kovil,Night,Never visited
+2145,Viharamahadevi Park,Morning,1 - 2 hours
+2146,Viharamahadevi Park,Evening,1 - 2 hours
+2147,Viharamahadevi Park,Night,Less than 1 hour
+2148,Port City,Morning,Never visited
+2149,Port City,Evening,Never visited
+2150,Port City,Night,Never visited
+2151,Lotus Tower,Morning,Never visited
+2152,Lotus Tower,Evening,Never visited
+2153,Lotus Tower,Night,Never visited
+2154,Pettah Market,Morning,More than 3 hours
+2155,Pettah Market,Evening,More than 3 hours
+2156,Pettah Market,Night,Less than 1 hour
+2157,Jami Ul-Alfar Mosque,Morning,Never visited
+2158,Jami Ul-Alfar Mosque,Evening,Never visited
+2159,Jami Ul-Alfar Mosque,Night,Never visited
