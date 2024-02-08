@@ -7,6 +7,7 @@ from rest_framework import status
 class OptimizationAPI(APIView):
     def post(self, request):
         # Your optimization algorithm logic here
-        result = {'message': 'Optimization successful!'}
+        result = {'message': 'Optimization successful!!!'}
+        print("I'm workingg!!")
         return Response(result, status=status.HTTP_200_OK)
 # Create your views here.
