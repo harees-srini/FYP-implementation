@@ -10,4 +10,16 @@ class OptimizationAPI(APIView):
         result = {'message': 'Optimization successful!!!'}
         print("I'm workingg!!")
         return Response(result, status=status.HTTP_200_OK)
-# Create your views here.
+
+class LocationSetAPI(APIView):
+    def post(Self, request):
+        #Retreive message from req data
+        message = request.data.get('message', None)
+        
+        if message is not None:
+            #Process message and do something
+            
+            #return response
+            return Response({'message': 'Message successfully received'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'message': 'Message required'}, status=status.HTTP_400_BAD_REQUEST)

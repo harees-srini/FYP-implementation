@@ -21,4 +21,32 @@ const OptimizationForm = () => {
     )
 }
 
-export default OptimizationForm
+const LocationsInput = () => {
+    const [inputVal, setInputVal] = useState('')
+
+    const handleInput = (event) => {
+        setInputVal(event.target.value)
+    }
+
+    const sendInput = async () => {
+        try {
+            const response = await axios.post('http://localhost:8000/api/getlocations/', { message: inputVal })
+            console.log('Message sent successfully!!:', response.data)
+        } catch (error) {
+            console.error('Error sending messgae!!:', error)
+        }
+    }
+
+    return (
+        <div padding="25">
+            <input type="text" value={inputVal} onChange={handleInput} />
+            <button onClick={sendInput}>Input locations</button>
+        </div>
+    )
+
+}
+
+
+
+// export default OptimizationForm
+export default LocationsInput
