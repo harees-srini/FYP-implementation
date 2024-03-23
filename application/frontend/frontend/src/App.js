@@ -1,5 +1,6 @@
 import React from 'react'
 import OptimizationForm from './components/OptimizationForm'
+import LandingPage from './pages/landingpage'
 
 function App() {
   return (
