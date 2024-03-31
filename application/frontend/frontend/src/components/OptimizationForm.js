@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Button from '@mui/material/Button';
 
 const OptimizationForm = () => {
     const [result, setResult] = useState('')
@@ -7,7 +8,7 @@ const OptimizationForm = () => {
     const [startTime, setStartTime] = useState('')
     const [endTime, setEndTime] = useState('')
     const [locationDict, setLocationDict] = useState([])
-    const [autocomplete, setAutocomplete] = useState(null)
+    // const [autocomplete, setAutocomplete] = useState(null)
 
     const handleOptimize = async () => {
         try {
@@ -33,19 +34,22 @@ const OptimizationForm = () => {
 
                 // Define AutocompleteOptions with bias towards user's location
                 const autocompleteOptions = {
-                    types: ['geocode'],
-                    bounds: new window.google.maps.LatLngBounds(userLocation, userLocation) // Bias towards user's location
+                    // types: ['geocode'],
+                    bounds: new window.google.maps.LatLngBounds(userLocation, userLocation), // Bias towards user's location
+                    // fields: ['formatted_address', 'geometry', 'name', 'address_components', 'regions', 'address', 'establishment'],                    
                 };
 
                 const autocomplete = new window.google.maps.places.Autocomplete(
-                    document.getElementById('locations'),
-                    // { types: ['geocode'] }
+                    document.getElementById('locations'),                    
                     autocompleteOptions
                 );
+
+                
+
                 autocomplete.addListener('place_changed', () => {
                     const place = autocomplete.getPlace();
                     const placeId = place.place_id;
-                    const location = place.formatted_address;
+                    const location = place.formatted_address;                    
                     setSelectedLocation(location); 
                     updateLocationDict(placeId, location);
                 });  
@@ -61,24 +65,25 @@ const OptimizationForm = () => {
     };
 
     return (
-        <div style={{ backgroundColor: '#00BF63', minHeight: '100vh', display: 'flex' }}>
+        <div style={{ backgroundColor: '#88CD82', minHeight: '100vh', display: 'flex' }}>
             <div style={{ backgroundColor: '#ffffff', display: 'flex', width: '25%' }}>
                 {'Nav bar goes here'}
             </div>
             <div style={{ display: 'grid' }}>
                 <div>
-                    <label htmlFor="locations">Locations:</label>
+                    {/* <label htmlFor="locations">Locations:</label> */}
                     <input
                         type="text"
                         id="locations"
                         value={selectedLocation}
-                        placeholder='Search here to add more locations'
+                        style={{ height: '50px', marginLeft: '200px', marginTop: '200px', width: '500px', fontSize: '20px' }}
+                        placeholder='Start typing to add more locations.....'
                         onChange={(e) => setSelectedLocation(e.target.value)}                  
                         size={50}      
                     />
                 </div>
-                <div>
-                    <label htmlFor="startTime">Start Time:</label>
+                <div style={{ marginLeft: '290px' }}>
+                    <label htmlFor="startTime">Enter your Start Time here:</label>
                     <input
                         type="time"
                         id="startTime"
@@ -86,21 +91,27 @@ const OptimizationForm = () => {
                         onChange={(e) => setStartTime(e.target.value)}
                     />
                 </div>
-                <div>
-                    <label htmlFor="endTime">End Time:</label>
+                <div style={{ marginLeft: '290px' }}>
+                    <label htmlFor="endTime">Enter your End Time here:</label>
                     <input
                         type="time"
                         id="endTime"
                         value={endTime}
                         onChange={(e) => setEndTime(e.target.value)}
-                    />
-                    <button onClick={handleOptimize}>Optimize</button>
+                    />            
                     <p>{result}</p>
                 </div>
+                <div>
+                    {/* <button onClick={handleOptimize} style={{ marginLeft: '400px',  }}>Optimize</button> */}
+                    <Button variant="contained" onClick={handleOptimize} style={{ marginLeft: '400px' }}>Optimize</Button>
+                    {/* <label htmlFor="result">Result:</label>
+                    <p>{result}</p> */}
+                </div>
             </div>
-        </div>
-    )
-}
+            <div style={{ backgroundColor: 'white' , width: '400px', display: 'flex', marginLeft: '50px'}}>Chosen location list</div>
+        </div>        
+    )   
+}   
 
 // export default OptimizationForm
 export default OptimizationForm
