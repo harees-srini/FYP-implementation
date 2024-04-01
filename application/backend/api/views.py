@@ -4,9 +4,11 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 import pandas as pd
+import numpy as np
+import requests
 from keras.models import load_model
 
-class OptimizationAPI(APIView):
+class PredictionAPI(APIView):
     def post(self, request):
         # Your optimization algorithm logic here
         result = request.data
@@ -48,6 +50,7 @@ class OptimizationAPI(APIView):
             datac = pd.concat([datac, new_row_df], ignore_index=True)
 
         df = pd.DataFrame(datac)
+        print('Heres the df')
         print(df)
 
         print('cooooooooools', df.columns)
@@ -56,13 +59,28 @@ class OptimizationAPI(APIView):
 
         model = load_model(model_path)
 
+        df = np.asarray(df).astype('float32')
+        
         prediction = model.predict(df)
 
         print(prediction)
         
+        # prediction = prediction.tolist()
+        # prediction.append(request.data.get('placeIds', []))
         
+        prediction_dict = {}
+        place_ids = request.data.get('placeIds', [])
+        predictions = prediction.flatten()
+        
+        for i in range(len(place_ids)):
+            place_id = place_ids[i]
+            pred_value = predictions[i]
+            pred_value = np.float64(pred_value)
+            prediction_dict[place_id] = pred_value
+        
+        print(prediction_dict)
          # Send a request to another microservice
-        response = requests.post('http://microservice-url/api/endpoint', json=prediction)
+        response = requests.post('http://127.0.0.1:8000/api/routeoptimize/', json=prediction_dict)
 
         # Process the response from the microservice
         if response.status_code == 200:
@@ -71,9 +89,10 @@ class OptimizationAPI(APIView):
             print("Received response from microservice:", response_data)
         else:
             print("Error:", response.status_code)
+            
 
 
-        return Response(prediction, status=status.HTTP_200_OK)
+        return Response(response_data, status=status.HTTP_200_OK)
 
 
 

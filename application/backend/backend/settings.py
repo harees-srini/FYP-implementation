@@ -134,3 +134,5 @@ CORS_ORIGIN_ALLOW_ALL = True  # Allow requests from all domains (for development
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # Add your frontend URL here
 ]
+
+GOOGLE_MAPS_API_KEY = 'AIzaSyCKj0YV5BGVpIYtOvDesOQE4rfboiosggQ'
