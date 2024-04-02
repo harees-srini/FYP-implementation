@@ -9,7 +9,6 @@ import googlemaps
 from deap import base, creator, tools, algorithms
 # Create your views here.
 
-
 class RouteOptimizationAPI(APIView):
     def post(self, request):
         # Your optimization algorithm logic here
@@ -76,7 +75,7 @@ class RouteOptimizationAPI(APIView):
 
         # Crossover and mutate the population
         algorithms.eaMuPlusLambda(population, toolbox, mu=population_size, lambda_=2 * population_size,
-                                  cxpb=0.7, mutpb=0.2, ngen=generations, stats=None, halloffame=None)
+                                  cxpb=0.4, mutpb=0.2, ngen=generations, stats=None, halloffame=None)
         
         # Select the best individual from the final population
         best_individual = tools.selBest(population, 1)[0]

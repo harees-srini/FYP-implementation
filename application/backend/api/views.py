@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import requests
 from keras.models import load_model
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 
 class PredictionAPI(APIView):
     def post(self, request):
@@ -112,6 +112,7 @@ class PredictionAPI(APIView):
         
         prediction = model.predict(df)
 
+        prediction = np.round(prediction)
         print(prediction)
         
         # prediction = prediction.tolist()
@@ -128,6 +129,49 @@ class PredictionAPI(APIView):
             prediction_dict[place_id] = pred_value
         
         print(prediction_dict)
+        
+        # Convert start time and end time strings to datetime objects
+        start_time = datetime.strptime(request.data.get('startTime', []), "%H:%M")
+        end_time = datetime.strptime(request.data.get('endTime', []), "%H:%M")
+
+        # Step 1: Calculate Total Predicted Stay Time
+        total_predicted_stay_time = sum(prediction_dict.values())
+
+        # Step 2: Calculate Total Available Time
+        total_available_time = (end_time - start_time).total_seconds() / 3600  # Convert to hours
+
+        # Step 3: Calculate Scaling Factor
+        scaling_factor = total_available_time / total_predicted_stay_time
+
+        # Step 4: Adjust Predicted Stay Times
+        adjusted_stay_times = {location: stay_time * scaling_factor for location, stay_time in prediction_dict.items()}
+
+        # Step 5: Check Adjusted Stay Times
+        for location, adjusted_stay_time in adjusted_stay_times.items():
+            print(f"Adjusted stay time for {location}: {adjusted_stay_time:.2f} hours")
+
+        # Ensure that adjusted stay times fit within the start time and end time window
+        adjusted_total_stay_time = sum(adjusted_stay_times.values())
+        if adjusted_total_stay_time > total_available_time:
+            print("Adjusted stay times exceed available time. Further adjustments may be needed.")
+        elif adjusted_total_stay_time < total_available_time:
+            print("Adjusted stay times are within available time.")
+        
+        for location, adjusted_stay_time in adjusted_stay_times.items():
+            prediction_dict[place_id] = adjusted_stay_time
+            
+        exact_time_values = {}
+        
+        current_time = start_time
+        
+        for location, adjusted_stay_time in adjusted_stay_times.items():
+            end_time_location = current_time + timedelta(hours=adjusted_stay_time)
+            # exact_time_values[location] = (current_time, end_time_location)
+            exact_time_values[location] = (current_time.strftime("%H:%M"), end_time_location.strftime("%H:%M"))
+            current_time = end_time_location  # Update current time for the next location
+            
+        print ('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', exact_time_values)
+        
         # Send a request to another microservice
         response = requests.post('http://127.0.0.1:8000/api/routeoptimize/', json=prediction_dict)
 
@@ -138,13 +182,15 @@ class PredictionAPI(APIView):
             print("Received response from microservice:", response_data)
         else:
             print("Error:", response.status_code)
-            
+        
+        
         display_data = {
-            "predictions": prediction_dict,
+            "predictions": exact_time_values,
             "optimized_route": response_data
         }
 
         return Response(display_data, status=status.HTTP_200_OK)
+
 
 
 
