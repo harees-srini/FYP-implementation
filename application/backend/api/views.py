@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import requests
 from keras.models import load_model
+from datetime import datetime, time
 
 class PredictionAPI(APIView):
     def post(self, request):
@@ -29,7 +30,29 @@ class PredictionAPI(APIView):
         'placeID_ChIJiey0cW5Z4joR3EK-cBauPac','placeID_ChIJr7L0oW9Z4joRjaT5aD0oCtk',
         'placeID_ChIJseUqHGtZ4joRgteF9GKSLoc'
         ]
-
+        
+        locationTypeDict = {
+            'locationType_Beaches and Parks': ['ChIJBfNyajlZ4joRbxOUv8Ykfl4', 'ChIJ2fnv9CxZ4joRsFXQ14mM27Q', 'ChIJiey0cW5Z4joR3EK-cBauPac'],
+            'locationType_Miscellaneous': ['ChIJiZ1zLxFZ4joRAdmjKdiEMjU'],
+            'locationType_Museums and Galleries': ['ChIJ4zP25CFZ4joR5oPveZLBwLA', 'ChIJC46ViHtZ4joRCya8Jp8IxcE', 'ChIJ9asnzG9Z4joRpzOYo3-ENCk', 'ChIJr7L0oW9Z4joRjaT5aD0oCtk'],
+            'locationType_Religious Site': ['ChIJQ9yCmWtZ4joRNu1evW41NTo', 'ChIJ29ux5BlZ4joRqIYssICvt2w', 'ChIJZRPdHihY4joRRH3j8j-i36Y'],
+            'locationType_Shopping Center': ['ChIJseUqHGtZ4joRgteF9GKSLoc', 'ChIJTXbn3s9b4joRxbASabb7l98', 'ChIJYZELmiFZ4joRKmKnrRRtj9g']
+        }
+        
+        timeOfDayDict = {
+            'timeOfDay_Evening': 'Evening',
+            'timeOfDay_Morning': 'Morning',
+            'timeOfDay_Night': 'Night'
+        }
+        
+        morning_start = time(6, 0)
+        morning_end = time(12, 0)
+        evening_start = time(12, 0)
+        evening_end = time(18, 0)
+        night_start = time(18, 0)
+        night_end = time(6, 0)
+        
+                            
         datac = pd.DataFrame(columns=columns)
 
         for place_id in request.data.get('placeIds',[]):
@@ -37,23 +60,49 @@ class PredictionAPI(APIView):
             if column_name in columns:
                 datac[column_name] = []
 
-        new_row = {key: 0 for key in datac.keys()}
-        new_row['locationType_Miscellaneous'] = 1
-        new_row['timeOfDay_Evening'] = 1
-
-        for location in request.data.get('locations', []):
-            matching_cols = [col for col in columns if col.endswith(location)]
-            if matching_cols:
+        for place_id in request.data.get('placeIds', []):
+            new_row = {key: 0 for key in datac.keys()}
+            matching_cols = [col for col in columns if col.endswith(place_id)]            
+            if matching_cols:                        
                 for col in matching_cols:
                     new_row[col] = 1
+                
             new_row_df = pd.DataFrame([new_row])
             datac = pd.concat([datac, new_row_df], ignore_index=True)
+        
+        for index, row in datac.iterrows():
+            for place_id in row.filter(like='placeID_').index:                
+                if row[place_id] == 1:
+                    form_place_id = place_id.replace('placeID_', '')                    
+                    for location_type, place_ids in locationTypeDict.items():
+                        if form_place_id in place_ids:
+                            print('location_type:', location_type, 'place_id:', form_place_id)                            
+                            datac.at[index, location_type] = 1       
+        
+        for index, row in datac.iterrows():
+            conv_startTime = datetime.strptime(request.data.get('startTime', []), "%H:%M").time()            
+            if morning_start <= conv_startTime < morning_end:                
+                datac.at[index, 'timeOfDay_Morning'] = 1
+            elif evening_start <= conv_startTime < evening_end:                
+                datac.at[index, 'timeOfDay_Evening'] = 1
+            elif night_start <= conv_startTime < night_end:                
+                datac.at[index, 'timeOfDay_Night'] = 1
 
         df = pd.DataFrame(datac)
         print('Heres the df')
         print(df)
 
         print('cooooooooools', df.columns)
+        # Filter columns that start with 'locationType'
+        location_type_columns = df.filter(like='timeOfDay_')
+
+        # Print column names
+        print('locationType columns:', location_type_columns.columns)
+
+        # Print values of filtered columns
+        for column in location_type_columns.columns:
+            print(f'Values for column {column}:')
+            print(location_type_columns[column])
 
         model_path = finders.find('model.h5')
 
@@ -79,7 +128,7 @@ class PredictionAPI(APIView):
             prediction_dict[place_id] = pred_value
         
         print(prediction_dict)
-         # Send a request to another microservice
+        # Send a request to another microservice
         response = requests.post('http://127.0.0.1:8000/api/routeoptimize/', json=prediction_dict)
 
         # Process the response from the microservice
@@ -90,9 +139,12 @@ class PredictionAPI(APIView):
         else:
             print("Error:", response.status_code)
             
+        display_data = {
+            "predictions": prediction_dict,
+            "optimized_route": response_data
+        }
 
-
-        return Response(response_data, status=status.HTTP_200_OK)
+        return Response(display_data, status=status.HTTP_200_OK)
 
 
 
