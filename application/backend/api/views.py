@@ -170,10 +170,17 @@ class PredictionAPI(APIView):
             exact_time_values[location] = (current_time.strftime("%H:%M"), end_time_location.strftime("%H:%M"))
             current_time = end_time_location  # Update current time for the next location
             
-        print ('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', exact_time_values)
+        print ('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', exact_time_values, request.data.get('currentPlaceId', []))
+        
+        optimization_data = {
+            "prediction_dict": prediction_dict,
+            "first_location": request.data.get('firstLocation', [])            
+        }
+        
+        print("hhehehehehe", optimization_data)
         
         # Send a request to another microservice
-        response = requests.post('http://127.0.0.1:8000/api/routeoptimize/', json=prediction_dict)
+        response = requests.post('http://127.0.0.1:8000/api/routeoptimize/', json=optimization_data)
 
         # Process the response from the microservice
         if response.status_code == 200:

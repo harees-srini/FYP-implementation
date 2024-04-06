@@ -1,7 +1,10 @@
+import json
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from django.conf import settings
+from django.http import JsonResponse
 from django.conf import settings
 from deap import base, creator, tools, algorithms
 import random
@@ -13,18 +16,38 @@ class RouteOptimizationAPI(APIView):
     def post(self, request):
         # Your optimization algorithm logic here
         gmaps = googlemaps.Client(key=settings.GOOGLE_MAPS_API_KEY)
-        locations = list(request.data.keys())
-        stay_times = [int(value) for value in request.data.values()]
+        
+        prediction_dict = request.data.get('prediction_dict', {})
+        first_location = request.data.get('first_location')
+        # current_place_id = request.data.get('currentPlaceId')
+        
+        geocode_data = gmaps.geocode(first_location)
+        
+        first_loc_placeId = geocode_data[0]['place_id']        
+        print("first_loc_placeId", first_loc_placeId)
+        
+        # if optimization_data:
+        #     optimization_data = json.loads(optimization_data)
+            
+        print("hiuihuhiuhihihiuhiuh", prediction_dict, first_location)        
+            
+        locations = list(prediction_dict.keys())
+        stay_times = [int(value) for value in prediction_dict.values()]                
 
         global_origin = 'ChIJx7uM9MNb4joROa_u8TYN3mg'
         global_destination = 'ChIJx7uM9MNb4joROa_u8TYN3mg'
+        
+        # Check if first_location exists and if so, always keep it as the first location
+        # if first_location:
+        #     locations.remove(first_loc_placeId)
+        #     locations.insert(0, first_loc_placeId)
         
         def get_distance(origin, destination):
             result = gmaps.distance_matrix(origins=f'place_id:{origin}', destinations=f'place_id:{destination}', mode='driving')
             return result['rows'][0]['elements'][0]['distance']['value']
         
         # Genetic Algorithm setup
-        creator.create("FitnessSingle", base.Fitness, weights=(-2.0, -1.0))  # Minimize both distance, preference and stay time
+        creator.create("FitnessSingle", base.Fitness, weights=(-2.0, 1.0))  # Minimize both distance, preference and stay time
         creator.create("Individual", list, fitness=creator.FitnessSingle)
         toolbox = base.Toolbox()
         toolbox.register("indices", random.sample, range(len(locations)), len(locations))
