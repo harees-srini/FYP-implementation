@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import { useTheme } from '@emotion/react'
 
 const Itinerary = () => {
     const [itinerary, setItinerary] = useState(null);
     const [locationData, setLocationData] = useState([]);
     const [locationDict, setLocationDict] = useState({}); // State to store location dictionary
+    const theme = useTheme();
 
     useEffect(() => {
         // Retrieve JSON data from localStorage for itinerary
@@ -66,21 +75,19 @@ const Itinerary = () => {
     };
 
     return (
-        <div>
+        <><div style={{ backgroundColor: theme.palette.background.default, alignItems: 'center', justifyContent: 'center' }}>
             <h2>Itinerary</h2>
             {itinerary ? (
-                <div>
-                    <h3>Received Data</h3>
-                    {/* <pre>{JSON.stringify(itinerary, null, 2)}</pre> */}
+                <div>                                        
                     {locationData.length > 0 && (
-                        <div>                            
+                        <div>
                             <table>
                                 <thead>
                                     <tr>
                                         <th>Place ID</th>
-                                        <th>Name</th>                                        
+                                        <th>Name</th>
                                         <th>Stay time</th>
-                                        <th>Order</th> 
+                                        <th>Order</th>
                                         {/* Add more fields as needed */}
                                     </tr>
                                 </thead>
@@ -88,7 +95,7 @@ const Itinerary = () => {
                                     {locationData.map((item, index) => (
                                         <tr key={index}>
                                             <td>{item.placeId}</td>
-                                            <td>{item.location}</td>                                            
+                                            <td>{item.location}</td>
                                             <td>{item.stayTime}</td>
                                             <td>{item.order}</td>
                                             {/* Add more fields as needed */}
@@ -97,12 +104,40 @@ const Itinerary = () => {
                                 </tbody>
                             </table>
                         </div>
-                    )}                
+                    )}
                 </div>
             ) : (
                 <p>Can't find it</p>
             )}
-        </div>
+        </div><div>
+                <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>Place ID</TableCell>
+                                <TableCell align="right">Name</TableCell>
+                                <TableCell align="right">Stay time</TableCell>
+                                <TableCell align="right">Order</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {locationData.map((item, index) => (
+                                <TableRow
+                                    key={index}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <TableCell component="th" scope="row">
+                                        {item.placeId}
+                                    </TableCell>
+                                    <TableCell align="right">{item.location}</TableCell>
+                                    <TableCell align="right">{item.stayTime}</TableCell>
+                                    <TableCell align="right">{item.order}</TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </div></>
     );
 }
 

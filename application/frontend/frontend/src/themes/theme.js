@@ -8,9 +8,12 @@ const theme = createTheme({
     secondary: {
       main: '#ffc107', // Amber color
     },
+    background: {
+      default: '#88CD82',      
+    },
   },
   typography: {
-    fontFamily: 'Roboto',
+    fontFamily: 'Roboto, sans-serif',
     h1: {
       fontSize: '2.5rem',
       fontWeight: 500,
@@ -25,7 +28,7 @@ const theme = createTheme({
   },
 
   Box: {    
-      backgroundColor: '#fff',
+      backgroundColor: 'green',
       border: '1px solid rgba(0, 0, 0, 0.12)',
       boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
       padding: '16px',
