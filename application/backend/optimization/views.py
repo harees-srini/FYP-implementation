@@ -120,6 +120,37 @@ class RouteOptimizationAPI(APIView):
             optimized_order = best_individual[i]            
             optimization_dict[place_id] = optimized_order
         
+        optimization_dict = {k: v for k, v in sorted(optimization_dict.items(), key=lambda item: item[1])}
+        
         print(optimization_dict)
         
-        return Response( optimization_dict, status=status.HTTP_200_OK)
+        ordered_location_keys = list(optimization_dict.keys())
+        
+        # Include global origin and destination in the ordered locations
+        # ordered_location_keys.insert(0, global_origin)
+        # ordered_location_keys.append(global_destination)
+        
+        # Initialize an empty dictionary to store travel times
+        ordered_travel_times = {}
+
+        # Iterate over the ordered locations to get travel times
+        for i in range(len(ordered_location_keys) - 1):
+            origin = ordered_location_keys[i]
+            destination = ordered_location_keys[i + 1]
+            travel_time_result = gmaps.distance_matrix(origins=f'place_id:{origin}', destinations=f'place_id:{destination}', mode='driving')
+            travel_time = travel_time_result['rows'][0]['elements'][0]['duration']['value']
+            key = f"{origin}-{destination}"  # Using a string key
+            ordered_travel_times[key] = travel_time
+
+        # Print or use ordered_travel_times as needed
+        print("Travel Times According to Order:")
+        print(ordered_travel_times)    
+        
+        response_data = {
+            "optimized_order": optimization_dict,
+            "ordered_travel_times": ordered_travel_times
+        }
+        
+        print("Kkkkkkkkkkkkkkkkkkkkkkkkk", response_data)
+        
+        return Response( response_data, status=status.HTTP_200_OK)

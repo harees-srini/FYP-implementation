@@ -50,8 +50,7 @@ class PredictionAPI(APIView):
         evening_start = time(12, 0)
         evening_end = time(18, 0)
         night_start = time(18, 0)
-        night_end = time(6, 0)
-        
+        night_end = time(6, 0)        
                             
         datac = pd.DataFrame(columns=columns)
 
@@ -130,47 +129,7 @@ class PredictionAPI(APIView):
         
         print(prediction_dict)
         
-        # Convert start time and end time strings to datetime objects
-        start_time = datetime.strptime(request.data.get('startTime', []), "%H:%M")
-        end_time = datetime.strptime(request.data.get('endTime', []), "%H:%M")
 
-        # Step 1: Calculate Total Predicted Stay Time
-        total_predicted_stay_time = sum(prediction_dict.values())
-
-        # Step 2: Calculate Total Available Time
-        total_available_time = (end_time - start_time).total_seconds() / 3600  # Convert to hours
-
-        # Step 3: Calculate Scaling Factor
-        scaling_factor = total_available_time / total_predicted_stay_time
-
-        # Step 4: Adjust Predicted Stay Times
-        adjusted_stay_times = {location: stay_time * scaling_factor for location, stay_time in prediction_dict.items()}
-
-        # Step 5: Check Adjusted Stay Times
-        for location, adjusted_stay_time in adjusted_stay_times.items():
-            print(f"Adjusted stay time for {location}: {adjusted_stay_time:.2f} hours")
-
-        # Ensure that adjusted stay times fit within the start time and end time window
-        adjusted_total_stay_time = sum(adjusted_stay_times.values())
-        if adjusted_total_stay_time > total_available_time:
-            print("Adjusted stay times exceed available time. Further adjustments may be needed.")
-        elif adjusted_total_stay_time < total_available_time:
-            print("Adjusted stay times are within available time.")
-        
-        for location, adjusted_stay_time in adjusted_stay_times.items():
-            prediction_dict[place_id] = adjusted_stay_time
-            
-        exact_time_values = {}
-        
-        current_time = start_time
-        
-        for location, adjusted_stay_time in adjusted_stay_times.items():
-            end_time_location = current_time + timedelta(hours=adjusted_stay_time)
-            # exact_time_values[location] = (current_time, end_time_location)
-            exact_time_values[location] = (current_time.strftime("%H:%M"), end_time_location.strftime("%H:%M"))
-            current_time = end_time_location  # Update current time for the next location
-            
-        print ('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', exact_time_values, request.data.get('currentPlaceId', []))
         
         optimization_data = {
             "prediction_dict": prediction_dict,
@@ -181,19 +140,154 @@ class PredictionAPI(APIView):
         
         # Send a request to another microservice
         response = requests.post('http://127.0.0.1:8000/api/routeoptimize/', json=optimization_data)
-
+        
+        sorted_prediction_dict = {}
+        ordered_travel_times = {}
+        
         # Process the response from the microservice
         if response.status_code == 200:
             response_data = response.json()
+            print("Received response from microservice:", response_data)            
+            sorted_prediction_dict = {k: prediction_dict[k] for k in sorted(prediction_dict, key=lambda x: response_data.get('optimized_order', {}).get(x, x))}
+            ordered_travel_times = response_data.get('ordered_travel_times')
             # Process the response data as needed
             print("Received response from microservice:", response_data)
         else:
             print("Error:", response.status_code)
+                                
         
+        print("pppppppppppppppppppppp", sorted_prediction_dict, ordered_travel_times)
+                
+        
+        # # Convert start time and end time strings to datetime objects
+        start_time = datetime.strptime(request.data.get('startTime', []), "%H:%M")
+        end_time = datetime.strptime(request.data.get('endTime', []), "%H:%M")
+
+        # # Step 1: Calculate Total Predicted Stay Time
+        # total_predicted_stay_time = sum(sorted_prediction_dict.values())
+
+        # # Step 2: Calculate Total Available Time
+        # total_available_time = (end_time - start_time).total_seconds() / 3600  # Convert to hours        
+        
+        # # Step 3: Calculate Scaling Factor
+        # scaling_factor = total_available_time / total_predicted_stay_time
+
+        # # Step 4: Adjust Predicted Stay Times
+        # adjusted_stay_times = {location: stay_time * scaling_factor for location, stay_time in sorted_prediction_dict.items()}
+
+        # # Step 5: Check Adjusted Stay Times
+        # for location, adjusted_stay_time in adjusted_stay_times.items():
+        #     print(f"Adjusted stay time for {location}: {adjusted_stay_time:.2f} hours")
+
+        # # Ensure that adjusted stay times fit within the start time and end time window
+        # adjusted_total_stay_time = sum(adjusted_stay_times.values())
+        # if adjusted_total_stay_time > total_available_time:
+        #     print("Adjusted stay times exceed available time. Further adjustments may be needed.")
+        # elif adjusted_total_stay_time < total_available_time:
+        #     print("Adjusted stay times are within available time.")
+        
+        # for location, adjusted_stay_time in adjusted_stay_times.items():
+        #     sorted_prediction_dict[place_id] = adjusted_stay_time
+            
+        exact_time_values = {}
+        
+        current_time = start_time
+        end_time = end_time
+        
+        # for location, adjusted_stay_time in adjusted_stay_times.items():
+        #     end_time_location = current_time + timedelta(hours=adjusted_stay_time)
+        #     # exact_time_values[location] = (current_time, end_time_location)
+        #     exact_time_values[location] = (current_time.strftime("%H:%M"), end_time_location.strftime("%H:%M"))
+        #     current_time = end_time_location  # Update current time for the next location
+        
+        # Step 1: Calculate Total Predicted Stay Time
+        total_predicted_stay_time = sum(sorted_prediction_dict.values()) / 60  # Convert to hours
+
+        # Step 2: Calculate Total Travel Time
+        total_travel_time = sum(ordered_travel_times.values()) / 3600 # Convert to hours
+
+        # Step 3: Calculate Total Available Time
+        total_available_time = (end_time - start_time).total_seconds() / 3600  # Convert to hours
+
+        print("Total Predicted Stay Time:", total_predicted_stay_time)
+        print("Total Travel Time:", total_travel_time)
+        print("Total Available Time:", total_available_time)
+
+        # Step 4: Calculate Scaling Factor
+        scaling_factor = total_available_time / (total_predicted_stay_time + total_travel_time)
+        
+        # Iterate over each location and calculate exact time values
+        for i, (location, stay_time) in enumerate(sorted_prediction_dict.items()):
+            stay_time_hours = stay_time / 60  # Convert to hours
+            # Calculate end time for stay at the current location
+            end_time_stay = current_time + timedelta(hours=stay_time_hours)
+            print('1current time:', current_time)
+            print("2End Time Stay:", end_time_stay)
+            # Check if the end time exceeds the trip end time
+            if end_time_stay > end_time:
+                end_time_stay = end_time  # Set end time to trip end time if it exceeds
+                print('3End Time Stay:', end_time_stay)
+
+            # Add the stay time range for the current location to the exact time values dictionary
+            exact_time_values[location] = (current_time.strftime("%H:%M"), end_time_stay.strftime("%H:%M"))
+            print('4Exact Time values:', exact_time_values[location])
+
+            # If there's a next location, calculate the travel time range
+            if i < len(sorted_prediction_dict) - 1:
+                next_location = list(sorted_prediction_dict.keys())[i + 1]
+                current_location = list(sorted_prediction_dict.keys())[i]
+                travel_time_to_next_location = ordered_travel_times[f"{current_location}-{next_location}"]
+                travel_time_hours = travel_time_to_next_location / 3600  # Convert to hours
+                print('5Travel Time:', travel_time_hours)
+                # Calculate end time for travel to the next location
+                end_time_travel = end_time_stay + timedelta(hours=travel_time_hours)
+                print('6End Time Travel:', end_time_travel)
+                # Check if the end time for travel exceeds the trip end time
+                if end_time_travel > end_time:
+                    end_time_travel = end_time  # Set end time to trip end time if it exceeds
+                    print('7End Time Travel:', end_time_travel)
+                # current_time += timedelta(hours=stay_time + travel_time_hours)
+                
+                current_time = end_time_travel
+                print('8Current Time:', current_time)
+            else:
+                # If it's the last location, no need to calculate travel time
+                current_time += timedelta(hours=stay_time_hours)
+                print('9Current Time:', current_time)
+
+
+        # Step 5: Adjust Predicted Stay Times
+        # adjusted_stay_times = {location: stay_time * scaling_factor for location, stay_time in sorted_prediction_dict.items()}
+
+        # Step 6: Check Adjusted Stay Times
+        # adjusted_total_trip_time = total_predicted_stay_time+total_travel_time
+        # if adjusted_total_trip_time > total_available_time:
+        #     print("Adjusted stay times exceed available time. Further adjustments may be needed.")
+        # elif adjusted_total_trip_time < total_available_time:
+        #     print("Adjusted stay times are within available time.")
+
+        # # If there's a next location
+        # if i < len(list(sorted_prediction_dict.keys())) - 1:
+        #     next_location = list(sorted_prediction_dict.keys())[i + 1]
+        #     current_location = list(sorted_prediction_dict.keys())[i]
+        #     travel_time_to_next_location = ordered_travel_times[f"{current_location}-{next_location}"]
+        #     end_time_location += timedelta(seconds=travel_time_to_next_location)
+        
+        # else:
+        #     # If there isn't a next location, use the stay time to calculate the end time
+        #     end_time_location = current_time + timedelta(hours=adjusted_stay_time)
+        
+        # exact_time_values[location] = (current_time.strftime("%H:%M"), end_time_location.strftime("%H:%M"))
+        # current_time = end_time_location  # Update current time for the next location
+
+        print ('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', exact_time_values, request.data.get('currentPlaceId', []))    
+        for location, (start_time, end_time) in exact_time_values.items():
+            print(f"{location}: {start_time} - {end_time}")
+        exact_time_values = "geg"
         
         display_data = {
             "predictions": exact_time_values,
-            "optimized_route": response_data
+            "optimized_route": response_data.get('optimized_order', []),
         }
 
         return Response(display_data, status=status.HTTP_200_OK)
