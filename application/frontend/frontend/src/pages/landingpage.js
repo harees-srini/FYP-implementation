@@ -32,7 +32,7 @@ const LandingPage = () => {
     return (
         <div>
             <ButtonAppBar />
-            <div position='fixed' style={{ backgroundColor: theme.palette.background.default, height: '100vh', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+            <div position='fixed' style={{ backgroundColor: theme.palette.background.default, height: '93.1vh', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                 <Fade in={showText} timeout={5000}>
                     <img position='relative' src={"../../landing_page_map.png"} alt="Landing Page image" />
                 </Fade>
