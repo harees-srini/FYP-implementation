@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useTheme } from '@emotion/react'
+import ButtonAppBar from '../components/NavBar'
 
 const Itinerary = () => {
     const [itinerary, setItinerary] = useState(null);
@@ -75,41 +76,12 @@ const Itinerary = () => {
     };
 
     return (
-        <><div style={{ backgroundColor: theme.palette.background.default, alignItems: 'center', justifyContent: 'center' }}>
-            <h2>Itinerary</h2>
-            {itinerary ? (
-                <div>                                        
-                    {locationData.length > 0 && (
-                        <div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Place ID</th>
-                                        <th>Name</th>
-                                        <th>Stay time</th>
-                                        <th>Order</th>
-                                        {/* Add more fields as needed */}
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {locationData.map((item, index) => (
-                                        <tr key={index}>
-                                            <td>{item.placeId}</td>
-                                            <td>{item.location}</td>
-                                            <td>{item.stayTime}</td>
-                                            <td>{item.order}</td>
-                                            {/* Add more fields as needed */}
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    )}
-                </div>
-            ) : (
-                <p>Can't find it</p>
-            )}
-        </div><div>
+        <div>
+        <div style={{ backgroundColor: theme.palette.background.default, alignItems: 'center', justifyContent: 'center' }}>
+            <ButtonAppBar />
+            <h2>Optimized Travel Itinerary with Stay Times</h2>            
+        </div>
+        <div>
                 <TableContainer component={Paper}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead>
@@ -137,7 +109,8 @@ const Itinerary = () => {
                         </TableBody>
                     </Table>
                 </TableContainer>
-            </div></>
+        </div>
+        </div>
     );
 }
 

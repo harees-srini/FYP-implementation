@@ -10,8 +10,7 @@ from keras.models import load_model
 from datetime import datetime, time, timedelta
 
 class PredictionAPI(APIView):
-    def post(self, request):
-        # Your optimization algorithm logic here
+    def post(self, request):        
         result = request.data
 
         print("I'm workingg!!")
@@ -133,7 +132,9 @@ class PredictionAPI(APIView):
         
         optimization_data = {
             "prediction_dict": prediction_dict,
-            "first_location": request.data.get('firstLocation', [])            
+            "first_location": request.data.get('firstLocation', []),
+            "startLocDict": request.data.get('startLocDict', []),
+            "endLocDict": request.data.get('endLocDict', [])    
         }
         
         print("hhehehehehe", optimization_data)
@@ -283,7 +284,6 @@ class PredictionAPI(APIView):
         print ('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', exact_time_values, request.data.get('currentPlaceId', []))    
         for location, (start_time, end_time) in exact_time_values.items():
             print(f"{location}: {start_time} - {end_time}")
-        exact_time_values = "geg"
         
         display_data = {
             "predictions": exact_time_values,

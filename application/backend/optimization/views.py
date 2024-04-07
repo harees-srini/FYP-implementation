@@ -1,5 +1,6 @@
 import json
 from django.shortcuts import render
+from pygit2 import Object
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -19,12 +20,14 @@ class RouteOptimizationAPI(APIView):
         
         prediction_dict = request.data.get('prediction_dict', {})
         first_location = request.data.get('first_location')
+        startLocDict = request.data.get('startLocDict', {})        
+        endLocDict = request.data.get('endLocDict', {})
         # current_place_id = request.data.get('currentPlaceId')
         
-        geocode_data = gmaps.geocode(first_location)
+        # geocode_data = gmaps.geocode(first_location)
         
-        first_loc_placeId = geocode_data[0]['place_id']        
-        print("first_loc_placeId", first_loc_placeId)
+        # first_loc_placeId = geocode_data[0]['place_id']        
+        # print("first_loc_placeId", first_loc_placeId)
         
         # if optimization_data:
         #     optimization_data = json.loads(optimization_data)
@@ -34,8 +37,18 @@ class RouteOptimizationAPI(APIView):
         locations = list(prediction_dict.keys())
         stay_times = [int(value) for value in prediction_dict.values()]                
 
-        global_origin = 'ChIJx7uM9MNb4joROa_u8TYN3mg'
-        global_destination = 'ChIJx7uM9MNb4joROa_u8TYN3mg'
+        global_origin = None
+        for key in startLocDict:
+            global_origin = key
+            break
+        
+        global_destination = None
+        for key in endLocDict:
+            global_destination = key
+            break
+
+        print("global_origin", global_origin)
+        print("global_destination", global_destination)
         
         # Check if first_location exists and if so, always keep it as the first location
         # if first_location:
