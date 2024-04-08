@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render
 from django.contrib.staticfiles import finders
 from rest_framework.views import APIView
@@ -8,35 +9,91 @@ import numpy as np
 import requests
 from keras.models import load_model
 from datetime import datetime, time, timedelta
+import googlemaps
+import random
 
 class PredictionAPI(APIView):
     def post(self, request):        
-        result = request.data
+        result = request.data        
 
         print("I'm workingg!!")
         print(result)
 
+        # columns = [
+        # 'timeOfDay_Evening', 'timeOfDay_Morning', 'timeOfDay_Night',
+        # 'locationType_Beaches and Parks', 'locationType_Miscellaneous',
+        # 'locationType_Museums and Galleries', 'locationType_Religious Site',
+        # 'locationType_Shopping Center', 'placeID_ChIJ29ux5BlZ4joRqIYssICvt2w',
+        # 'placeID_ChIJ2fnv9CxZ4joRsFXQ14mM27Q','placeID_ChIJ4zP25CFZ4joR5oPveZLBwLA',
+        # 'placeID_ChIJ9asnzG9Z4joRpzOYo3-ENCk','placeID_ChIJBfNyajlZ4joRbxOUv8Ykfl4',
+        # 'placeID_ChIJC46ViHtZ4joRCya8Jp8IxcE','placeID_ChIJQ9yCmWtZ4joRNu1evW41NTo',
+        # 'placeID_ChIJTXbn3s9b4joRxbASabb7l98','placeID_ChIJYZELmiFZ4joRKmKnrRRtj9g',
+        # 'placeID_ChIJZRPdHihY4joRRH3j8j-i36Y','placeID_ChIJiZ1zLxFZ4joRAdmjKdiEMjU',
+        # 'placeID_ChIJiey0cW5Z4joR3EK-cBauPac','placeID_ChIJr7L0oW9Z4joRjaT5aD0oCtk',
+        # 'placeID_ChIJseUqHGtZ4joRgteF9GKSLoc'
+        # ]
+        
         columns = [
         'timeOfDay_Evening', 'timeOfDay_Morning', 'timeOfDay_Night',
-        'locationType_Beaches and Parks', 'locationType_Miscellaneous',
-        'locationType_Museums and Galleries', 'locationType_Religious Site',
-        'locationType_Shopping Center', 'placeID_ChIJ29ux5BlZ4joRqIYssICvt2w',
-        'placeID_ChIJ2fnv9CxZ4joRsFXQ14mM27Q','placeID_ChIJ4zP25CFZ4joR5oPveZLBwLA',
-        'placeID_ChIJ9asnzG9Z4joRpzOYo3-ENCk','placeID_ChIJBfNyajlZ4joRbxOUv8Ykfl4',
-        'placeID_ChIJC46ViHtZ4joRCya8Jp8IxcE','placeID_ChIJQ9yCmWtZ4joRNu1evW41NTo',
-        'placeID_ChIJTXbn3s9b4joRxbASabb7l98','placeID_ChIJYZELmiFZ4joRKmKnrRRtj9g',
-        'placeID_ChIJZRPdHihY4joRRH3j8j-i36Y','placeID_ChIJiZ1zLxFZ4joRAdmjKdiEMjU',
-        'placeID_ChIJiey0cW5Z4joR3EK-cBauPac','placeID_ChIJr7L0oW9Z4joRjaT5aD0oCtk',
-        'placeID_ChIJseUqHGtZ4joRgteF9GKSLoc'
+        'new_place_types_art_gallery,tourist_attraction,point_of_interest,establishment',
+       'new_place_types_grocery_or_supermarket,food,point_of_interest,store,establishment',
+       'new_place_types_grocery_or_supermarket,food,store,point_of_interest,establishment',
+       'new_place_types_grocery_or_supermarket,store,food,point_of_interest,establishment',
+       'new_place_types_grocery_or_supermarket,store,point_of_interest,food,establishment',
+       'new_place_types_hindu_temple,place_of_worship,point_of_interest,establishment',
+       'new_place_types_locality,political',
+       'new_place_types_park,point_of_interest,establishment',
+       'new_place_types_park,tourist_attraction,point_of_interest,establishment',
+       'new_place_types_premise',
+       'new_place_types_shopping_mall,lodging,shoe_store,store,point_of_interest,establishment',
+       'new_place_types_shopping_mall,point_of_interest,establishment',
+       'new_place_types_shopping_mall,shoe_store,lodging,point_of_interest,store,establishment',
+       'new_place_types_shopping_mall,shoe_store,lodging,store,point_of_interest,establishment',
+       'new_place_types_shopping_mall,shoe_store,store,lodging,point_of_interest,establishment',
+       'new_place_types_tourist_attraction,museum,point_of_interest,establishment',
+       'new_place_types_tourist_attraction,place_of_worship,point_of_interest,establishment',
+       'new_place_types_tourist_attraction,point_of_interest,establishment',
+       'randomized_stay_time'
         ]
         
-        locationTypeDict = {
-            'locationType_Beaches and Parks': ['ChIJBfNyajlZ4joRbxOUv8Ykfl4', 'ChIJ2fnv9CxZ4joRsFXQ14mM27Q', 'ChIJiey0cW5Z4joR3EK-cBauPac'],
-            'locationType_Miscellaneous': ['ChIJiZ1zLxFZ4joRAdmjKdiEMjU'],
-            'locationType_Museums and Galleries': ['ChIJ4zP25CFZ4joR5oPveZLBwLA', 'ChIJC46ViHtZ4joRCya8Jp8IxcE', 'ChIJ9asnzG9Z4joRpzOYo3-ENCk', 'ChIJr7L0oW9Z4joRjaT5aD0oCtk'],
-            'locationType_Religious Site': ['ChIJQ9yCmWtZ4joRNu1evW41NTo', 'ChIJ29ux5BlZ4joRqIYssICvt2w', 'ChIJZRPdHihY4joRRH3j8j-i36Y'],
-            'locationType_Shopping Center': ['ChIJseUqHGtZ4joRgteF9GKSLoc', 'ChIJTXbn3s9b4joRxbASabb7l98', 'ChIJYZELmiFZ4joRKmKnrRRtj9g']
+        
+        userPreferenceDict = {
+            'shopping' : ['shopping_mall', 'store', 'shoe_store', 'grocery_or_supermarket'],
+            'relax' : ['park'],
+            'explore' : ['locality', 'premise', 'political'],
+            'sightsee' : ['tourist_attraction', 'museum', 'art_gallery' ,'place_of_worship'],
+            'worship' : ['place_of_worship']
         }
+        
+        
+        
+        # locationTypeDict = {
+        #     'locationType_Beaches and Parks': ['ChIJBfNyajlZ4joRbxOUv8Ykfl4', 'ChIJ2fnv9CxZ4joRsFXQ14mM27Q', 'ChIJiey0cW5Z4joR3EK-cBauPac'],
+        #     'locationType_Miscellaneous': ['ChIJiZ1zLxFZ4joRAdmjKdiEMjU'],
+        #     'locationType_Museums and Galleries': ['ChIJ4zP25CFZ4joR5oPveZLBwLA', 'ChIJC46ViHtZ4joRCya8Jp8IxcE', 'ChIJ9asnzG9Z4joRpzOYo3-ENCk', 'ChIJr7L0oW9Z4joRjaT5aD0oCtk'],
+        #     'locationType_Religious Site': ['ChIJQ9yCmWtZ4joRNu1evW41NTo', 'ChIJ29ux5BlZ4joRqIYssICvt2w', 'ChIJZRPdHihY4joRRH3j8j-i36Y'],
+        #     'locationType_Shopping Center': ['ChIJseUqHGtZ4joRgteF9GKSLoc', 'ChIJTXbn3s9b4joRxbASabb7l98', 'ChIJYZELmiFZ4joRKmKnrRRtj9g']
+        # }
+                    
+        gmaps = googlemaps.Client(key=settings.GOOGLE_MAPS_API_KEY)
+                     
+        datac = pd.DataFrame(columns=columns)    
+        
+        # for place_id in request.data.get('placeIds',[]):
+        #     print("JJJJJJJJJJJJJJJ", place_id)
+        #     place = gmaps.place(place_id)
+        #     if 'types' in place['result']:
+        #         location_types = place['result']['types']
+        #         location_type = ','.join(location_types)
+        #         print('location_type:', location_type)               
+        #         column_name = f'new_place_types_{location_type}'
+        #         print("WWWWWWWWWW", column_name)
+        #         if column_name in columns:
+        #             datac[column_name] = []
+        #             # print('WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWw')
+        #             print(datac[column_name])
+        
+        print('dataccolumns:', datac.columns)
         
         timeOfDayDict = {
             'timeOfDay_Evening': 'Evening',
@@ -51,40 +108,82 @@ class PredictionAPI(APIView):
         night_start = time(18, 0)
         night_end = time(6, 0)        
                             
-        datac = pd.DataFrame(columns=columns)
+        # datac = pd.DataFrame(columns=columns)
 
-        for place_id in request.data.get('placeIds',[]):
-            column_name = f'placeID_{place_id}'
-            if column_name in columns:
-                datac[column_name] = []
+        # for place_id in request.data.get('placeIds',[]):
+        #     column_name = f'placeID_{place_id}'
+        #     if column_name in columns:
+        #         datac[column_name] = []
 
         for place_id in request.data.get('placeIds', []):
             new_row = {key: 0 for key in datac.keys()}
-            matching_cols = [col for col in columns if col.endswith(place_id)]            
-            if matching_cols:                        
-                for col in matching_cols:
-                    new_row[col] = 1
+            place = gmaps.place(place_id)
+            if 'types' in place['result']:
+                location_types = place['result']['types']
+                for key, value in userPreferenceDict.items():
+                    if request.data.get('userPreference') == key:
+                        print('key:', key)
+                        if any(loc_type in value for loc_type in location_types):
+                            print('location_types:', location_types)
+                            random_stay_time = random.uniform(101.34, (400/3))
+                            new_row['randomized_stay_time'] = random_stay_time
+                        else :
+                            random_stay_time = random.uniform(45, 200)
+                            new_row['randomized_stay_time'] = random_stay_time
+                location_type = ','.join(location_types)
+                print('location_type:', location_type)               
+                column_name = f'new_place_types_{location_type}'
+                matching_cols = [col for col in columns if col == column_name]            
                 
+                if matching_cols:                        
+                    for col in matching_cols:
+                        new_row[col] = 1
+                elif not matching_cols:
+                    first_location_type = location_types[0]
+                    print('first_location_type:', first_location_type)
+                    for col in columns:
+                        col_values = col.replace('new_place_types_', '')
+                        print('col_values:', col_values)
+                        if first_location_type in col_values:
+                            print("yes is tere")                            
+                            new_row[col] = 1
+                            break
+                print('OOOOOOOOOOOOOOOOOOOO', matching_cols)
+            
+            conv_startTime = datetime.strptime(request.data.get('startTime', []), "%H:%M").time()
+            print('conv_startTime:', conv_startTime)
+            if morning_start <= conv_startTime < morning_end:                
+                print('jil')
+                new_row['timeOfDay_Morning'] = 1
+            elif evening_start <= conv_startTime < evening_end:                
+                print('jung')
+                new_row['timeOfDay_Evening'] = 1
+            elif night_start <= conv_startTime < night_end:                
+                print('juk')
+                new_row['timeOfDay_Night'] = 1
+            
             new_row_df = pd.DataFrame([new_row])
             datac = pd.concat([datac, new_row_df], ignore_index=True)
         
-        for index, row in datac.iterrows():
-            for place_id in row.filter(like='placeID_').index:                
-                if row[place_id] == 1:
-                    form_place_id = place_id.replace('placeID_', '')                    
-                    for location_type, place_ids in locationTypeDict.items():
-                        if form_place_id in place_ids:
-                            print('location_type:', location_type, 'place_id:', form_place_id)                            
-                            datac.at[index, location_type] = 1       
+        # for index, row in datac.iterrows():
+        #     for place_id in row.filter(like='placeID_').index:                
+        #         if row[place_id] == 1:
+        #             form_place_id = place_id.replace('placeID_', '')                    
+        #             for location_type, place_ids in locationTypeDict.items():
+        #                 if form_place_id in place_ids:
+        #                     print('location_type:', location_type, 'place_id:', form_place_id)                            
+        #                     datac.at[index, location_type] = 1       
         
-        for index, row in datac.iterrows():
-            conv_startTime = datetime.strptime(request.data.get('startTime', []), "%H:%M").time()            
-            if morning_start <= conv_startTime < morning_end:                
-                datac.at[index, 'timeOfDay_Morning'] = 1
-            elif evening_start <= conv_startTime < evening_end:                
-                datac.at[index, 'timeOfDay_Evening'] = 1
-            elif night_start <= conv_startTime < night_end:                
-                datac.at[index, 'timeOfDay_Night'] = 1
+        
+        
+        # for index, row in datac.iterrows():
+        #     conv_startTime = datetime.strptime(request.data.get('startTime', []), "%H:%M").time()            
+        #     if morning_start <= conv_startTime < morning_end:                
+        #         datac.at[index, 'timeOfDay_Morning'] = 1
+        #     elif evening_start <= conv_startTime < evening_end:                
+        #         datac.at[index, 'timeOfDay_Evening'] = 1
+        #     elif night_start <= conv_startTime < night_end:                
+        #         datac.at[index, 'timeOfDay_Night'] = 1
 
         df = pd.DataFrame(datac)
         print('Heres the df')
@@ -95,7 +194,7 @@ class PredictionAPI(APIView):
         location_type_columns = df.filter(like='timeOfDay_')
 
         # Print column names
-        print('locationType columns:', location_type_columns.columns)
+        print('timeofDay columns:', location_type_columns.columns)
 
         # Print values of filtered columns
         for column in location_type_columns.columns:
@@ -138,7 +237,7 @@ class PredictionAPI(APIView):
         }
         
         print("hhehehehehe", optimization_data)
-        
+        print("1111111111111111111 start optimization time:", datetime.now())
         # Send a request to another microservice
         response = requests.post('http://127.0.0.1:8000/api/routeoptimize/', json=optimization_data)
         
@@ -159,7 +258,7 @@ class PredictionAPI(APIView):
         
         print("pppppppppppppppppppppp", sorted_prediction_dict, ordered_travel_times)
                 
-        
+        print("2222222222222222222 end optimization time:", datetime.now())
         # # Convert start time and end time strings to datetime objects
         start_time = datetime.strptime(request.data.get('startTime', []), "%H:%M")
         end_time = datetime.strptime(request.data.get('endTime', []), "%H:%M")
@@ -217,8 +316,12 @@ class PredictionAPI(APIView):
         # Step 4: Calculate Scaling Factor
         scaling_factor = total_available_time / (total_predicted_stay_time + total_travel_time)
         
+        # # Step 4: Adjust Predicted Stay Times
+        adjusted_stay_times_dict = {location: stay_time * scaling_factor for location, stay_time in sorted_prediction_dict.items()}
+        print("Adjusted Stay Times:", adjusted_stay_times_dict)
+        
         # Iterate over each location and calculate exact time values
-        for i, (location, stay_time) in enumerate(sorted_prediction_dict.items()):
+        for i, (location, stay_time) in enumerate(adjusted_stay_times_dict.items()):
             stay_time_hours = stay_time / 60  # Convert to hours
             # Calculate end time for stay at the current location
             end_time_stay = current_time + timedelta(hours=stay_time_hours)
@@ -234,9 +337,9 @@ class PredictionAPI(APIView):
             print('4Exact Time values:', exact_time_values[location])
 
             # If there's a next location, calculate the travel time range
-            if i < len(sorted_prediction_dict) - 1:
-                next_location = list(sorted_prediction_dict.keys())[i + 1]
-                current_location = list(sorted_prediction_dict.keys())[i]
+            if i < len(adjusted_stay_times_dict) - 1:
+                next_location = list(adjusted_stay_times_dict.keys())[i + 1]
+                current_location = list(adjusted_stay_times_dict.keys())[i]
                 travel_time_to_next_location = ordered_travel_times[f"{current_location}-{next_location}"]
                 travel_time_hours = travel_time_to_next_location / 3600  # Convert to hours
                 print('5Travel Time:', travel_time_hours)
@@ -292,6 +395,18 @@ class PredictionAPI(APIView):
 
         return Response(display_data, status=status.HTTP_200_OK)
 
+
+    # def get_place_types(self, place_id):
+    #     gmaps = googlemaps.Client(key=settings.GOOGLE_MAPS_API_KEY)
+    #     try:
+    #         place = gmaps.place(place_id)
+    #         if 'types' in place['result']:
+    #             return place['result']['types']
+    #         else:
+    #             return None
+    #     except Exception as e:
+    #         print(f"Error fetching place types for Place ID {place_id}: {e}")
+    #         return None
 
 
 

@@ -59,8 +59,16 @@ class RouteOptimizationAPI(APIView):
             result = gmaps.distance_matrix(origins=f'place_id:{origin}', destinations=f'place_id:{destination}', mode='driving')
             return result['rows'][0]['elements'][0]['distance']['value']
         
+        
+        def get_travel_time(origin, destination):
+            result = gmaps.distance_matrix(origins=f'place_id:{origin}', destinations=f'place_id:{destination}', mode='driving')
+            return result['rows'][0]['elements'][0]['duration']['value']
+        
+        def stay_time_heuristic(travel_time, predicted_stay_time):
+            return predicted_stay_time/travel_time            
+        
         # Genetic Algorithm setup
-        creator.create("FitnessSingle", base.Fitness, weights=(-2.0, 1.0))  # Minimize both distance, preference and stay time
+        creator.create("FitnessSingle", base.Fitness, weights=(-2.0, 1.0))  # Minimize both distance, preference and stay time        
         creator.create("Individual", list, fitness=creator.FitnessSingle)
         toolbox = base.Toolbox()
         toolbox.register("indices", random.sample, range(len(locations)), len(locations))
@@ -72,16 +80,20 @@ class RouteOptimizationAPI(APIView):
             origin = global_origin
             destination = global_destination
             total_distance = 0
+            total_travel_time = 0
             # total_preference = 0
             total_stay_time = 0
             # Calculate distance from origin to the first location
             total_distance += get_distance(origin, locations[individual[0]])
+            total_travel_time = get_travel_time(origin, locations[individual[0]])
 
             for i in range(len(individual) - 1):
                 origin_loc = locations[individual[i]]
                 destination_loc = locations[individual[i + 1]]
                 distance = get_distance(origin_loc, destination_loc)
+                travel_time = get_travel_time(origin_loc, destination_loc)
                 total_distance += distance
+                total_travel_time += travel_time
 
             # total_preference = sum(user_preferences[locations[i]] * val for i, val in enumerate(individual))
 
@@ -90,8 +102,12 @@ class RouteOptimizationAPI(APIView):
 
             # Calculate distance from the last location to the destination
             total_distance += get_distance(locations[individual[-1]], destination)
+            
+            total_travel_time += get_travel_time(locations[individual[-1]], destination)
+            
+            total_heuristic = stay_time_heuristic(total_travel_time, total_stay_time)
 
-            return total_distance, -total_stay_time # Note the negative sign to maximize stay time
+            return (total_distance, total_heuristic,) # Note the negative sign to maximize stay time
 
         toolbox.register("mate", tools.cxOrdered)
         toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.2)
@@ -107,11 +123,12 @@ class RouteOptimizationAPI(APIView):
         # Evaluate the entire population
         fitnesses = list(map(toolbox.evaluate, population))
         for ind, fit in zip(population, fitnesses):
+            print('yyyyyyyyyyyyy', fit, type(fit))
             ind.fitness.values = fit
 
         # Crossover and mutate the population
         algorithms.eaMuPlusLambda(population, toolbox, mu=population_size, lambda_=2 * population_size,
-                                  cxpb=0.4, mutpb=0.2, ngen=generations, stats=None, halloffame=None)
+                                cxpb=0.4, mutpb=0.2, ngen=generations, stats=None, halloffame=None)
         
         # Select the best individual from the final population
         best_individual = tools.selBest(population, 1)[0]

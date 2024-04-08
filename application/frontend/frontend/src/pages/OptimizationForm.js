@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import { Paper, TextField } from '@mui/material';
+import { Menu, Paper, TextField } from '@mui/material';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -34,6 +34,7 @@ const OptimizationForm = () => {
     const [endLocPlaceID, setEndLocPlaceID] = useState('')
     const [startLocDict, setStartLocDict] = useState([])
     const [endLocDict, setEndLocDict] = useState([])
+    const [userPreference, setUserPreference] = useState('')
     const navigate = useNavigate();
     const theme = useTheme();
 
@@ -58,7 +59,8 @@ const OptimizationForm = () => {
                 firstLocation: firstLocation,
                 currentPlaceId: currentPlaceId,
                 startLocDict: startLocDict,
-                endLocDict: endLocDict
+                endLocDict: endLocDict,
+                userPreference: userPreference
             })
             setResult(response.data.message)
             localStorage.setItem('itinerary', JSON.stringify(response))
@@ -213,6 +215,10 @@ const OptimizationForm = () => {
     }
     console.log({ locationDict })
 
+    const handleUserPreference = (e) => {
+        setUserPreference(e.target.value);
+    }
+
 
     return (
         <div>
@@ -323,26 +329,26 @@ const OptimizationForm = () => {
                         </TableContainer>
                     </div>
                     <div style={{ position: 'relative', flex: '2', marginTop: '100px' }}>
-                        {/* <Box sx={{ minWidth: 120 }}>
-                            <label><b>Select the location you wish to visit first</b></label>
+                        <Box sx={{ minWidth: 120 }}>
+                            <label><b>Select your interests</b></label>
                             <FormControl fullWidth>
                                 <InputLabel style={{ width: '100%', marginTop: '20px' }} id="demo-simple-select-label">Select location</InputLabel>
                                 <Select
                                     style={{ width: '100%', marginTop: '20px' }}
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
-                                    value={firstLocation}
+                                    value={userPreference}
                                     label="Locations"
-                                    onChange={handleSelectLocation}
+                                    onChange={handleUserPreference}
                                 >
-                                    {Object.values(locationDict).map((location, index) => (
-                                        <MenuItem key={index} value={location}>
-                                            {location}
-                                        </MenuItem>
-                                    ))}
+                                    <MenuItem value="shopping">Shopping - You wish to spend more time shopping</MenuItem>
+                                    <MenuItem value="relax">Relaxation - You wish to relax at a beach, park, etc.</MenuItem>
+                                    <MenuItem value="explore">Explore - You wish to explore new locations, structures, etc.</MenuItem>
+                                    <MenuItem value="sightsee">Sightsee - You wish to look at attractions, museums, etc.</MenuItem>
+                                    <MenuItem value="worship">Worship - You wish to spend more time at a place of worship</MenuItem>
                                 </Select>
                             </FormControl>
-                        </Box> */}
+                        </Box>
                     </div>
                 </div>
             </div>
