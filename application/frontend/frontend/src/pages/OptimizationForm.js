@@ -48,7 +48,7 @@ const OptimizationForm = () => {
         // Simulate optimization process (15 seconds)
         setTimeout(() => {
             setLoading(false);
-        }, 45000);
+        }, 75000);
 
         try {
             localStorage.setItem('locationDict', JSON.stringify(locationDict))
@@ -284,7 +284,7 @@ const OptimizationForm = () => {
                                     id="startTime"
                                     value={startTime}
                                     onChange={(e) => setStartTime(e.target.value)}
-                                    style={{ marginLeft: '40px', width: '100px', fontSize: '20px', backgroundColor: 'lightblue' }}
+                                    style={{ marginLeft: '40px', width: '100px', fontSize: '15px', backgroundColor: 'lightblue', fontFamily: 'Roboto, sans-serif' }}
                                 />
                             </div>
                             <div style={{ display: 'inline-flex' }}>
@@ -302,7 +302,7 @@ const OptimizationForm = () => {
                                     id="endTime"
                                     value={endTime}
                                     onChange={(e) => setEndTime(e.target.value)}
-                                    style={{ marginLeft: '50px', width: '100px', fontSize: '20px', backgroundColor: 'lightblue' }}
+                                    style={{ marginLeft: '50px', width: '100px', fontSize: '15px', backgroundColor: 'lightblue', fontFamily: 'Roboto, sans-serif' }}
                                 />
                             </div>
                         </Paper>
