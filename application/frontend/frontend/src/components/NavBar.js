@@ -13,7 +13,7 @@ export default function ButtonAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             DELTA - Route Optimization and Stay Time Prediction
           </Typography>
-          <Button color="inherit">Github</Button>
+          <Button color="inherit" href="https://github.com/harees-srini/FYP-implementation" target="_blank">Github</Button>
           <Button color="inherit">Watch Demo</Button>
         </Toolbar>
       </AppBar>

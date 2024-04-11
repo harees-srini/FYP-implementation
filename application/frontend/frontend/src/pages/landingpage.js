@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useTheme } from '@emotion/react'
 import Fade from '@mui/material/Fade';
 import ButtonAppBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 // import axios from 'axios'
 
@@ -30,9 +31,9 @@ const LandingPage = () => {
     };
 
     return (
-        <div>
+        <div style={{ backgroundColor: theme.palette.background.default }} >
             <ButtonAppBar />
-            <div position='fixed' style={{ backgroundColor: theme.palette.background.default, height: '93.1vh', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+            <div position='fixed' style={{ backdropFilter: 'blur', height: '93.1vh', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                 <Fade in={showText} timeout={5000}>
                     <img position='relative' src={"../../landing_page_map.png"} alt="Landing Page image" />
                 </Fade>
@@ -42,9 +43,15 @@ const LandingPage = () => {
                         <div>
                             <Typography variant="h3" gutterBottom style={{ fontWeight: '1000' }}>
                                 DELTA
+                            </Typography>                            
+                            <Typography variant="body1" gutterBottom>
+                            ˈdɛltə : <b>noun</b>
+                            </Typography>                          
+                            <Typography variant="h5" gutterBottom>
+                                To move or change places, people, or things
                             </Typography>
-                            <Typography variant="h3" gutterBottom>
-                                Route Optimization and Stay Time Prediction
+                            <Typography variant="h5" gutterBottom>
+                            <i>Let's delta outta here!</i>
                             </Typography>
                         </div>
                     </Fade>
@@ -57,6 +64,7 @@ const LandingPage = () => {
                     </Fade>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

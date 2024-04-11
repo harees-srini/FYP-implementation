@@ -8,6 +8,7 @@ import Modal from '@mui/material/Modal';
 import LinearProgress from '@mui/material/LinearProgress';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import AddHomeIcon from '@mui/icons-material/AddHome';
 import Box from '@mui/material/Box';
 import Select from '@mui/material/Select'
 import InputLabel from '@mui/material/InputLabel';
@@ -15,8 +16,8 @@ import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@emotion/react'
 import FormControl from '@mui/material/FormControl';
 import ButtonAppBar from '../components/NavBar'
-
-
+import Tooltip from '@mui/material/Tooltip';
+import Footer from '../components/Footer'
 
 const OptimizationForm = () => {
     const [result, setResult] = useState('')
@@ -47,7 +48,7 @@ const OptimizationForm = () => {
         // Simulate optimization process (15 seconds)
         setTimeout(() => {
             setLoading(false);
-        }, 15000);
+        }, 45000);
 
         try {
             localStorage.setItem('locationDict', JSON.stringify(locationDict))
@@ -86,15 +87,15 @@ const OptimizationForm = () => {
                         const currentLocation = results[0].formatted_address;
                         if (locationType === 'start') {
                             setStartLocation(currentLocation);
-                            setStartLocPlaceID(currentPlaceId); 
-                            updateStartLocationDict(currentPlaceId, currentLocation);                           
+                            setStartLocPlaceID(currentPlaceId);
+                            updateStartLocationDict(currentPlaceId, currentLocation);
                             document.getElementById('start-location-search').value = currentLocation || '';
                         } else if (locationType === 'end') {
                             setEndLocation(currentLocation);
                             setEndLocPlaceID(currentPlaceId);
                             updateEndLocationDict(currentPlaceId, currentLocation)
                             document.getElementById('end-location-search').value = currentLocation || '';
-                        }                        
+                        }
                     }
                 }
             });
@@ -132,7 +133,7 @@ const OptimizationForm = () => {
                     const options = {
                         bounds: new window.google.maps.LatLngBounds(userLocation, userLocation), // Bias towards user's location                    
                     }
-                    return options                
+                    return options
                 };
 
                 const autocomplete = new window.google.maps.places.Autocomplete(
@@ -149,7 +150,7 @@ const OptimizationForm = () => {
                     document.getElementById('end-location-search'),
                     setAutocompleteOptions('end-location-search')
                 );
-            
+
 
                 autocomplete.addListener('place_changed', () => {
                     const place = autocomplete.getPlace();
@@ -166,7 +167,7 @@ const OptimizationForm = () => {
                     setStartLocation(location);
                     // updateStartLocationDict(startLocPlaceID, startLocation);
                 });
-                
+
                 endAutocomplete.addListener('place_changed', () => {
                     const place = endAutocomplete.getPlace();
                     const placeId = place.place_id;
@@ -175,10 +176,10 @@ const OptimizationForm = () => {
                     // updateEndLocationDict(endLocPlaceID, endLocation);
                 });
                 console.log({ startLocDict });
-                console.log({ endLocDict});
+                console.log({ endLocDict });
                 console.log({ endLocPlaceID });
                 console.log({ startLocPlaceID });
-                
+
             })
         }
     }, []);
@@ -191,17 +192,17 @@ const OptimizationForm = () => {
     };
 
     const updateStartLocationDict = (placeId, location) => {
-        setStartLocDict({            
+        setStartLocDict({
             [placeId]: location // Add or update the location for the given place ID
         });
     };
 
     const updateEndLocationDict = (placeId, location) => {
-        setEndLocDict({            
+        setEndLocDict({
             [placeId]: location // Add or update the location for the given place ID    
         });
-    };    
-    
+    };
+
     const handleSelectLocation = (e) => {
         setFirstLocation(e.target.value);
     }
@@ -210,8 +211,8 @@ const OptimizationForm = () => {
         setLocationDict(prevDictionary => {
             const newDictionary = { ...prevDictionary };
             delete newDictionary[placeId];
-            return newDictionary;                    
-        });            
+            return newDictionary;
+        });
     }
     console.log({ locationDict })
 
@@ -221,64 +222,87 @@ const OptimizationForm = () => {
 
 
     return (
-        <div>
+        <div style={{ maxHeight: '100vh' }}>
             <ButtonAppBar />
             <div style={{ backgroundColor: theme.palette.background.default, minHeight: '100vh', display: 'flex' }}>
-                <div style={{ flex: '1', maxWidth: '50%' }}>
-                <div>
+                <div style={{ flex: '1', minWidth: '100vh' }}>
+                    <div>
                         <TextField
+                            required={true}
+                            helperText="Please enter the location from where you will start your journey."
                             id="start-location-search"
-                            label="Start here"
+                            label="Search to add origin"
                             variant="filled"
                             value={startLocation}
                             onChange={(e) => setStartLocation(e.target.value)}
                             style={{ height: '60px', marginLeft: '100px', marginTop: '100px', width: '500px', fontSize: '50px', position: 'relative', top: '10px' }}
                         />
-                        <Button id="start-location-btn" variant="contained" onClick={() => handleSelectCurrentLocation('start')} style={{ marginLeft: '250px', marginTop: '100px' }}>Add current location</Button>
+                        <Tooltip title="Add current location"><IconButton style={{ marginTop: '120px', marginLeft: '50px', fontSize: 'medium' }} aria-label="add-home" onClick={() => handleSelectCurrentLocation('start')}><AddHomeIcon /></IconButton></Tooltip>
+                        {/* <Button id="start-location-btn" variant="contained" onClick={() => handleSelectCurrentLocation('start')} style={{ marginLeft: '250px', marginTop: '30px' }}>Add current location</Button> */}
                     </div>
                     <div>
                         <TextField
+                            required={true}
+                            helperText="Enter the first few letters of the locations you wish to add to your itinerary."
                             id="locations-search"
-                            label="Add locations"
+                            label="Search to add locations to your itinerary"
                             variant="filled"
                             value={selectedLocation}
                             onChange={(e) => setSelectedLocation(e.target.value)}
-                            style={{ height: '60px', marginLeft: '100px', marginTop: '100px', width: '500px', fontSize: '50px', position: 'relative', top: '10px' }}
+                            style={{ height: '60px', marginLeft: '100px', marginTop: '70px', width: '500px', fontSize: '50px', position: 'relative', top: '10px' }}
                         />
                     </div>
                     <div>
                         <TextField
+                            required={true}
+                            helperText="Please enter the location where you will end your journey."
                             id="end-location-search"
-                            label="End here"
+                            label="Search to add destination"
                             variant="filled"
                             value={endLocation}
                             onChange={(e) => setEndLocation(e.target.value)}
-                            style={{ height: '60px', marginLeft: '100px', marginTop: '100px', width: '500px', fontSize: '50px', position: 'relative', top: '10px' }}
+                            style={{ height: '60px', marginLeft: '100px', marginTop: '70px', width: '500px', fontSize: '50px', position: 'relative', top: '10px' }}
                         />
-                        <Button id="end-location-btn" variant="contained" onClick={() => handleSelectCurrentLocation('end')} style={{ marginLeft: '250px', marginTop: '100px' }}>Add current location</Button>
+                        <Tooltip title="Add current location"><IconButton style={{ marginTop: '90px', marginLeft: '50px' }} aria-label="add-home" onClick={() => handleSelectCurrentLocation('end')}><AddHomeIcon /></IconButton></Tooltip>
+                        {/* <Button id="end-location-btn" variant="contained" onClick={() => handleSelectCurrentLocation('end')} style={{ marginLeft: '250px', marginTop: '30px' }}>Add current location</Button> */}
                         {/* <Button id="end-location-btn2" variant="contained" onClick={'add function'} style={{ marginLeft: '250px', marginTop: '100px' }}>Same as start location</Button> */}
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '150px', position: 'relative' }}>
-                        <Paper style={{ padding: '50px', borderRadius: '5px', backgroundColor: 'rgba(0, 0, 0, 0.1)' }}>
-                            <div style={{ marginLeft: '75px' }}>
-                                <label htmlFor="startTime">Enter your Start Time here:</label>
-                                <br />
+                    <div style={{ display: 'flex', marginTop: '100px', position: 'relative' }}>
+                        <Paper style={{ padding: '50px', borderRadius: '5px', backgroundColor: 'rgba(0, 0, 0, 0.05)', width: '400px', marginLeft: '100px' }}>
+                            <div style={{ display: 'inline-flex' }}>
+                                <label htmlFor="startTime"><h3>Enter your Start Time here:</h3></label>
+                                {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                    <DemoContainer components={['TimePicker']}>
+                                        <TimePicker id="startTime"
+                                            value={startTime}
+                                            onChange={(e) => setStartTime(e.target.value)} label="Basic time picker" />
+                                    </DemoContainer>
+                                </LocalizationProvider> */}
                                 <input
+                                    required={true}
                                     type="time"
                                     id="startTime"
                                     value={startTime}
                                     onChange={(e) => setStartTime(e.target.value)}
+                                    style={{ marginLeft: '40px', width: '100px', fontSize: '20px', backgroundColor: 'lightblue' }}
                                 />
                             </div>
-                            <div style={{ marginLeft: '75px' }}>
-                                <label htmlFor="endTime">Enter your End Time here:</label>
-                                <br />
+                            <div style={{ display: 'inline-flex' }}>
+                                <label htmlFor="endTime"><h3>Enter your End Time here:</h3></label>
+                                {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                    <DemoContainer components={['TimePicker']}>
+                                        <TimePicker id="endTime"
+                                            value={endTime}
+                                            onChange={(e) => setEndTime(e.target.value)} label="Basic time picker" />
+                                    </DemoContainer>
+                                </LocalizationProvider> */}
                                 <input
+                                    required={true}
                                     type="time"
                                     id="endTime"
                                     value={endTime}
                                     onChange={(e) => setEndTime(e.target.value)}
-                                    style={{ marginRight: '0px' }}
+                                    style={{ marginLeft: '50px', width: '100px', fontSize: '20px', backgroundColor: 'lightblue' }}
                                 />
                             </div>
                         </Paper>
@@ -303,17 +327,17 @@ const OptimizationForm = () => {
                             )}
                         </div>
                     </Modal>
-                    <Button variant="contained" onClick={handleOptimize} style={{ marginLeft: '250px', marginTop: '100px' }}>Optimize</Button>
+                    <Button variant="contained" onClick={handleOptimize} style={{ marginLeft: '250px', marginTop: '50px' }}>Optimize</Button>
                 </div>
-                <div style={{ width: '200px', display: 'flex', marginLeft: '300px', marginRight: '100px', marginTop: '100px', flexDirection: 'column', flex: '2', maxWidth: '50%' }}>
+                <div style={{ width: '200px', display: 'flex', marginLeft: '250px', marginRight: '100px', marginTop: '70px', flexDirection: 'column', flex: '2', maxWidth: '50%' }}>
                     <div style={{ position: 'relative', flex: '1' }}>
                         <TableContainer>
                             <Table>
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell><b>Selected location list</b></TableCell>                                        
+                                        <TableCell><h3>Selected location list</h3></TableCell>
                                     </TableRow>
-                                </TableHead>                                
+                                </TableHead>
                                 <TableBody>
                                     {Object.entries(locationDict).map(([placeId, location]) => (
                                         <TableRow key={placeId}>
@@ -332,9 +356,11 @@ const OptimizationForm = () => {
                         <Box sx={{ minWidth: 120 }}>
                             <label><b>Select your interests</b></label>
                             <FormControl fullWidth>
-                                <InputLabel style={{ width: '100%', marginTop: '20px' }} id="demo-simple-select-label">Select location</InputLabel>
+                                <InputLabel required={true} style={{ width: '100%', marginTop: '20px' }} id="demo-simple-select-label">Select your preferred activity</InputLabel>
                                 <Select
-                                    style={{ width: '100%', marginTop: '20px' }}
+                                    required={true}
+                                    variant="filled"
+                                    style={{ width: '100%', marginTop: '18px' }}
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
                                     value={userPreference}
@@ -352,6 +378,7 @@ const OptimizationForm = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
