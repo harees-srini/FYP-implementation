@@ -9,6 +9,10 @@ import Paper from '@mui/material/Paper';
 import { useTheme } from '@emotion/react'
 import ButtonAppBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 const Itinerary = () => {
     const [itinerary, setItinerary] = useState(null);
@@ -78,42 +82,56 @@ const Itinerary = () => {
     };
 
     return (
-        <div style={{ backgroundColor: theme.palette.background.default, minHeight: '100vh', backgroundRepeat: 'no-repeat' }}>
-            <div>
-                <ButtonAppBar />
-                <h1 style={{ display: 'flex', justifyContent: 'center' }}>Travel Itinerary provided by DELTA</h1>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <TableContainer component={Paper} style={{ width: "70%" }}>
-                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableHead style={{ backgroundColor: "#4169E1" }}>
-                            <TableRow>
-                                {/* <TableCell>Place ID</TableCell> */}
-                                <TableCell style={{ fontSize: 'large', fontWeight: 'bolder' }} align="center">Order</TableCell>
-                                <TableCell style={{ fontSize: 'large', fontWeight: 'bolder' }} align="center">Name</TableCell>
-                                <TableCell style={{ fontSize: 'large', fontWeight: 'bolder' }} align="center">Stay time</TableCell>
+        <Container id="faq"
+            sx={{
+                pt: { xs: 4, sm: 12 },
+                pb: { xs: 8, sm: 16 },
+                position: 'relative',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: { xs: 3, sm: 6 },
+            }}>
+            <ButtonAppBar />
+            <Typography
+                component="h2"
+                variant="h4"
+                color="text.primary"
+                sx={{
+                    width: { sm: '100%', md: '60%' },
+                    textAlign: { sm: 'left', md: 'center' },
+                }}
+            >
+                Your Delta-optimized travel itinerary
+            </Typography>
+            <TableContainer component={Paper} sx={{ sm: { width: '100%', md: '60%' } }}>
+                <Table aria-label="simple table" sx={{ sm: { width: '100%', md: '60%' } }}>
+                    <TableHead sx={{ backgroundColor: "#4169E1" }}>
+                        <TableRow>
+                            <TableCell sx={{ fontSize: 'large', fontWeight: 'bolder' }} align="center">Order</TableCell>
+                            <TableCell sx={{ fontSize: 'large', fontWeight: 'bolder' }} align="center">Name</TableCell>
+                            <TableCell sx={{ fontSize: 'large', fontWeight: 'bolder' }} align="center">Stay time</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {locationData.map((item, index) => (
+                            <TableRow
+                                key={index}                                 
+                            >
+                                <TableCell align="center">{item.order + 1}</TableCell>
+                                <TableCell align="center">{item.location}</TableCell>
+                                <TableCell align="center">{item.stayTime[0] + " - " + item.stayTime[1]}</TableCell>
                             </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {locationData.map((item, index) => (
-                                <TableRow
-                                    key={index}
-                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                >
-                                    {/* <TableCell component="th" scope="row">
-                                        {item.placeId}
-                                    </TableCell> */}
-                                    <TableCell align="center">{item.order + 1}</TableCell>
-                                    <TableCell align="center">{item.location}</TableCell>
-                                    <TableCell align="center">{item.stayTime[0] + " - " + item.stayTime[1]}</TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-            </div>
-            {/* <Footer /> */}
-        </div>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+            <Button variant="contained" color="primary" sx={{ width: { sm: '100%', md: '30%' },
+                                    textAlign: { sm: 'center', md: 'center' } }}>
+                            Download Itinerary
+                        </Button>
+            <Footer />
+        </Container>
     );
 }
 
